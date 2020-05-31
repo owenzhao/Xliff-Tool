@@ -1,0 +1,225 @@
+/* Class = "NSButtonCell"; title = "Cancel"; ObjectID = "0uT-sC-hK8"; */
+"0uT-sC-hK8.title" = "取消";
+
+/* Class = "NSTableColumn"; headerCell.title = "Target Language"; ObjectID = "0xN-FD-jux"; */
+"0xN-FD-jux.headerCell.title" = "目标语言";
+
+/* Class = "NSMenuItem"; title = "Xliff Tool"; ObjectID = "1Xt-HY-uBw"; */
+"1Xt-HY-uBw.title" = "Xliff工具";
+
+/* Class = "NSTextFieldCell"; title = "Table View Cell"; ObjectID = "2Mq-0d-Xix"; */
+"2Mq-0d-Xix.title" = "Table View Cell";
+
+/* Class = "NSTextFieldCell"; title = "Note"; ObjectID = "3KE-2r-rQO"; */
+"3KE-2r-rQO.title" = "备注";
+
+/* Class = "NSButtonCell"; title = "Verify"; ObjectID = "3MM-TX-OEC"; */
+"3MM-TX-OEC.title" = "审核通过";
+
+/* Class = "NSTextFieldCell"; title = "Progress"; ObjectID = "3WV-vd-4qK"; */
+"3WV-vd-4qK.title" = "进度";
+
+/* Class = "NSMenuItem"; title = "Quit Xliff Tool"; ObjectID = "4sb-4s-VLi"; */
+"4sb-4s-VLi.title" = "退出 Xliff 工具";
+
+/* Class = "NSMenuItem"; title = "About Xliff Tool"; ObjectID = "5kV-Vb-QxS"; */
+"5kV-Vb-QxS.title" = "关于 Xliff工具";
+
+/* Class = "NSMenuItem"; title = "Edit"; ObjectID = "5QF-Oa-p0T"; */
+"5QF-Oa-p0T.title" = "编辑";
+
+/* Class = "NSMenuItem"; title = "Redo"; ObjectID = "6dh-zS-Vam"; */
+"6dh-zS-Vam.title" = "重做";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "8Eb-Xp-8Qb"; */
+"8Eb-Xp-8Qb.title" = "Text Cell";
+
+/* Class = "NSTextFieldCell"; title = "Table View Cell"; ObjectID = "9pM-Se-qwd"; */
+"9pM-Se-qwd.title" = "Table View Cell";
+
+/* Class = "NSButtonCell"; title = "Open Google Translate"; ObjectID = "66u-Js-oNU"; */
+"66u-Js-oNU.title" = "打开谷歌翻译";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "77s-Uf-ZqI"; */
+"77s-Uf-ZqI.title" = "Text Cell";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "Agc-yi-5s3"; */
+"Agc-yi-5s3.title" = "Text Cell";
+
+/* Class = "NSWindow"; title = "Xliff File Original"; ObjectID = "Aod-Gt-how"; */
+"Aod-Gt-how.title" = "Xliff文件源";
+
+/* Class = "NSMenuItem"; title = "Window"; ObjectID = "aUF-d1-5bR"; */
+"aUF-d1-5bR.title" = "窗口";
+
+/* Class = "NSMenu"; title = "Main Menu"; ObjectID = "AYu-sK-qS6"; */
+"AYu-sK-qS6.title" = "Main Menu";
+
+/* Class = "NSTableColumn"; headerCell.title = "Original"; ObjectID = "b2Z-Rb-wJX"; */
+"b2Z-Rb-wJX.headerCell.title" = "源";
+
+/* Class = "NSMenuItem"; title = "Skip Translated Results"; ObjectID = "b6Y-ST-q3r"; */
+"b6Y-ST-q3r.title" = "跳过已翻译的结果";
+
+/* Class = "NSTableColumn"; headerCell.title = "Source Language"; ObjectID = "bBb-kn-HHb"; */
+"bBb-kn-HHb.headerCell.title" = "源语言";
+
+/* Class = "NSTextFieldCell"; title = "Xliff File Path"; ObjectID = "BfC-gV-GGd"; */
+"BfC-gV-GGd.title" = "Xliff文件路径";
+
+/* Class = "NSMenu"; title = "File"; ObjectID = "bib-Uj-vzu"; */
+"bib-Uj-vzu.title" = "文件";
+
+/* Class = "NSMenuItem"; title = "Preferences…"; ObjectID = "BOF-NM-1cW"; */
+"BOF-NM-1cW.title" = "偏好设置…";
+
+/* Class = "NSMenuItem"; title = "Save As…"; ObjectID = "Bw7-FT-i3A"; */
+"Bw7-FT-i3A.title" = "保存为…";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "D2b-UJ-iHN"; */
+"D2b-UJ-iHN.title" = "Text Cell";
+
+/* Class = "NSMenuItem"; title = "File"; ObjectID = "dMs-cI-mzQ"; */
+"dMs-cI-mzQ.title" = "文件";
+
+/* Class = "NSTextFieldCell"; title = "Verified"; ObjectID = "dqU-ao-OeX"; */
+"dqU-ao-OeX.title" = "已审核";
+
+/* Class = "NSMenuItem"; title = "Undo"; ObjectID = "dRJ-4n-Yzg"; */
+"dRJ-4n-Yzg.title" = "撤销";
+
+/* Class = "NSMenuItem"; title = "Close"; ObjectID = "DVo-aG-piG"; */
+"DVo-aG-piG.title" = "关闭";
+
+/* Class = "NSTextFieldCell"; title = "Table View Cell"; ObjectID = "eDB-Ub-DPC"; */
+"eDB-Ub-DPC.title" = "Table View Cell";
+
+/* Class = "NSTableColumn"; headerCell.title = "Last Modified Date"; ObjectID = "ELi-pf-LVL"; */
+"ELi-pf-LVL.headerCell.title" = "上次修改时间";
+
+/* Class = "NSTextFieldCell"; title = "Translated"; ObjectID = "ezN-nZ-9Qt"; */
+"ezN-nZ-9Qt.title" = "翻译";
+
+/* Class = "NSMenu"; title = "Help"; ObjectID = "F2S-fz-NVQ"; */
+"F2S-fz-NVQ.title" = "帮助";
+
+/* Class = "NSMenuItem"; title = "Xliff Tool Help"; ObjectID = "FKE-Sm-Kum"; */
+"FKE-Sm-Kum.title" = "Xliff工具 帮助";
+
+/* Class = "NSMenuItem"; title = "Paste"; ObjectID = "gVA-U4-sdL"; */
+"gVA-U4-sdL.title" = "粘贴";
+
+/* Class = "NSMenuItem"; title = "View"; ObjectID = "H8h-7b-M4v"; */
+"H8h-7b-M4v.title" = "查看";
+
+/* Class = "NSMenuItem"; title = "Skip Verified Results"; ObjectID = "hUI-Ho-QHI"; */
+"hUI-Ho-QHI.title" = "跳过已审核的结果";
+
+/* Class = "NSMenu"; title = "View"; ObjectID = "HyV-fh-RgO"; */
+"HyV-fh-RgO.title" = "查看";
+
+/* Class = "NSMenu"; title = "Services"; ObjectID = "hz9-B4-Xy5"; */
+"hz9-B4-Xy5.title" = "服务";
+
+/* Class = "NSMenuItem"; title = "Open…"; ObjectID = "IAo-SY-fd9"; */
+"IAo-SY-fd9.title" = "打开…";
+
+/* Class = "NSWindow"; title = "Choose an Action"; ObjectID = "IQv-IB-iLA"; */
+"IQv-IB-iLA.title" = "选择操作";
+
+/* Class = "NSTextFieldCell"; title = "Table View Cell"; ObjectID = "JlD-eB-QN4"; */
+"JlD-eB-QN4.title" = "Table View Cell";
+
+/* Class = "NSTextFieldCell"; title = "Table View Cell"; ObjectID = "jsL-eb-Vbg"; */
+"jsL-eb-Vbg.title" = "Table View Cell";
+
+/* Class = "NSMenuItem"; title = "Show All"; ObjectID = "Kd2-mp-pUS"; */
+"Kd2-mp-pUS.title" = "显示全部";
+
+/* Class = "NSTextFieldCell"; title = "Target"; ObjectID = "kK4-Hq-JCD"; */
+"kK4-Hq-JCD.title" = "目标";
+
+/* Class = "NSMenuItem"; title = "Bring All to Front"; ObjectID = "LE2-aR-0XJ"; */
+"LE2-aR-0XJ.title" = "牵制全部窗口";
+
+/* Class = "NSTableColumn"; headerCell.title = "Data Type"; ObjectID = "mY8-la-btl"; */
+"mY8-la-btl.headerCell.title" = "数据类型";
+
+/* Class = "NSMenuItem"; title = "Services"; ObjectID = "NMo-om-nkz"; */
+"NMo-om-nkz.title" = "服务";
+
+/* Class = "NSMenu"; title = "Open Recent"; ObjectID = "oas-Oc-fiZ"; */
+"oas-Oc-fiZ.title" = "打开最近使用";
+
+/* Class = "NSMenuItem"; title = "Hide Xliff Tool"; ObjectID = "Olw-nP-bQN"; */
+"Olw-nP-bQN.title" = "隐藏 Xliff工具";
+
+/* Class = "NSMenuItem"; title = "Minimize"; ObjectID = "OY7-WF-poV"; */
+"OY7-WF-poV.title" = "最小化";
+
+/* Class = "NSMenuItem"; title = "Delete"; ObjectID = "pa3-QI-u2k"; */
+"pa3-QI-u2k.title" = "删除";
+
+/* Class = "NSButtonCell"; title = "Create New Project"; ObjectID = "pf8-nc-x3n"; */
+"pf8-nc-x3n.title" = "创建新项目";
+
+/* Class = "NSTextFieldCell"; title = "Source"; ObjectID = "pg9-yh-40W"; */
+"pg9-yh-40W.title" = "源";
+
+/* Class = "NSMenuItem"; title = "Save…"; ObjectID = "pxx-59-PXV"; */
+"pxx-59-PXV.title" = "保存…";
+
+/* Class = "NSTextFieldCell"; title = "Table View Cell"; ObjectID = "q0P-Z3-915"; */
+"q0P-Z3-915.title" = "Table View Cell";
+
+/* Class = "NSButtonCell"; title = "Open Bing Translator"; ObjectID = "qM1-aW-iR7"; */
+"qM1-aW-iR7.title" = "打开必应翻译";
+
+/* Class = "NSMenuItem"; title = "Zoom"; ObjectID = "R4o-n2-Eq4"; */
+"R4o-n2-Eq4.title" = "缩放";
+
+/* Class = "NSButtonCell"; title = "Copy Note ObjectID"; ObjectID = "RrD-mP-rXb"; */
+"RrD-mP-rXb.title" = "复制备注的ObjectID";
+
+/* Class = "NSMenuItem"; title = "Select All"; ObjectID = "Ruw-6m-B2m"; */
+"Ruw-6m-B2m.title" = "全选";
+
+/* Class = "NSMenu"; title = "Window"; ObjectID = "Td7-aD-5lo"; */
+"Td7-aD-5lo.title" = "窗口";
+
+/* Class = "NSMenuItem"; title = "Open Recent"; ObjectID = "tXI-mr-wws"; */
+"tXI-mr-wws.title" = "打开最近使用";
+
+/* Class = "NSTableColumn"; headerCell.title = "Project"; ObjectID = "UIG-Uv-kTX"; */
+"UIG-Uv-kTX.headerCell.title" = "项目";
+
+/* Class = "NSMenu"; title = "Xliff Tool"; ObjectID = "uQy-DD-JDr"; */
+"uQy-DD-JDr.title" = "Xliff工具";
+
+/* Class = "NSMenuItem"; title = "Cut"; ObjectID = "uRl-iY-unG"; */
+"uRl-iY-unG.title" = "剪切";
+
+/* Class = "NSMenuItem"; title = "Hide Others"; ObjectID = "Vdr-fp-XzO"; */
+"Vdr-fp-XzO.title" = "隐藏其它";
+
+/* Class = "NSMenuItem"; title = "Clear Menu"; ObjectID = "vNY-rz-j42"; */
+"vNY-rz-j42.title" = "清除菜单";
+
+/* Class = "NSMenu"; title = "Edit"; ObjectID = "W48-6f-4Dl"; */
+"W48-6f-4Dl.title" = "编辑";
+
+/* Class = "NSMenuItem"; title = "Help"; ObjectID = "wpr-3q-Mcd"; */
+"wpr-3q-Mcd.title" = "帮助";
+
+/* Class = "NSMenuItem"; title = "Copy"; ObjectID = "x3v-GG-iWU"; */
+"x3v-GG-iWU.title" = "复制";
+
+/* Class = "NSTextFieldCell"; title = "Last Modified Date"; ObjectID = "X7v-ig-fhF"; */
+"X7v-ig-fhF.title" = "上次修改时间";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "xMM-ZL-tzQ"; */
+"xMM-ZL-tzQ.title" = "Text Cell";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "yub-Wi-VtE"; */
+"yub-Wi-VtE.title" = "Text Cell";
+

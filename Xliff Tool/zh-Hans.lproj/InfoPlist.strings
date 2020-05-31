@@ -1,0 +1,9 @@
+/* Bundle name */
+"CFBundleName" = "Xliff工具";
+
+/* Copyright (human-readable) */
+"NSHumanReadableCopyright" = "版权所有 © 2020 肇鑫。所有权力保留。";
+
+/* (No Comment) */
+"XML Localization Interchange File Format" = "XML本地交换文件类型";
+

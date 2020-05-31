@@ -1,0 +1,3525 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 http://docs.oasis-open.org/xliff/v1.2/os/xliff-core-1.2-strict.xsd">
+  <file original="iOS Post/Base.lproj/InfoPlist.strings" source-language="en" target-language="zh-Hans" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="11.3.1" build-num="11C504"/>
+    </header>
+    <body>
+      <trans-unit id="CFBundleDisplayName" xml:space="preserve">
+        <source>Poster 2</source>
+        <target>咕唧2</target>
+        <note>Bundle display name</note>
+      </trans-unit>
+      <trans-unit id="CFBundleName" xml:space="preserve">
+        <source>iOS Post 2</source>
+        <note>Bundle name</note>
+      </trans-unit>
+      <trans-unit id="NSLocationWhenInUseUsageDescription" xml:space="preserve">
+        <source>Get the current location where you are posting.</source>
+        <target>获得你分享状态时所处的位置。</target>
+        <note>Privacy - Location When In Use Usage Description</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="iOS Post/Base.lproj/Post.storyboard" source-language="en" target-language="zh-Hans" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="11.3.1" build-num="11C504"/>
+    </header>
+    <body>
+      <trans-unit id="0zs-wN-DC8.text" xml:space="preserve">
+        <source>Latitude</source>
+        <target>经度</target>
+        <note>Class = "UILabel"; text = "Latitude"; ObjectID = "0zs-wN-DC8";</note>
+      </trans-unit>
+      <trans-unit id="3KD-cF-CtA.text" xml:space="preserve">
+        <source>140</source>
+        <target>140</target>
+        <note>Class = "UILabel"; text = "140"; ObjectID = "3KD-cF-CtA";</note>
+      </trans-unit>
+      <trans-unit id="66Q-DI-emX.title" xml:space="preserve">
+        <source>Back</source>
+        <target>返回</target>
+        <note>Class = "UIBarButtonItem"; title = "Back"; ObjectID = "66Q-DI-emX";</note>
+      </trans-unit>
+      <trans-unit id="GrS-kx-ROK.text" xml:space="preserve">
+        <source>video</source>
+        <target>视频</target>
+        <note>Class = "UILabel"; text = "video"; ObjectID = "GrS-kx-ROK";</note>
+      </trans-unit>
+      <trans-unit id="KSQ-Ex-xXI.text" xml:space="preserve">
+        <source>Title</source>
+        <target>标题</target>
+        <note>Class = "UILabel"; text = "Title"; ObjectID = "KSQ-Ex-xXI";</note>
+      </trans-unit>
+      <trans-unit id="MI0-OU-CBX.text" xml:space="preserve">
+        <source>$title</source>
+        <target>$title</target>
+        <note>Class = "UITextView"; text = "$title"; ObjectID = "MI0-OU-CBX";</note>
+      </trans-unit>
+      <trans-unit id="MPq-tU-0pY.normalTitle" xml:space="preserve">
+        <source>Cancel</source>
+        <target>取消</target>
+        <note>Class = "UIButton"; normalTitle = "Cancel"; ObjectID = "MPq-tU-0pY";</note>
+      </trans-unit>
+      <trans-unit id="OXy-NW-K7C.normalTitle" xml:space="preserve">
+        <source>Post</source>
+        <target>发布</target>
+        <note>Class = "UIButton"; normalTitle = "Post"; ObjectID = "OXy-NW-K7C";</note>
+      </trans-unit>
+      <trans-unit id="S08-Np-9gE.headerTitle" xml:space="preserve">
+        <source>Location Name</source>
+        <target>所在位置</target>
+        <note>Class = "UITableViewSection"; headerTitle = "Location Name"; ObjectID = "S08-Np-9gE";</note>
+      </trans-unit>
+      <trans-unit id="SCi-Td-wEo.placeholder" xml:space="preserve">
+        <source>Title</source>
+        <target>标题</target>
+        <note>Class = "UITextField"; placeholder = "Title"; ObjectID = "SCi-Td-wEo";</note>
+      </trans-unit>
+      <trans-unit id="TDc-ZY-DXC.placeholder" xml:space="preserve">
+        <source>Mountain Peak</source>
+        <target>山顶</target>
+        <note>Class = "UITextField"; placeholder = "Mountain Peak"; ObjectID = "TDc-ZY-DXC";</note>
+      </trans-unit>
+      <trans-unit id="ZBS-s7-FR7.text" xml:space="preserve">
+        <source>Content</source>
+        <target>内容</target>
+        <note>Class = "UILabel"; text = "Content"; ObjectID = "ZBS-s7-FR7";</note>
+      </trans-unit>
+      <trans-unit id="cJ8-Rx-B5Y.text" xml:space="preserve">
+        <source>Altitude</source>
+        <target>海拔</target>
+        <note>Class = "UILabel"; text = "Altitude"; ObjectID = "cJ8-Rx-B5Y";</note>
+      </trans-unit>
+      <trans-unit id="flf-n4-h4c.text" xml:space="preserve">
+        <source>Current Location</source>
+        <target>当前位置</target>
+        <note>Class = "UILabel"; text = "Current Location"; ObjectID = "flf-n4-h4c";</note>
+      </trans-unit>
+      <trans-unit id="gVu-rq-X0O.text" xml:space="preserve">
+        <source>Longtitude</source>
+        <target>纬度</target>
+        <note>Class = "UILabel"; text = "Longtitude"; ObjectID = "gVu-rq-X0O";</note>
+      </trans-unit>
+      <trans-unit id="oK0-Fr-6u2.text" xml:space="preserve">
+        <source>Title</source>
+        <target>标题</target>
+        <note>Class = "UILabel"; text = "Title"; ObjectID = "oK0-Fr-6u2";</note>
+      </trans-unit>
+      <trans-unit id="pye-Yp-PO3.title" xml:space="preserve">
+        <source>Content Template</source>
+        <target>内容模版</target>
+        <note>Class = "UINavigationItem"; title = "Content Template"; ObjectID = "pye-Yp-PO3";</note>
+      </trans-unit>
+      <trans-unit id="slt-jN-QYa.text" xml:space="preserve">
+        <source>title</source>
+        <target>标题</target>
+        <note>Class = "UILabel"; text = "title"; ObjectID = "slt-jN-QYa";</note>
+      </trans-unit>
+      <trans-unit id="yd9-26-S1Q.text" xml:space="preserve">
+        <source>Title</source>
+        <target>标题</target>
+        <note>Class = "UILabel"; text = "Title"; ObjectID = "yd9-26-S1Q";</note>
+      </trans-unit>
+      <trans-unit id="yvG-0c-rKF.text" xml:space="preserve">
+        <source>url</source>
+        <target>网址</target>
+        <note>Class = "UILabel"; text = "url"; ObjectID = "yvG-0c-rKF";</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="iOS Post/en.lproj/Localizable.strings" source-language="en" target-language="zh-Hans" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="11.3.1" build-num="11C504"/>
+    </header>
+    <body>
+      <trans-unit id="%@ • %@" xml:space="preserve">
+        <source>%1$@ • %2$@</source>
+        <target>%1$@ • %2$@</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="%@E" xml:space="preserve">
+        <source>%@E</source>
+        <target>东经%@</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="%@N" xml:space="preserve">
+        <source>%@N</source>
+        <target>北纬%@</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="%@S" xml:space="preserve">
+        <source>%@S</source>
+        <target>南纬%@</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="%@W" xml:space="preserve">
+        <source>%@W</source>
+        <target>西经%@</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="%d + image" xml:space="preserve">
+        <source>%d + image</source>
+        <target>%d + 图片</target>
+        <note>words count and image</note>
+      </trans-unit>
+      <trans-unit id="Accounts: %@" xml:space="preserve">
+        <source>Accounts: %@</source>
+        <target>账户：%@</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Altitude: %0.1fm" xml:space="preserve">
+        <source>Altitude: %0.1fm</source>
+        <target>海拔：%0.1f米</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="An invalid format is specified in your Tweet." xml:space="preserve">
+        <source>An invalid format is specified in your Tweet.</source>
+        <target>推特内包含不支持的格式。</target>
+        <note>An invalid format is specified in your Tweet.</note>
+      </trans-unit>
+      <trans-unit id="Bad format data Twitter returns." xml:space="preserve">
+        <source>Bad format data Twitter returns.</source>
+        <target>从推特返回的数据的格式是错误的。</target>
+        <note>Bad format data Twitter returns.</note>
+      </trans-unit>
+      <trans-unit id="Bad format data Weibo returns." xml:space="preserve">
+        <source>Bad format data Weibo returns.</source>
+        <target>从微博返回的数据的格式是错误的。</target>
+        <note>Bad format data Weibo returns.</note>
+      </trans-unit>
+      <trans-unit id="Cancel" xml:space="preserve">
+        <source>Cancel</source>
+        <target>取消</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Content Template" xml:space="preserve">
+        <source>Content Template</source>
+        <target>内容模版</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Continuous Posting" xml:space="preserve">
+        <source>Continuous Posting</source>
+        <target>直播模式</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Current Location" xml:space="preserve">
+        <source>Current Location</source>
+        <target>当前位置</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Current Location: On" xml:space="preserve">
+        <source>Current Location: On</source>
+        <target>当前位置：已开启</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Delete" xml:space="preserve">
+        <source>Delete</source>
+        <target>删除</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Enable Location Service" xml:space="preserve">
+        <source>Enable Location Service</source>
+        <target>启用位置服务</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Help" xml:space="preserve">
+        <source>Help</source>
+        <target>帮助</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Latitude: %@" xml:space="preserve">
+        <source>Latitude: %@</source>
+        <target>经度：%@</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Local Network Error" xml:space="preserve">
+        <source>Local Network Error</source>
+        <target>本地网络错误</target>
+        <note>Local Network Error</note>
+      </trans-unit>
+      <trans-unit id="Location Service Disabled" xml:space="preserve">
+        <source>Location Service Disabled</source>
+        <target>位置服务已禁用</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Longtitude: %@" xml:space="preserve">
+        <source>Longtitude: %@</source>
+        <target>纬度：%@</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Maybe your network speed is too slow." xml:space="preserve">
+        <source>Maybe your network speed is too slow.</source>
+        <target>可能是您当前网速过慢。</target>
+        <note>Maybe your network speed is too slow.</note>
+      </trans-unit>
+      <trans-unit id="OK" xml:space="preserve">
+        <source>OK</source>
+        <target>确定</target>
+        <note>OK</note>
+      </trans-unit>
+      <trans-unit id="Parameters" xml:space="preserve">
+        <source>Parameters</source>
+        <target>参数</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Please Notify Me" xml:space="preserve">
+        <source>Please Notify Me</source>
+        <target>请通知我</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Please capture this screen and send this back to developer." xml:space="preserve">
+        <source>Please capture this screen and send this back to developer.</source>
+        <target>请截图并反馈给开发者。</target>
+        <note>untranslatated error</note>
+      </trans-unit>
+      <trans-unit id="Please do not post the same Weibo repeatedly." xml:space="preserve">
+        <source>Please do not post the same Weibo repeatedly.</source>
+        <target>请不要连续发布相同的微博内容。</target>
+        <note>Please do not post the same Weibo repeatedly.</note>
+      </trans-unit>
+      <trans-unit id="Poster" xml:space="preserve">
+        <source>Poster</source>
+        <target>咕唧</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Poster uses location service to get your current location. You can enable it in your device &quot;Settings -&gt; Poster -&gt; Location&quot;." xml:space="preserve">
+        <source>Poster uses location service to get your current location. You can enable it in your device "Settings -&gt; Poster -&gt; Location".</source>
+        <target>咕唧使用位置服务来获取你当前的位置。你可以通过依次打开“设置-&gt;咕唧-&gt;位置“来启用该服务。</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Poster uses location service to get your current location. You can enable it in your device &quot;Settings -&gt; Privacy -&gt; Location Services&quot;." xml:space="preserve">
+        <source>Poster uses location service to get your current location. You can enable it in your device "Settings -&gt; Privacy -&gt; Location Services".</source>
+        <target>咕唧使用位置服务来获取你当前的位置。你可以通过依次打开”设置-&gt;隐私-&gt;定位服务“来启用该服务。</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Posting Weibo Failed" xml:space="preserve">
+        <source>Posting Weibo Failed</source>
+        <target>微博发布失败</target>
+        <note>Posting Weibo Failed</note>
+      </trans-unit>
+      <trans-unit id="Resources" xml:space="preserve">
+        <source>Resources</source>
+        <target>资源</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Revise" xml:space="preserve">
+        <source>Revise</source>
+        <target>修改</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="The Twitter servers are up, but overloaded with requests. Try again later." xml:space="preserve">
+        <source>The Twitter servers are up, but overloaded with requests. Try again later.</source>
+        <target>推特服务器过于繁忙，请稍后再试。</target>
+        <note>The Twitter servers are up, but overloaded with requests. Try again later.</note>
+      </trans-unit>
+      <trans-unit id="The URL value provided is not a URL that can be attached to this Tweet." xml:space="preserve">
+        <source>The URL value provided is not a URL that can be attached to this Tweet.</source>
+        <target>推特中网址对应的文件无法获取。</target>
+        <note>The URL value provided is not a URL that can be attached to this Tweet.</note>
+      </trans-unit>
+      <trans-unit id="The requested Tweet ID is not found (if it existed, it was probably deleted)." xml:space="preserve">
+        <source>The requested Tweet ID is not found (if it existed, it was probably deleted).</source>
+        <target>不存在此推特ID。可能该ID已经被删除。</target>
+        <note>The requested Tweet ID is not found (if it existed, it was probably deleted).</note>
+      </trans-unit>
+      <trans-unit id="The status text has already been Tweeted by the authenticated account." xml:space="preserve">
+        <source>The status text has already been Tweeted by the authenticated account.</source>
+        <target>内容重复。请不要反复发布相同的内容。</target>
+        <note>The status text has already been Tweeted by the authenticated account.</note>
+      </trans-unit>
+      <trans-unit id="The user account has been suspended and information cannot be retrieved." xml:space="preserve">
+        <source>The user account has been suspended and information cannot be retrieved.</source>
+        <target>该用户帐户被吊销。信息无法获得。</target>
+        <note>The user account has been suspended and information cannot be retrieved.</note>
+      </trans-unit>
+      <trans-unit id="This resource is gone." xml:space="preserve">
+        <source>This resource is gone.</source>
+        <target>资源不存在。</target>
+        <note>This resource is gone.</note>
+      </trans-unit>
+      <trans-unit id="Timestamp out of bounds (check your system clock)." xml:space="preserve">
+        <source>Timestamp out of bounds (check your system clock).</source>
+        <target>推特无法验证你。请检查你的系统显示的时间是否正常。</target>
+        <note>Timestamp out of bounds (check your system clock).</note>
+      </trans-unit>
+      <trans-unit id="Tweeting Failed" xml:space="preserve">
+        <source>Tweeting Failed</source>
+        <target>推特发送失败</target>
+        <note>Tweeting Failed</note>
+      </trans-unit>
+      <trans-unit id="Twitter is down or being upgraded. Try again later." xml:space="preserve">
+        <source>Twitter is down or being upgraded. Try again later.</source>
+        <target>推特网站出错或正在升级中。请稍后再试。</target>
+        <note>Twitter is down or being upgraded. Try again later.</note>
+      </trans-unit>
+      <trans-unit id="Twitter is temporarily over capacity. Please try again later." xml:space="preserve">
+        <source>Twitter is temporarily over capacity. Please try again later.</source>
+        <target>推特服务器负载过高。请稍后再试。</target>
+        <note>Twitter is temporarily over capacity. Please try again later.</note>
+      </trans-unit>
+      <trans-unit id="Twitter server internal error. Try again later." xml:space="preserve">
+        <source>Twitter server internal error. Try again later.</source>
+        <target>推特服务器内部错误。请稍后再试。</target>
+        <note>Twitter server internal error. Try again later.</note>
+      </trans-unit>
+      <trans-unit id="Twitter server timeout. Try again later." xml:space="preserve">
+        <source>Twitter server timeout. Try again later.</source>
+        <target>推特服务器超时。请稍后再试。</target>
+        <note>Twitter server timeout. Try again later.</note>
+      </trans-unit>
+      <trans-unit id="Use &quot;Add a Weibo Account&quot; menu to login Weibo accounts again." xml:space="preserve">
+        <source>Use "Add a Weibo Account" menu to login Weibo accounts again.</source>
+        <target>使用“添加微博账户”菜单来重新登录微博账户。</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Weibo Account Notification" xml:space="preserve">
+        <source>Weibo Account Notification</source>
+        <target>微博账户通知</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Weibo Accounts Expired" xml:space="preserve">
+        <source>Weibo Accounts Expired</source>
+        <target>微博账户已过期</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Weibo Accounts Will Expire" xml:space="preserve">
+        <source>Weibo Accounts Will Expire</source>
+        <target>微博账户即将过期</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Weibo RPC error. Please wait a while and try again." xml:space="preserve">
+        <source>Weibo RPC error. Please wait a while and try again.</source>
+        <target>微博服务器故障，请稍后再试。</target>
+        <note>Weibo RPC error. Please wait a while and try again.</note>
+      </trans-unit>
+      <trans-unit id="Weibo request its user to reauthorize account every 30 days. Poster can check that and notify you to reauthorize so you won't get the authorized failed error when posting." xml:space="preserve">
+        <source>Weibo request its user to reauthorize account every 30 days. Poster can check that and notify you to reauthorize so you won't get the authorized failed error when posting.</source>
+        <target>微博要求用户每30天授权一次。咕唧可以查看当前授权是否过期，并提醒您重新授权。这样可以避免您在发送时出现授权过期的错误。</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Weibo server has too many pending tasks, system is busy. Please wait a while and retry." xml:space="preserve">
+        <source>Weibo server has too many pending tasks, system is busy. Please wait a while and retry.</source>
+        <target>微博服务器任务过多，系统繁忙。请稍后再试。</target>
+        <note>Weibo server has too many pending tasks, system is busy. Please wait a while and retry.</note>
+      </trans-unit>
+      <trans-unit id="Weibo service error. Please wait a while and try again." xml:space="preserve">
+        <source>Weibo service error. Please wait a while and try again.</source>
+        <target>微博服务器故障，请稍后再试。</target>
+        <note>Weibo service error. Please wait a while and try again.</note>
+      </trans-unit>
+      <trans-unit id="Weibo service is unavailable. Please wait a while and try again." xml:space="preserve">
+        <source>Weibo service is unavailable. Please wait a while and try again.</source>
+        <target>微博服务器故障，请稍后再试。</target>
+        <note>Weibo service is unavailable. Please wait a while and try again.</note>
+      </trans-unit>
+      <trans-unit id="Weibo system error. Please wait a while and try again." xml:space="preserve">
+        <source>Weibo system error. Please wait a while and try again.</source>
+        <target>微博服务器出错，请稍后再试。</target>
+        <note>Weibo system error. Please wait a while and try again.</note>
+      </trans-unit>
+      <trans-unit id="You account is labelled as a spam account. If you think you are not, please filing a ticket at https://support.twitter.com/forms/platform ." xml:space="preserve">
+        <source>You account is labelled as a spam account. If you think you are not, please filing a ticket at https://support.twitter.com/forms/platform .</source>
+        <target>您的帐户被推特官方归类为滥发广告。如果您对此有质疑，请与Twitter客服联系。网址：https://support.twitter.com/forms/platform</target>
+        <note>You account is labelled as a spam account. If you think you are not, please filing a ticket at https://support.twitter.com/forms/platform .</note>
+      </trans-unit>
+      <trans-unit id="You account is temporarily locked by Twitter because your account sent spam and did other malicious activity. You need to login to https://twitter.com to unlock your account." xml:space="preserve">
+        <source>You account is temporarily locked by Twitter because your account sent spam and did other malicious activity. You need to login to https://twitter.com to unlock your account.</source>
+        <target>您的帐户因滥发广告或其它可疑行为被推特官方临时锁定。您需要登录https://twitter.com来解锁。</target>
+        <note>You account is temporarily locked by Twitter because your account sent spam and did other malicious activity. You need to login to https://twitter.com to unlock your account.</note>
+      </trans-unit>
+      <trans-unit id="You have posted too many pieces of Weibo in a short time." xml:space="preserve">
+        <source>You have posted too many pieces of Weibo in a short time.</source>
+        <target>您短期内发布了过多的微博。</target>
+        <note>You have posted too many pieces of Weibo in a short time.</note>
+      </trans-unit>
+      <trans-unit id="You have sent too many Tweets. Please try again later." xml:space="preserve">
+        <source>You have sent too many Tweets. Please try again later.</source>
+        <target>您今天发布了过多的推特。请明天再试。</target>
+        <note>You have sent too many Tweets. Please try again later.</note>
+      </trans-unit>
+      <trans-unit id="You have sent too many pieces of Weibo on this IP address." xml:space="preserve">
+        <source>You have sent too many pieces of Weibo on this IP address.</source>
+        <target>您在当前的IP地址发布了太多的微博。</target>
+        <note>You have sent too many pieces of Weibo on this IP address.</note>
+      </trans-unit>
+      <trans-unit id="You must create an account in Poster main app before sharing anything." xml:space="preserve">
+        <source>You must create an account in Poster main app before sharing anything.</source>
+        <target>您必须先在咕唧的主程序中创建账户，然后才能进行分享。</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="You sent too many Tweets. Please do not send a lot of Tweets in a short time." xml:space="preserve">
+        <source>You sent too many Tweets. Please do not send a lot of Tweets in a short time.</source>
+        <target>您发送推特超出限制。请不要在短时间内发布大量推特。</target>
+        <note>You sent too many Tweets. Please do not send a lot of Tweets in a short time.</note>
+      </trans-unit>
+      <trans-unit id="Your IP address is blocked by Weibo. If you are using WiFi, try to disconnect and reconnect you network through your router." xml:space="preserve">
+        <source>Your IP address is blocked by Weibo. If you are using WiFi, try to disconnect and reconnect you network through your router.</source>
+        <target>您当前的IP地址已经被微博屏蔽。如果是您是通过WiFi连接的，建议您在路由器中断开连接再重新连接。</target>
+        <note>Your IP address is blocked by Weibo. If you are using WiFi, try to disconnect and reconnect you network through your router.</note>
+      </trans-unit>
+      <trans-unit id="Your Weibo contains ads. Please revise and post again." xml:space="preserve">
+        <source>Your Weibo contains ads. Please revise and post again.</source>
+        <target>此条微博包含广告信息。请修改后再重新发布。</target>
+        <note>Your Weibo contains ads. Please revise and post again.</note>
+      </trans-unit>
+      <trans-unit id="Your Weibo contains forbid words. Please revise and post again." xml:space="preserve">
+        <source>Your Weibo contains forbid words. Please revise and post again.</source>
+        <target>此条微博包含违禁词。请修改后再重新发布。</target>
+        <note>Your Weibo contains forbid words. Please revise  and post again.</note>
+      </trans-unit>
+      <trans-unit id="Your Weibo contains illegal content. Please revise and post again." xml:space="preserve">
+        <source>Your Weibo contains illegal content. Please revise and post again.</source>
+        <target>此条微博包含非法内容。请修改后再重新发布。</target>
+        <note>Your Weibo contains illegal content. Please revise and post again.</note>
+      </trans-unit>
+      <trans-unit id="Your Weibo contains illegal website. Please revise and post again." xml:space="preserve">
+        <source>Your Weibo contains illegal website. Please revise and post again.</source>
+        <target>此条微博包含非法网站。请修改后再重新发布。</target>
+        <note>Your Weibo contains illegal website. Please revise and post again.</note>
+      </trans-unit>
+      <trans-unit id="Your account is invalid. Maybe your account is blocked." xml:space="preserve">
+        <source>Your account is invalid. Maybe your account is blocked.</source>
+        <target>您的账户非法。可能是被微博禁言或关闭。</target>
+        <note>Your account is invalid. Maybe your account is blocked.</note>
+      </trans-unit>
+      <trans-unit id="Your account is suspended by Twitter." xml:space="preserve">
+        <source>Your account is suspended by Twitter.</source>
+        <target>您的帐户已经被推特官方吊销。</target>
+        <note>Your account is suspended by Twitter.</note>
+      </trans-unit>
+      <trans-unit id="Your account or IP address is block by Weibo." xml:space="preserve">
+        <source>Your account or IP address is block by Weibo.</source>
+        <target>您的帐户或所在IP地址已被微博屏蔽。</target>
+        <note>Your account or IP address is block by Weibo.</note>
+      </trans-unit>
+      <trans-unit id="Your previous Weibo login in Poster is expired. Please re-login." xml:space="preserve">
+        <source>Your previous Weibo login in Poster is expired. Please re-login.</source>
+        <target>您之前的微博登录已过期。请重新登录。</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="gifs" xml:space="preserve">
+        <source>gifs</source>
+        <target>动图</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="images" xml:space="preserve">
+        <source>images</source>
+        <target>图片</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="title" xml:space="preserve">
+        <source>title</source>
+        <target>标题</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="urls" xml:space="preserve">
+        <source>urls</source>
+        <target>链接</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="videos" xml:space="preserve">
+        <source>videos</source>
+        <target>视频</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="iOS Poster/Base.lproj/InfoPlist.strings" source-language="en" target-language="zh-Hans" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="11.3.1" build-num="11C504"/>
+    </header>
+    <body>
+      <trans-unit id="CFBundleDisplayName" xml:space="preserve">
+        <source>Poster 2</source>
+        <target>咕唧2</target>
+        <note>Bundle display name</note>
+      </trans-unit>
+      <trans-unit id="CFBundleName" xml:space="preserve">
+        <source>iOS Poster 2</source>
+        <note>Bundle name</note>
+      </trans-unit>
+      <trans-unit id="Documents and Videos" xml:space="preserve">
+        <source>Documents and Videos</source>
+        <target>文档和视频</target>
+        <note>Documents and Videos</note>
+      </trans-unit>
+      <trans-unit id="NSLocationWhenInUseUsageDescription" xml:space="preserve">
+        <source>Get the current location where you are posting.</source>
+        <target>获得你分享状态时所处的位置。</target>
+        <note>Privacy - Location When In Use Usage Description</note>
+      </trans-unit>
+      <trans-unit id="Post Text" xml:space="preserve">
+        <source>Post Text</source>
+        <target>发布文字</target>
+        <note>Post Text</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="iOS Poster/Base.lproj/Main.storyboard" source-language="en" target-language="zh-Hans" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="11.3.1" build-num="11C504"/>
+    </header>
+    <body>
+      <trans-unit id="2QP-0W-yb7.title" xml:space="preserve">
+        <source>Next</source>
+        <target>下一步</target>
+        <note>Class = "UIBarButtonItem"; title = "Next"; ObjectID = "2QP-0W-yb7";</note>
+      </trans-unit>
+      <trans-unit id="Ac4-oV-YQT.placeholder" xml:space="preserve">
+        <source>Identity Name</source>
+        <target>身份名</target>
+        <note>Class = "UITextField"; placeholder = "Identity Name"; ObjectID = "Ac4-oV-YQT";</note>
+      </trans-unit>
+      <trans-unit id="Akc-c2-pKP.text" xml:space="preserve">
+        <source>Title</source>
+        <target>标题</target>
+        <note>Class = "UILabel"; text = "Title"; ObjectID = "Akc-c2-pKP";</note>
+      </trans-unit>
+      <trans-unit id="Ayl-FZ-dbR.title" xml:space="preserve">
+        <source>Name the New Identity</source>
+        <target>为新身份命名</target>
+        <note>Class = "UIViewController"; title = "Name the New Identity"; ObjectID = "Ayl-FZ-dbR";</note>
+      </trans-unit>
+      <trans-unit id="MTK-SA-OSZ.title" xml:space="preserve">
+        <source>Weibo</source>
+        <target>微博</target>
+        <note>Class = "UIViewController"; title = "Weibo"; ObjectID = "MTK-SA-OSZ";</note>
+      </trans-unit>
+      <trans-unit id="R9P-kX-WC7.title" xml:space="preserve">
+        <source>Facebook</source>
+        <target>脸书</target>
+        <note>Class = "UIViewController"; title = "Facebook"; ObjectID = "R9P-kX-WC7";</note>
+      </trans-unit>
+      <trans-unit id="Rg9-7A-Vd5.title" xml:space="preserve">
+        <source>Associate Accounts</source>
+        <target>关联账户</target>
+        <note>Class = "UINavigationItem"; title = "Associate Accounts"; ObjectID = "Rg9-7A-Vd5";</note>
+      </trans-unit>
+      <trans-unit id="ZpG-fP-tC9.text" xml:space="preserve">
+        <source>Title</source>
+        <target>标题</target>
+        <note>Class = "UILabel"; text = "Title"; ObjectID = "ZpG-fP-tC9";</note>
+      </trans-unit>
+      <trans-unit id="eIh-Be-HHO.text" xml:space="preserve">
+        <source>Title</source>
+        <target>标题</target>
+        <note>Class = "UILabel"; text = "Title"; ObjectID = "eIh-Be-HHO";</note>
+      </trans-unit>
+      <trans-unit id="h4h-zY-CIw.title" xml:space="preserve">
+        <source>Choose a Profile Image</source>
+        <target>选择头像</target>
+        <note>Class = "UICollectionViewController"; title = "Choose a Profile Image"; ObjectID = "h4h-zY-CIw";</note>
+      </trans-unit>
+      <trans-unit id="kTY-3s-gSQ.text" xml:space="preserve">
+        <source>Detail</source>
+        <target>明细</target>
+        <note>Class = "UILabel"; text = "Detail"; ObjectID = "kTY-3s-gSQ";</note>
+      </trans-unit>
+      <trans-unit id="meC-HR-fyN.title" xml:space="preserve">
+        <source>Choose a Main Account</source>
+        <target>选择主账户</target>
+        <note>Class = "UITableViewController"; title = "Choose a Main Account"; ObjectID = "meC-HR-fyN";</note>
+      </trans-unit>
+      <trans-unit id="mth-c5-AHu.title" xml:space="preserve">
+        <source>Associate Accounts</source>
+        <target>关联账户</target>
+        <note>Class = "UITableViewController"; title = "Associate Accounts"; ObjectID = "mth-c5-AHu";</note>
+      </trans-unit>
+      <trans-unit id="pmT-NY-GQK.text" xml:space="preserve">
+        <source>Detail</source>
+        <target>明细</target>
+        <note>Class = "UILabel"; text = "Detail"; ObjectID = "pmT-NY-GQK";</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="iOS Poster/en.lproj/Localizable.strings" source-language="en" target-language="zh-Hans" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="11.3.1" build-num="11C504"/>
+    </header>
+    <body>
+      <trans-unit id="%@ • %@" xml:space="preserve">
+        <source>%1$@ • %2$@</source>
+        <target>%1$@ • %2$@</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="%@E" xml:space="preserve">
+        <source>%@E</source>
+        <target>东经%@</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="%@N" xml:space="preserve">
+        <source>%@N</source>
+        <target>北纬%@</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="%@S" xml:space="preserve">
+        <source>%@S</source>
+        <target>南纬%@</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="%@W" xml:space="preserve">
+        <source>%@W</source>
+        <target>西经%@</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="%d + image" xml:space="preserve">
+        <source>%d + image</source>
+        <target>%d + 图片</target>
+        <note>words count and image</note>
+      </trans-unit>
+      <trans-unit id="Accounts: %@" xml:space="preserve">
+        <source>Accounts: %@</source>
+        <target>账户：%@</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Add a Facebook Account" xml:space="preserve">
+        <source>Add a Facebook Account</source>
+        <target>添加脸书账户</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Add a Twitter Account" xml:space="preserve">
+        <source>Add a Twitter Account</source>
+        <target>添加推特账户</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Add a Weibo Account" xml:space="preserve">
+        <source>Add a Weibo Account</source>
+        <target>添加微博账户</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Add an Identity Account" xml:space="preserve">
+        <source>Add an Identity Account</source>
+        <target>创建身份账户</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Altitude: %0.1fm" xml:space="preserve">
+        <source>Altitude: %0.1fm</source>
+        <target>海拔：%0.1f米</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="An invalid format is specified in your Tweet." xml:space="preserve">
+        <source>An invalid format is specified in your Tweet.</source>
+        <target>推特内包含不支持的格式。</target>
+        <note>An invalid format is specified in your Tweet.</note>
+      </trans-unit>
+      <trans-unit id="Are you satified with Poster 2?" xml:space="preserve">
+        <source>Are you satified with Poster 2?</source>
+        <target>你对于咕唧2满意吗？</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Are you satified with the new version of Poster 2?" xml:space="preserve">
+        <source>Are you satified with the new version of Poster 2?</source>
+        <target>你对于咕唧2的新版满意吗？</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Bad format data Twitter returns." xml:space="preserve">
+        <source>Bad format data Twitter returns.</source>
+        <target>从推特返回的数据的格式是错误的。</target>
+        <note>Bad format data Twitter returns.</note>
+      </trans-unit>
+      <trans-unit id="Bad format data Weibo returns." xml:space="preserve">
+        <source>Bad format data Weibo returns.</source>
+        <target>从微博返回的数据的格式是错误的。</target>
+        <note>Bad format data Weibo returns.</note>
+      </trans-unit>
+      <trans-unit id="Cancel" xml:space="preserve">
+        <source>Cancel</source>
+        <target>取消</target>
+        <note>Cancel</note>
+      </trans-unit>
+      <trans-unit id="Clear Cache" xml:space="preserve">
+        <source>Clear Cache</source>
+        <target>清除缓存</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Clear Cache (current: %d MB)" xml:space="preserve">
+        <source>Clear Cache (current: %d MB)</source>
+        <target>清除缓存（当前：%d MB）</target>
+        <note>Clear Cache</note>
+      </trans-unit>
+      <trans-unit id="Content Template" xml:space="preserve">
+        <source>Content Template</source>
+        <target>内容模版</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Continuous Posting" xml:space="preserve">
+        <source>Continuous Posting</source>
+        <target>直播模式</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Current Location" xml:space="preserve">
+        <source>Current Location</source>
+        <target>当前位置</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Current Location: On" xml:space="preserve">
+        <source>Current Location: On</source>
+        <target>当前位置：已开启</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Current: %d MB" xml:space="preserve">
+        <source>Current: %d MB</source>
+        <target>当前：%d MB</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Default" xml:space="preserve">
+        <source>Default</source>
+        <target>默认</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Delete" xml:space="preserve">
+        <source>Delete</source>
+        <target>删除</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Documents and Videos" xml:space="preserve">
+        <source>Documents and Videos</source>
+        <target>文档和视频</target>
+        <note>Documents and Videos</note>
+      </trans-unit>
+      <trans-unit id="Done" xml:space="preserve">
+        <source>Done</source>
+        <target>完成</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Email Address Copied" xml:space="preserve">
+        <source>Email Address Copied</source>
+        <target>邮箱地址已复制到粘贴板</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Enable Location Service" xml:space="preserve">
+        <source>Enable Location Service</source>
+        <target>启用位置服务</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Feedback" xml:space="preserve">
+        <source>Feedback</source>
+        <target>反馈</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Feedback to Developer" xml:space="preserve">
+        <source>Feedback to Developer</source>
+        <target>反馈给开发者</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Help" xml:space="preserve">
+        <source>Help</source>
+        <target>帮助</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Later" xml:space="preserve">
+        <source>Later</source>
+        <target>以后</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Latitude: %@" xml:space="preserve">
+        <source>Latitude: %@</source>
+        <target>经度：%@</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Local Network Error" xml:space="preserve">
+        <source>Local Network Error</source>
+        <target>本地网络错误</target>
+        <note>Local Network Error</note>
+      </trans-unit>
+      <trans-unit id="Location Service Disabled" xml:space="preserve">
+        <source>Location Service Disabled</source>
+        <target>位置服务已禁用</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Longtitude: %@" xml:space="preserve">
+        <source>Longtitude: %@</source>
+        <target>纬度：%@</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Maybe your network speed is too slow." xml:space="preserve">
+        <source>Maybe your network speed is too slow.</source>
+        <target>可能是您当前网速过慢。</target>
+        <note>Maybe your network speed is too slow.</note>
+      </trans-unit>
+      <trans-unit id="Next" xml:space="preserve">
+        <source>Next</source>
+        <target>下一步</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="No" xml:space="preserve">
+        <source>No</source>
+        <target>否</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="No Accounts" xml:space="preserve">
+        <source>No Accounts</source>
+        <target>无账户</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="No accounts" xml:space="preserve">
+        <source>No accounts</source>
+        <target>无账户</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="OK" xml:space="preserve">
+        <source>OK</source>
+        <target>确定</target>
+        <note>OK</note>
+      </trans-unit>
+      <trans-unit id="Open URL from Pasteboard" xml:space="preserve">
+        <source>Open URL from Pasteboard</source>
+        <target>打开剪贴板里的链接</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Parameters" xml:space="preserve">
+        <source>Parameters</source>
+        <target>参数</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Please Notify Me" xml:space="preserve">
+        <source>Please Notify Me</source>
+        <target>请通知我</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Please capture this screen and send this back to developer." xml:space="preserve">
+        <source>Please capture this screen and send this back to developer.</source>
+        <target>请截图并反馈给开发者。</target>
+        <note>untranslatated error</note>
+      </trans-unit>
+      <trans-unit id="Please do not post the same Weibo repeatedly." xml:space="preserve">
+        <source>Please do not post the same Weibo repeatedly.</source>
+        <target>请不要连续发布相同的微博内容。</target>
+        <note>Please do not post the same Weibo repeatedly.</note>
+      </trans-unit>
+      <trans-unit id="Please use Chinese or English in you mail." xml:space="preserve">
+        <source>Please use Chinese or English in you mail.</source>
+        <target>邮件请使用中文或英文。</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Post Text" xml:space="preserve">
+        <source>Post Text</source>
+        <target>发布文字</target>
+        <note>Post Text</note>
+      </trans-unit>
+      <trans-unit id="Poster" xml:space="preserve">
+        <source>Poster</source>
+        <target>咕唧</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Poster uses location service to get your current location. You can enable it in your device &quot;Settings -&gt; Poster -&gt; Location&quot;." xml:space="preserve">
+        <source>Poster uses location service to get your current location. You can enable it in your device "Settings -&gt; Poster -&gt; Location".</source>
+        <target>咕唧使用位置服务来获取你当前的位置。你可以通过依次打开“设置-&gt;咕唧-&gt;位置“来启用该服务。</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Poster uses location service to get your current location. You can enable it in your device &quot;Settings -&gt; Privacy -&gt; Location Services&quot;." xml:space="preserve">
+        <source>Poster uses location service to get your current location. You can enable it in your device "Settings -&gt; Privacy -&gt; Location Services".</source>
+        <target>咕唧使用位置服务来获取你当前的位置。你可以通过依次打开”设置-&gt;隐私-&gt;定位服务“来启用该服务。</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Posting Weibo Failed" xml:space="preserve">
+        <source>Posting Weibo Failed</source>
+        <target>微博发布失败</target>
+        <note>Posting Weibo Failed</note>
+      </trans-unit>
+      <trans-unit id="Reauthorize" xml:space="preserve">
+        <source>Reauthorize</source>
+        <target>重新授权</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Remove" xml:space="preserve">
+        <source>Remove</source>
+        <target>移除</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Remove Accounts" xml:space="preserve">
+        <source>Remove Accounts</source>
+        <target>移除账户</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Resources" xml:space="preserve">
+        <source>Resources</source>
+        <target>资源</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Review me in App Store" xml:space="preserve">
+        <source>Review me in App Store</source>
+        <target>评价此应用</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Revise" xml:space="preserve">
+        <source>Revise</source>
+        <target>修改</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Set Default" xml:space="preserve">
+        <source>Set Default</source>
+        <target>设为默认</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Settings" xml:space="preserve">
+        <source>Settings</source>
+        <target>设置</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Skip" xml:space="preserve">
+        <source>Skip</source>
+        <target>跳过</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="The Twitter servers are up, but overloaded with requests. Try again later." xml:space="preserve">
+        <source>The Twitter servers are up, but overloaded with requests. Try again later.</source>
+        <target>推特服务器过于繁忙，请稍后再试。</target>
+        <note>The Twitter servers are up, but overloaded with requests. Try again later.</note>
+      </trans-unit>
+      <trans-unit id="The URL value provided is not a URL that can be attached to this Tweet." xml:space="preserve">
+        <source>The URL value provided is not a URL that can be attached to this Tweet.</source>
+        <target>推特中网址对应的文件无法获取。</target>
+        <note>The URL value provided is not a URL that can be attached to this Tweet.</note>
+      </trans-unit>
+      <trans-unit id="The requested Tweet ID is not found (if it existed, it was probably deleted)." xml:space="preserve">
+        <source>The requested Tweet ID is not found (if it existed, it was probably deleted).</source>
+        <target>不存在此推特ID。可能该ID已经被删除。</target>
+        <note>The requested Tweet ID is not found (if it existed, it was probably deleted).</note>
+      </trans-unit>
+      <trans-unit id="The status text has already been Tweeted by the authenticated account." xml:space="preserve">
+        <source>The status text has already been Tweeted by the authenticated account.</source>
+        <target>内容重复。请不要反复发布相同的内容。</target>
+        <note>The status text has already been Tweeted by the authenticated account.</note>
+      </trans-unit>
+      <trans-unit id="The user account has been suspended and information cannot be retrieved." xml:space="preserve">
+        <source>The user account has been suspended and information cannot be retrieved.</source>
+        <target>该用户帐户被吊销。信息无法获得。</target>
+        <note>The user account has been suspended and information cannot be retrieved.</note>
+      </trans-unit>
+      <trans-unit id="This resource is gone." xml:space="preserve">
+        <source>This resource is gone.</source>
+        <target>资源不存在。</target>
+        <note>This resource is gone.</note>
+      </trans-unit>
+      <trans-unit id="Timestamp out of bounds (check your system clock)." xml:space="preserve">
+        <source>Timestamp out of bounds (check your system clock).</source>
+        <target>推特无法验证你。请检查你的系统显示的时间是否正常。</target>
+        <note>Timestamp out of bounds (check your system clock).</note>
+      </trans-unit>
+      <trans-unit id="Tweeting Failed" xml:space="preserve">
+        <source>Tweeting Failed</source>
+        <target>推特发送失败</target>
+        <note>Tweeting Failed</note>
+      </trans-unit>
+      <trans-unit id="Twitter" xml:space="preserve">
+        <source>Twitter</source>
+        <target>推特</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Twitter is down or being upgraded. Try again later." xml:space="preserve">
+        <source>Twitter is down or being upgraded. Try again later.</source>
+        <target>推特网站出错或正在升级中。请稍后再试。</target>
+        <note>Twitter is down or being upgraded. Try again later.</note>
+      </trans-unit>
+      <trans-unit id="Twitter is temporarily over capacity. Please try again later." xml:space="preserve">
+        <source>Twitter is temporarily over capacity. Please try again later.</source>
+        <target>推特服务器负载过高。请稍后再试。</target>
+        <note>Twitter is temporarily over capacity. Please try again later.</note>
+      </trans-unit>
+      <trans-unit id="Twitter server internal error. Try again later." xml:space="preserve">
+        <source>Twitter server internal error. Try again later.</source>
+        <target>推特服务器内部错误。请稍后再试。</target>
+        <note>Twitter server internal error. Try again later.</note>
+      </trans-unit>
+      <trans-unit id="Twitter server timeout. Try again later." xml:space="preserve">
+        <source>Twitter server timeout. Try again later.</source>
+        <target>推特服务器超时。请稍后再试。</target>
+        <note>Twitter server timeout. Try again later.</note>
+      </trans-unit>
+      <trans-unit id="Use &quot;Add a Weibo Account&quot; menu to login Weibo accounts again." xml:space="preserve">
+        <source>Use "Add a Weibo Account" menu to login Weibo accounts again.</source>
+        <target>使用“添加微博账户”菜单来重新登录微博账户。</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Weibo Account Notification" xml:space="preserve">
+        <source>Weibo Account Notification</source>
+        <target>微博账户通知</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Weibo Accounts Expired" xml:space="preserve">
+        <source>Weibo Accounts Expired</source>
+        <target>微博账户已过期</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Weibo Accounts Will Expire" xml:space="preserve">
+        <source>Weibo Accounts Will Expire</source>
+        <target>微博账户即将过期</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Weibo RPC error. Please wait a while and try again." xml:space="preserve">
+        <source>Weibo RPC error. Please wait a while and try again.</source>
+        <target>微博服务器故障，请稍后再试。</target>
+        <note>Weibo RPC error. Please wait a while and try again.</note>
+      </trans-unit>
+      <trans-unit id="Weibo request its user to reauthorize account every 30 days. Poster can check that and notify you to reauthorize so you won't get the authorized failed error when posting." xml:space="preserve">
+        <source>Weibo request its user to reauthorize account every 30 days. Poster can check that and notify you to reauthorize so you won't get the authorized failed error when posting.</source>
+        <target>微博要求用户每30天授权一次。咕唧可以查看当前授权是否过期，并提醒您重新授权。这样可以避免您在发送时出现授权过期的错误。</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Weibo server has too many pending tasks, system is busy. Please wait a while and retry." xml:space="preserve">
+        <source>Weibo server has too many pending tasks, system is busy. Please wait a while and retry.</source>
+        <target>微博服务器任务过多，系统繁忙。请稍后再试。</target>
+        <note>Weibo server has too many pending tasks, system is busy. Please wait a while and retry.</note>
+      </trans-unit>
+      <trans-unit id="Weibo service error. Please wait a while and try again." xml:space="preserve">
+        <source>Weibo service error. Please wait a while and try again.</source>
+        <target>微博服务器故障，请稍后再试。</target>
+        <note>Weibo service error. Please wait a while and try again.</note>
+      </trans-unit>
+      <trans-unit id="Weibo service is unavailable. Please wait a while and try again." xml:space="preserve">
+        <source>Weibo service is unavailable. Please wait a while and try again.</source>
+        <target>微博服务器故障，请稍后再试。</target>
+        <note>Weibo service is unavailable. Please wait a while and try again.</note>
+      </trans-unit>
+      <trans-unit id="Weibo system error. Please wait a while and try again." xml:space="preserve">
+        <source>Weibo system error. Please wait a while and try again.</source>
+        <target>微博服务器出错，请稍后再试。</target>
+        <note>Weibo system error. Please wait a while and try again.</note>
+      </trans-unit>
+      <trans-unit id="Would you like to give us your feedback on how to improve Poster 2?" xml:space="preserve">
+        <source>Would you like to give us your feedback on how to improve Poster 2?</source>
+        <target>您是否对于咕唧2有改进的建议？</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Yes" xml:space="preserve">
+        <source>Yes</source>
+        <target>是</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="You account is labelled as a spam account. If you think you are not, please filing a ticket at https://support.twitter.com/forms/platform ." xml:space="preserve">
+        <source>You account is labelled as a spam account. If you think you are not, please filing a ticket at https://support.twitter.com/forms/platform .</source>
+        <target>您的帐户被推特官方归类为滥发广告。如果您对此有质疑，请与Twitter客服联系。网址：https://support.twitter.com/forms/platform</target>
+        <note>You account is labelled as a spam account. If you think you are not, please filing a ticket at https://support.twitter.com/forms/platform .</note>
+      </trans-unit>
+      <trans-unit id="You account is temporarily locked by Twitter because your account sent spam and did other malicious activity. You need to login to https://twitter.com to unlock your account." xml:space="preserve">
+        <source>You account is temporarily locked by Twitter because your account sent spam and did other malicious activity. You need to login to https://twitter.com to unlock your account.</source>
+        <target>您的帐户因滥发广告或其它可疑行为被推特官方临时锁定。您需要登录https://twitter.com来解锁。</target>
+        <note>You account is temporarily locked by Twitter because your account sent spam and did other malicious activity. You need to login to https://twitter.com to unlock your account.</note>
+      </trans-unit>
+      <trans-unit id="You have posted too many pieces of Weibo in a short time." xml:space="preserve">
+        <source>You have posted too many pieces of Weibo in a short time.</source>
+        <target>您短期内发布了过多的微博。</target>
+        <note>You have posted too many pieces of Weibo in a short time.</note>
+      </trans-unit>
+      <trans-unit id="You have sent too many Tweets. Please try again later." xml:space="preserve">
+        <source>You have sent too many Tweets. Please try again later.</source>
+        <target>您今天发布了过多的推特。请明天再试。</target>
+        <note>You have sent too many Tweets. Please try again later.</note>
+      </trans-unit>
+      <trans-unit id="You have sent too many pieces of Weibo on this IP address." xml:space="preserve">
+        <source>You have sent too many pieces of Weibo on this IP address.</source>
+        <target>您在当前的IP地址发布了太多的微博。</target>
+        <note>You have sent too many pieces of Weibo on this IP address.</note>
+      </trans-unit>
+      <trans-unit id="You must create an account in Poster main app before sharing anything." xml:space="preserve">
+        <source>You must create an account in Poster main app before sharing anything.</source>
+        <target>您必须先在咕唧的主程序中创建账户，然后才能进行分享。</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="You sent too many Tweets. Please do not send a lot of Tweets in a short time." xml:space="preserve">
+        <source>You sent too many Tweets. Please do not send a lot of Tweets in a short time.</source>
+        <target>您发送推特超出限制。请不要在短时间内发布大量推特。</target>
+        <note>You sent too many Tweets. Please do not send a lot of Tweets in a short time.</note>
+      </trans-unit>
+      <trans-unit id="You should create at least one account." xml:space="preserve">
+        <source>You should create at least one account.</source>
+        <target>你需要先创建一个账户。</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Your IP address is blocked by Weibo. If you are using WiFi, try to disconnect and reconnect you network through your router." xml:space="preserve">
+        <source>Your IP address is blocked by Weibo. If you are using WiFi, try to disconnect and reconnect you network through your router.</source>
+        <target>您当前的IP地址已经被微博屏蔽。如果是您是通过WiFi连接的，建议您在路由器中断开连接再重新连接。</target>
+        <note>Your IP address is blocked by Weibo. If you are using WiFi, try to disconnect and reconnect you network through your router.</note>
+      </trans-unit>
+      <trans-unit id="Your Weibo contains ads. Please revise and post again." xml:space="preserve">
+        <source>Your Weibo contains ads. Please revise and post again.</source>
+        <target>此条微博包含广告信息。请修改后再重新发布。</target>
+        <note>Your Weibo contains ads. Please revise and post again.</note>
+      </trans-unit>
+      <trans-unit id="Your Weibo contains forbid words. Please revise and post again." xml:space="preserve">
+        <source>Your Weibo contains forbid words. Please revise and post again.</source>
+        <target>此条微博包含违禁词。请修改后再重新发布。</target>
+        <note>Your Weibo contains forbid words. Please revise  and post again.</note>
+      </trans-unit>
+      <trans-unit id="Your Weibo contains illegal content. Please revise and post again." xml:space="preserve">
+        <source>Your Weibo contains illegal content. Please revise and post again.</source>
+        <target>此条微博包含非法内容。请修改后再重新发布。</target>
+        <note>Your Weibo contains illegal content. Please revise and post again.</note>
+      </trans-unit>
+      <trans-unit id="Your Weibo contains illegal website. Please revise and post again." xml:space="preserve">
+        <source>Your Weibo contains illegal website. Please revise and post again.</source>
+        <target>此条微博包含非法网站。请修改后再重新发布。</target>
+        <note>Your Weibo contains illegal website. Please revise and post again.</note>
+      </trans-unit>
+      <trans-unit id="Your account is invalid. Maybe your account is blocked." xml:space="preserve">
+        <source>Your account is invalid. Maybe your account is blocked.</source>
+        <target>您的账户非法。可能是被微博禁言或关闭。</target>
+        <note>Your account is invalid. Maybe your account is blocked.</note>
+      </trans-unit>
+      <trans-unit id="Your account is suspended by Twitter." xml:space="preserve">
+        <source>Your account is suspended by Twitter.</source>
+        <target>您的帐户已经被推特官方吊销。</target>
+        <note>Your account is suspended by Twitter.</note>
+      </trans-unit>
+      <trans-unit id="Your account or IP address is block by Weibo." xml:space="preserve">
+        <source>Your account or IP address is block by Weibo.</source>
+        <target>您的帐户或所在IP地址已被微博屏蔽。</target>
+        <note>Your account or IP address is block by Weibo.</note>
+      </trans-unit>
+      <trans-unit id="Your previous Weibo login in Poster is expired. Please re-login." xml:space="preserve">
+        <source>Your previous Weibo login in Poster is expired. Please re-login.</source>
+        <target>您之前的微博登录已过期。请重新登录。</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="gifs" xml:space="preserve">
+        <source>gifs</source>
+        <target>动图</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="images" xml:space="preserve">
+        <source>images</source>
+        <target>图片</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="title" xml:space="preserve">
+        <source>title</source>
+        <target>标题</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="urls" xml:space="preserve">
+        <source>urls</source>
+        <target>链接</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="videos" xml:space="preserve">
+        <source>videos</source>
+        <target>视频</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="iOS Poster/Settings.bundle/en.lproj/Root.strings" source-language="en" target-language="zh-Hans" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="11.3.1" build-num="11C504"/>
+    </header>
+    <body>
+      <trans-unit id="footer" xml:space="preserve">
+        <source>Use an emoji as the indicator. Only the very first none empty character will be used even if you input more. 
+
+Assuming "📍" is the indicator.
+
+In Tweet, it shows as 📍#your_place.
+In Weibo, it shows as 📍you_place.</source>
+        <target>使用表情符作为指示器。只有第一个非空的字符会作为指示器。
+
+假设你当前的指示器是“📍”。
+
+在推特中，将显示为：📍#你的位置。
+在微博中，将显示为：📍你的位置。</target>
+        <note>A single strings file, whose title is specified in your preferences schema. The strings files provide the localized content to display to the user for each of your preferences.</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="iOS Poster/v2/Base.lproj/PrivacyNotice.storyboard" source-language="en" target-language="zh-Hans" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="11.3.1" build-num="11C504"/>
+    </header>
+    <body>
+      <trans-unit id="cri-yT-aBO.normalTitle" xml:space="preserve">
+        <source>Agree</source>
+        <target>同意</target>
+        <note>Class = "UIButton"; normalTitle = "Agree"; ObjectID = "cri-yT-aBO";</note>
+      </trans-unit>
+      <trans-unit id="jT6-LV-2Es.normalTitle" xml:space="preserve">
+        <source>Disagree</source>
+        <target>不同意</target>
+        <note>Class = "UIButton"; normalTitle = "Disagree"; ObjectID = "jT6-LV-2Es";</note>
+      </trans-unit>
+      <trans-unit id="yFS-QB-EW6.text" xml:space="preserve">
+        <source>I have read the agreement.</source>
+        <target>我已阅读了隐私协议。</target>
+        <note>Class = "UILabel"; text = "I have read the agreement."; ObjectID = "yFS-QB-EW6";</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="iOS SharingAPI/en.lproj/InfoPlist.strings" source-language="en" target-language="zh-Hans" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="11.3.1" build-num="11C504"/>
+    </header>
+    <body>
+      <trans-unit id="CFBundleName" xml:space="preserve">
+        <source>iOS_SharingAPI</source>
+        <note>Bundle name</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="iOS SharingAPI/en.lproj/Localizable.strings" source-language="en" target-language="zh-Hans" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="11.3.1" build-num="11C504"/>
+    </header>
+    <body>
+      <trans-unit id="ALT: %0.1fm" xml:space="preserve">
+        <source>ALT: %0.1fm</source>
+        <target>海拔：%0.1f米</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Autumn Yellow" xml:space="preserve">
+        <source>Autumn Yellow</source>
+        <target>秋黄</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Classic" xml:space="preserve">
+        <source>Classic</source>
+        <target>经典</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Facebook" xml:space="preserve">
+        <source>Facebook</source>
+        <target>脸书</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Facebook only accepts a movie under 20 minutes." xml:space="preserve">
+        <source>Facebook only accepts a movie under 20 minutes.</source>
+        <target>脸书规定视频不能超过20分钟。</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="For account type %@, a movie must not be bigger than %@ MB." xml:space="preserve">
+        <source>For account type %1$@, a movie must not be bigger than %2$@ MB.</source>
+        <target>对于%1$@类型的账户，视频不能超过%2$@ MB。</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Gif is too big or too long." xml:space="preserve">
+        <source>Gif is too big or too long.</source>
+        <target>Gif过大或过长。</target>
+        <note>Gif is too big or too long.</note>
+      </trans-unit>
+      <trans-unit id="Got an attributed String.&#10;Will create a image.&#10;&#10;" xml:space="preserve">
+        <source>Got an attributed String.
+Will create a image.
+
+</source>
+        <target>获得了带格式的文本。
+将创建为图片。
+</target>
+        <note>Got an attributed String</note>
+      </trans-unit>
+      <trans-unit id="Identity" xml:space="preserve">
+        <source>Identity</source>
+        <target>身份</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Quote with Comments" xml:space="preserve">
+        <source>Quote with Comments</source>
+        <target>引用并评论</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Retweet" xml:space="preserve">
+        <source>Retweet</source>
+        <target>转推</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Spring Green" xml:space="preserve">
+        <source>Spring Green</source>
+        <target>春绿</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Summer Blue" xml:space="preserve">
+        <source>Summer Blue</source>
+        <target>夏蓝</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Twitter" xml:space="preserve">
+        <source>Twitter</source>
+        <target>推特</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Twitter only accepts a movie in 0.5 to 140 seconds." xml:space="preserve">
+        <source>Twitter only accepts a movie in 0.5 to 140 seconds.</source>
+        <target>推特仅支持时长为0.5秒到140秒的视频。</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Unsupported attachment type." xml:space="preserve">
+        <source>Unsupported attachment type.</source>
+        <target>不支持的附件类型。</target>
+        <note>Unsupported attachment file</note>
+      </trans-unit>
+      <trans-unit id="Unsupported file type: .%@" xml:space="preserve">
+        <source>Unsupported file type: .%@</source>
+        <target>不支持的文件类型：.%@</target>
+        <note>Unsupported file type</note>
+      </trans-unit>
+      <trans-unit id="Weibo" xml:space="preserve">
+        <source>Weibo</source>
+        <target>微博</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Winter White" xml:space="preserve">
+        <source>Winter White</source>
+        <target>冬白</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="Post/Base.lproj/InfoPlist.strings" source-language="en" target-language="zh-Hans" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="11.3.1" build-num="11C504"/>
+    </header>
+    <body>
+      <trans-unit id="CFBundleDisplayName" xml:space="preserve">
+        <source>Poster 2</source>
+        <target>咕唧2</target>
+        <note>Bundle display name</note>
+      </trans-unit>
+      <trans-unit id="CFBundleName" xml:space="preserve">
+        <source>Post 2</source>
+        <note>Bundle name</note>
+      </trans-unit>
+      <trans-unit id="NSHumanReadableCopyright" xml:space="preserve">
+        <source>Copyright © 2017 ParusSoft.com. All rights reserved.</source>
+        <target>版权所有 © 2017 ParusSoft.com。 所有权利保留。</target>
+        <note>Copyright (human-readable)</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="Post/en.lproj/Localizable.strings" source-language="en" target-language="zh-Hans" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="11.3.1" build-num="11C504"/>
+    </header>
+    <body>
+      <trans-unit id="%@ • %@" xml:space="preserve">
+        <source>%1$@ • %2$@</source>
+        <target>%1$@ • %2$@</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="%d + image" xml:space="preserve">
+        <source>%d + image</source>
+        <target>%d + 图片</target>
+        <note>words count and image</note>
+      </trans-unit>
+      <trans-unit id="Accounts: %@" xml:space="preserve">
+        <source>Accounts: %@</source>
+        <target>账户：%@</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Add Content Template" xml:space="preserve">
+        <source>Add Content Template</source>
+        <target>添加内容模版</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="An invalid format is specified in your Tweet." xml:space="preserve">
+        <source>An invalid format is specified in your Tweet.</source>
+        <target>推特内包含不支持的格式。</target>
+        <note>An invalid format is specified in your Tweet.</note>
+      </trans-unit>
+      <trans-unit id="Animated Gifs" xml:space="preserve">
+        <source>Animated Gifs</source>
+        <target>动图</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Bad format data Twitter returns." xml:space="preserve">
+        <source>Bad format data Twitter returns.</source>
+        <target>从推特返回的数据的格式是错误的。</target>
+        <note>Bad format data Twitter returns.</note>
+      </trans-unit>
+      <trans-unit id="Bad format data Weibo returns." xml:space="preserve">
+        <source>Bad format data Weibo returns.</source>
+        <target>从微博返回的数据的格式是错误的。</target>
+        <note>Bad format data Weibo returns.</note>
+      </trans-unit>
+      <trans-unit id="Cancel" xml:space="preserve">
+        <source>Cancel</source>
+        <target>取消</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Content Templates" xml:space="preserve">
+        <source>Content Templates</source>
+        <target>内容模版</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Continuous Posting" xml:space="preserve">
+        <source>Continuous Posting</source>
+        <target>直播模式</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Dropped Images" xml:space="preserve">
+        <source>Dropped Images</source>
+        <target>拖拽添加的图片</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Edit Content Template" xml:space="preserve">
+        <source>Edit Content Template</source>
+        <target>编辑内容模版</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Images" xml:space="preserve">
+        <source>Images</source>
+        <target>图片</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Local Network Error" xml:space="preserve">
+        <source>Local Network Error</source>
+        <target>本地网络错误</target>
+        <note>Local Network Error</note>
+      </trans-unit>
+      <trans-unit id="Maybe your network speed is too slow." xml:space="preserve">
+        <source>Maybe your network speed is too slow.</source>
+        <target>可能是您当前网速过慢。</target>
+        <note>Maybe your network speed is too slow.</note>
+      </trans-unit>
+      <trans-unit id="Movies" xml:space="preserve">
+        <source>Movies</source>
+        <target>视频</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="No selected template!" xml:space="preserve">
+        <source>No selected template!</source>
+        <target>没有选中的模板</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="OK" xml:space="preserve">
+        <source>OK</source>
+        <target>确定</target>
+        <note>OK</note>
+      </trans-unit>
+      <trans-unit id="Please Notify Me" xml:space="preserve">
+        <source>Please Notify Me</source>
+        <target>请通知我</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Please capture this screen and send this back to developer." xml:space="preserve">
+        <source>Please capture this screen and send this back to developer.</source>
+        <target>请截图并反馈给开发者。</target>
+        <note>untranslatated error</note>
+      </trans-unit>
+      <trans-unit id="Please do not post the same Weibo repeatedly." xml:space="preserve">
+        <source>Please do not post the same Weibo repeatedly.</source>
+        <target>请不要连续发布相同的微博内容。</target>
+        <note>Please do not post the same Weibo repeatedly.</note>
+      </trans-unit>
+      <trans-unit id="Post" xml:space="preserve">
+        <source>Post</source>
+        <target>发布</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Poster" xml:space="preserve">
+        <source>Poster</source>
+        <target>咕唧</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Posting Account Choosing" xml:space="preserve">
+        <source>Posting Account Choosing</source>
+        <target>选择发布的账户</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Posting Weibo Failed" xml:space="preserve">
+        <source>Posting Weibo Failed</source>
+        <target>微博发布失败</target>
+        <note>Posting Weibo Failed</note>
+      </trans-unit>
+      <trans-unit id="Quit" xml:space="preserve">
+        <source>Quit</source>
+        <target>退出</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Remove" xml:space="preserve">
+        <source>Remove</source>
+        <target>移除</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Remove Templates?" xml:space="preserve">
+        <source>Remove Templates?</source>
+        <target>移除模板？</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Resources" xml:space="preserve">
+        <source>Resources</source>
+        <target>资源</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="The Twitter servers are up, but overloaded with requests. Try again later." xml:space="preserve">
+        <source>The Twitter servers are up, but overloaded with requests. Try again later.</source>
+        <target>推特服务器过于繁忙，请稍后再试。</target>
+        <note>The Twitter servers are up, but overloaded with requests. Try again later.</note>
+      </trans-unit>
+      <trans-unit id="The URL value provided is not a URL that can be attached to this Tweet." xml:space="preserve">
+        <source>The URL value provided is not a URL that can be attached to this Tweet.</source>
+        <target>推特中网址对应的文件无法获取。</target>
+        <note>The URL value provided is not a URL that can be attached to this Tweet.</note>
+      </trans-unit>
+      <trans-unit id="The requested Tweet ID is not found (if it existed, it was probably deleted)." xml:space="preserve">
+        <source>The requested Tweet ID is not found (if it existed, it was probably deleted).</source>
+        <target>不存在此推特ID。可能该ID已经被删除。</target>
+        <note>The requested Tweet ID is not found (if it existed, it was probably deleted).</note>
+      </trans-unit>
+      <trans-unit id="The status text has already been Tweeted by the authenticated account." xml:space="preserve">
+        <source>The status text has already been Tweeted by the authenticated account.</source>
+        <target>内容重复。请不要反复发布相同的内容。</target>
+        <note>The status text has already been Tweeted by the authenticated account.</note>
+      </trans-unit>
+      <trans-unit id="The user account has been suspended and information cannot be retrieved." xml:space="preserve">
+        <source>The user account has been suspended and information cannot be retrieved.</source>
+        <target>该用户帐户被吊销。信息无法获得。</target>
+        <note>The user account has been suspended and information cannot be retrieved.</note>
+      </trans-unit>
+      <trans-unit id="This resource is gone." xml:space="preserve">
+        <source>This resource is gone.</source>
+        <target>资源不存在。</target>
+        <note>This resource is gone.</note>
+      </trans-unit>
+      <trans-unit id="Timestamp out of bounds (check your system clock)." xml:space="preserve">
+        <source>Timestamp out of bounds (check your system clock).</source>
+        <target>推特无法验证你。请检查你的系统显示的时间是否正常。</target>
+        <note>Timestamp out of bounds (check your system clock).</note>
+      </trans-unit>
+      <trans-unit id="Title" xml:space="preserve">
+        <source>Title</source>
+        <target>标题</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Title can't be empty!" xml:space="preserve">
+        <source>Title can't be empty!</source>
+        <target>标题不能为空！</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Too many templates to apply!" xml:space="preserve">
+        <source>Too many templates to apply!</source>
+        <target>不能同时应用多个模板！</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Too many templates to edit. Only one each time." xml:space="preserve">
+        <source>Too many templates to edit. Only one each time.</source>
+        <target>选中了太多的模板。每次只能编辑一个模板！</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Tweeting Failed" xml:space="preserve">
+        <source>Tweeting Failed</source>
+        <target>推特发送失败</target>
+        <note>Tweeting Failed</note>
+      </trans-unit>
+      <trans-unit id="Twitter is down or being upgraded. Try again later." xml:space="preserve">
+        <source>Twitter is down or being upgraded. Try again later.</source>
+        <target>推特网站出错或正在升级中。请稍后再试。</target>
+        <note>Twitter is down or being upgraded. Try again later.</note>
+      </trans-unit>
+      <trans-unit id="Twitter is temporarily over capacity. Please try again later." xml:space="preserve">
+        <source>Twitter is temporarily over capacity. Please try again later.</source>
+        <target>推特服务器负载过高。请稍后再试。</target>
+        <note>Twitter is temporarily over capacity. Please try again later.</note>
+      </trans-unit>
+      <trans-unit id="Twitter server internal error. Try again later." xml:space="preserve">
+        <source>Twitter server internal error. Try again later.</source>
+        <target>推特服务器内部错误。请稍后再试。</target>
+        <note>Twitter server internal error. Try again later.</note>
+      </trans-unit>
+      <trans-unit id="Twitter server timeout. Try again later." xml:space="preserve">
+        <source>Twitter server timeout. Try again later.</source>
+        <target>推特服务器超时。请稍后再试。</target>
+        <note>Twitter server timeout. Try again later.</note>
+      </trans-unit>
+      <trans-unit id="URLs" xml:space="preserve">
+        <source>URLs</source>
+        <target>链接</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Use &quot;Add a Weibo Account&quot; menu to login Weibo accounts again." xml:space="preserve">
+        <source>Use "Add a Weibo Account" menu to login Weibo accounts again.</source>
+        <target>使用“添加微博账户”菜单来重新登录微博账户。</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Weibo Account Notification" xml:space="preserve">
+        <source>Weibo Account Notification</source>
+        <target>微博账户通知</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Weibo Accounts Expired" xml:space="preserve">
+        <source>Weibo Accounts Expired</source>
+        <target>微博账户已过期</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Weibo Accounts Will Expire" xml:space="preserve">
+        <source>Weibo Accounts Will Expire</source>
+        <target>微博账户即将过期</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Weibo RPC error. Please wait a while and try again." xml:space="preserve">
+        <source>Weibo RPC error. Please wait a while and try again.</source>
+        <target>微博服务器故障，请稍后再试。</target>
+        <note>Weibo RPC error. Please wait a while and try again.</note>
+      </trans-unit>
+      <trans-unit id="Weibo request its user to reauthorize account every 30 days. Poster can check that and notify you to reauthorize so you won't get the authorized failed error when posting." xml:space="preserve">
+        <source>Weibo request its user to reauthorize account every 30 days. Poster can check that and notify you to reauthorize so you won't get the authorized failed error when posting.</source>
+        <target>微博要求用户每30天授权一次。咕唧可以查看当前授权是否过期，并提醒您重新授权。这样可以避免您在发送时出现授权过期的错误。</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Weibo server has too many pending tasks, system is busy. Please wait a while and retry." xml:space="preserve">
+        <source>Weibo server has too many pending tasks, system is busy. Please wait a while and retry.</source>
+        <target>微博服务器任务过多，系统繁忙。请稍后再试。</target>
+        <note>Weibo server has too many pending tasks, system is busy. Please wait a while and retry.</note>
+      </trans-unit>
+      <trans-unit id="Weibo service error. Please wait a while and try again." xml:space="preserve">
+        <source>Weibo service error. Please wait a while and try again.</source>
+        <target>微博服务器故障，请稍后再试。</target>
+        <note>Weibo service error. Please wait a while and try again.</note>
+      </trans-unit>
+      <trans-unit id="Weibo service is unavailable. Please wait a while and try again." xml:space="preserve">
+        <source>Weibo service is unavailable. Please wait a while and try again.</source>
+        <target>微博服务器故障，请稍后再试。</target>
+        <note>Weibo service is unavailable. Please wait a while and try again.</note>
+      </trans-unit>
+      <trans-unit id="Weibo system error. Please wait a while and try again." xml:space="preserve">
+        <source>Weibo system error. Please wait a while and try again.</source>
+        <target>微博服务器出错，请稍后再试。</target>
+        <note>Weibo system error. Please wait a while and try again.</note>
+      </trans-unit>
+      <trans-unit id="You account is labelled as a spam account. If you think you are not, please filing a ticket at https://support.twitter.com/forms/platform ." xml:space="preserve">
+        <source>You account is labelled as a spam account. If you think you are not, please filing a ticket at https://support.twitter.com/forms/platform .</source>
+        <target>您的帐户被推特官方归类为滥发广告。如果您对此有质疑，请与Twitter客服联系。网址：https://support.twitter.com/forms/platform</target>
+        <note>You account is labelled as a spam account. If you think you are not, please filing a ticket at https://support.twitter.com/forms/platform .</note>
+      </trans-unit>
+      <trans-unit id="You account is temporarily locked by Twitter because your account sent spam and did other malicious activity. You need to login to https://twitter.com to unlock your account." xml:space="preserve">
+        <source>You account is temporarily locked by Twitter because your account sent spam and did other malicious activity. You need to login to https://twitter.com to unlock your account.</source>
+        <target>您的帐户因滥发广告或其它可疑行为被推特官方临时锁定。您需要登录https://twitter.com来解锁。</target>
+        <note>You account is temporarily locked by Twitter because your account sent spam and did other malicious activity. You need to login to https://twitter.com to unlock your account.</note>
+      </trans-unit>
+      <trans-unit id="You have a draft, do you still want to quit?" xml:space="preserve">
+        <source>You have a draft, do you still want to quit?</source>
+        <target>您有尚未发布的草稿，是否确定要退出？</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="You have an unsaved content template!" xml:space="preserve">
+        <source>You have an unsaved content template!</source>
+        <target>您有未保存的内容模板！</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="You have not select any templates." xml:space="preserve">
+        <source>You have not select any templates.</source>
+        <target>您没有选中任何模板。</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="You have posted too many pieces of Weibo in a short time." xml:space="preserve">
+        <source>You have posted too many pieces of Weibo in a short time.</source>
+        <target>您短期内发布了过多的微博。</target>
+        <note>You have posted too many pieces of Weibo in a short time.</note>
+      </trans-unit>
+      <trans-unit id="You have sent too many Tweets. Please try again later." xml:space="preserve">
+        <source>You have sent too many Tweets. Please try again later.</source>
+        <target>您今天发布了过多的推特。请明天再试。</target>
+        <note>You have sent too many Tweets. Please try again later.</note>
+      </trans-unit>
+      <trans-unit id="You have sent too many pieces of Weibo on this IP address." xml:space="preserve">
+        <source>You have sent too many pieces of Weibo on this IP address.</source>
+        <target>您在当前的IP地址发布了太多的微博。</target>
+        <note>You have sent too many pieces of Weibo on this IP address.</note>
+      </trans-unit>
+      <trans-unit id="You must create an account in Poster main app before sharing anything." xml:space="preserve">
+        <source>You must create an account in Poster main app before sharing anything.</source>
+        <target>您必须先在咕唧的主程序中创建账户，然后才能进行分享。</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="You must select one template to edit." xml:space="preserve">
+        <source>You must select one template to edit.</source>
+        <target>您必须必须选择一个模板，才能编辑。</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="You sent too many Tweets. Please do not send a lot of Tweets in a short time." xml:space="preserve">
+        <source>You sent too many Tweets. Please do not send a lot of Tweets in a short time.</source>
+        <target>您发送推特超出限制。请不要在短时间内发布大量推特。</target>
+        <note>You sent too many Tweets. Please do not send a lot of Tweets in a short time.</note>
+      </trans-unit>
+      <trans-unit id="Your IP address is blocked by Weibo. If you are using WiFi, try to disconnect and reconnect you network through your router." xml:space="preserve">
+        <source>Your IP address is blocked by Weibo. If you are using WiFi, try to disconnect and reconnect you network through your router.</source>
+        <target>您当前的IP地址已经被微博屏蔽。如果是您是通过WiFi连接的，建议您在路由器中断开连接再重新连接。</target>
+        <note>Your IP address is blocked by Weibo. If you are using WiFi, try to disconnect and reconnect you network through your router.</note>
+      </trans-unit>
+      <trans-unit id="Your Weibo contains ads. Please revise and post again." xml:space="preserve">
+        <source>Your Weibo contains ads. Please revise and post again.</source>
+        <target>此条微博包含广告信息。请修改后再重新发布。</target>
+        <note>Your Weibo contains ads. Please revise and post again.</note>
+      </trans-unit>
+      <trans-unit id="Your Weibo contains forbid words. Please revise and post again." xml:space="preserve">
+        <source>Your Weibo contains forbid words. Please revise and post again.</source>
+        <target>此条微博包含违禁词。请修改后再重新发布。</target>
+        <note>Your Weibo contains forbid words. Please revise  and post again.</note>
+      </trans-unit>
+      <trans-unit id="Your Weibo contains illegal content. Please revise and post again." xml:space="preserve">
+        <source>Your Weibo contains illegal content. Please revise and post again.</source>
+        <target>此条微博包含非法内容。请修改后再重新发布。</target>
+        <note>Your Weibo contains illegal content. Please revise and post again.</note>
+      </trans-unit>
+      <trans-unit id="Your Weibo contains illegal website. Please revise and post again." xml:space="preserve">
+        <source>Your Weibo contains illegal website. Please revise and post again.</source>
+        <target>此条微博包含非法网站。请修改后再重新发布。</target>
+        <note>Your Weibo contains illegal website. Please revise and post again.</note>
+      </trans-unit>
+      <trans-unit id="Your account is invalid. Maybe your account is blocked." xml:space="preserve">
+        <source>Your account is invalid. Maybe your account is blocked.</source>
+        <target>您的账户非法。可能是被微博禁言或关闭。</target>
+        <note>Your account is invalid. Maybe your account is blocked.</note>
+      </trans-unit>
+      <trans-unit id="Your account is suspended by Twitter." xml:space="preserve">
+        <source>Your account is suspended by Twitter.</source>
+        <target>您的帐户已经被推特官方吊销。</target>
+        <note>Your account is suspended by Twitter.</note>
+      </trans-unit>
+      <trans-unit id="Your account or IP address is block by Weibo." xml:space="preserve">
+        <source>Your account or IP address is block by Weibo.</source>
+        <target>您的帐户或所在IP地址已被微博屏蔽。</target>
+        <note>Your account or IP address is block by Weibo.</note>
+      </trans-unit>
+      <trans-unit id="Your previous Weibo login in Poster is expired. Please re-login." xml:space="preserve">
+        <source>Your previous Weibo login in Poster is expired. Please re-login.</source>
+        <target>您之前的微博登录已过期。请重新登录。</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="Poster 2 Launcher/Base.lproj/Main.storyboard" datatype="plaintext" source-language="en" target-language="zh-Hans">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="11.3.1" build-num="11C504"/>
+    </header>
+    <body>
+      <trans-unit id="1Xt-HY-uBw.title" xml:space="preserve">
+        <source>Poster 2 Launcher</source>
+        <note>Class = "NSMenuItem"; title = "Poster 2 Launcher"; ObjectID = "1Xt-HY-uBw";</note>
+      </trans-unit>
+      <trans-unit id="4sb-4s-VLi.title" xml:space="preserve">
+        <source>Quit Poster 2 Launcher</source>
+        <note>Class = "NSMenuItem"; title = "Quit Poster 2 Launcher"; ObjectID = "4sb-4s-VLi";</note>
+      </trans-unit>
+      <trans-unit id="5QF-Oa-p0T.title" xml:space="preserve">
+        <source>Edit</source>
+        <note>Class = "NSMenuItem"; title = "Edit"; ObjectID = "5QF-Oa-p0T";</note>
+      </trans-unit>
+      <trans-unit id="5kV-Vb-QxS.title" xml:space="preserve">
+        <source>About Poster 2 Launcher</source>
+        <note>Class = "NSMenuItem"; title = "About Poster 2 Launcher"; ObjectID = "5kV-Vb-QxS";</note>
+      </trans-unit>
+      <trans-unit id="AYu-sK-qS6.title" xml:space="preserve">
+        <source>Main Menu</source>
+        <note>Class = "NSMenu"; title = "Main Menu"; ObjectID = "AYu-sK-qS6";</note>
+      </trans-unit>
+      <trans-unit id="BOF-NM-1cW.title" xml:space="preserve">
+        <source>Preferences…</source>
+        <note>Class = "NSMenuItem"; title = "Preferences…"; ObjectID = "BOF-NM-1cW";</note>
+      </trans-unit>
+      <trans-unit id="H8h-7b-M4v.title" xml:space="preserve">
+        <source>View</source>
+        <note>Class = "NSMenuItem"; title = "View"; ObjectID = "H8h-7b-M4v";</note>
+      </trans-unit>
+      <trans-unit id="Kd2-mp-pUS.title" xml:space="preserve">
+        <source>Show All</source>
+        <note>Class = "NSMenuItem"; title = "Show All"; ObjectID = "Kd2-mp-pUS";</note>
+      </trans-unit>
+      <trans-unit id="NMo-om-nkz.title" xml:space="preserve">
+        <source>Services</source>
+        <note>Class = "NSMenuItem"; title = "Services"; ObjectID = "NMo-om-nkz";</note>
+      </trans-unit>
+      <trans-unit id="Olw-nP-bQN.title" xml:space="preserve">
+        <source>Hide Poster 2 Launcher</source>
+        <note>Class = "NSMenuItem"; title = "Hide Poster 2 Launcher"; ObjectID = "Olw-nP-bQN";</note>
+      </trans-unit>
+      <trans-unit id="Vdr-fp-XzO.title" xml:space="preserve">
+        <source>Hide Others</source>
+        <note>Class = "NSMenuItem"; title = "Hide Others"; ObjectID = "Vdr-fp-XzO";</note>
+      </trans-unit>
+      <trans-unit id="aUF-d1-5bR.title" xml:space="preserve">
+        <source>Window</source>
+        <note>Class = "NSMenuItem"; title = "Window"; ObjectID = "aUF-d1-5bR";</note>
+      </trans-unit>
+      <trans-unit id="dMs-cI-mzQ.title" xml:space="preserve">
+        <source>File</source>
+        <note>Class = "NSMenuItem"; title = "File"; ObjectID = "dMs-cI-mzQ";</note>
+      </trans-unit>
+      <trans-unit id="hz9-B4-Xy5.title" xml:space="preserve">
+        <source>Services</source>
+        <note>Class = "NSMenu"; title = "Services"; ObjectID = "hz9-B4-Xy5";</note>
+      </trans-unit>
+      <trans-unit id="jxT-CU-nIS.title" xml:space="preserve">
+        <source>Format</source>
+        <note>Class = "NSMenuItem"; title = "Format"; ObjectID = "jxT-CU-nIS";</note>
+      </trans-unit>
+      <trans-unit id="uQy-DD-JDr.title" xml:space="preserve">
+        <source>Poster 2 Launcher</source>
+        <note>Class = "NSMenu"; title = "Poster 2 Launcher"; ObjectID = "uQy-DD-JDr";</note>
+      </trans-unit>
+      <trans-unit id="wpr-3q-Mcd.title" xml:space="preserve">
+        <source>Help</source>
+        <note>Class = "NSMenuItem"; title = "Help"; ObjectID = "wpr-3q-Mcd";</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="Poster 2 Launcher/en.lproj/InfoPlist.strings" datatype="plaintext" source-language="en" target-language="zh-Hans">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="11.3.1" build-num="11C504"/>
+    </header>
+    <body>
+      <trans-unit id="CFBundleName" xml:space="preserve">
+        <source>Poster Launcher</source>
+        <note>Bundle name</note>
+      </trans-unit>
+      <trans-unit id="NSHumanReadableCopyright" xml:space="preserve">
+        <source>Copyright © 2020 ParusSoft.com. All rights reserved.</source>
+        <note>Copyright (human-readable)</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="Poster/Base.lproj/Main.storyboard" source-language="en" target-language="zh-Hans" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="11.3.1" build-num="11C504"/>
+    </header>
+    <body>
+      <trans-unit id="0sY-rd-wXQ.title" xml:space="preserve">
+        <source>File</source>
+        <target>文件</target>
+        <note>Class = "NSMenu"; title = "File"; ObjectID = "0sY-rd-wXQ";</note>
+      </trans-unit>
+      <trans-unit id="1Xt-HY-uBw.title" xml:space="preserve">
+        <source>Poster</source>
+        <target>咕唧</target>
+        <note>Class = "NSMenuItem"; title = "Poster"; ObjectID = "1Xt-HY-uBw";</note>
+      </trans-unit>
+      <trans-unit id="4sb-4s-VLi.title" xml:space="preserve">
+        <source>Quit Poster</source>
+        <target>退出 咕唧</target>
+        <note>Class = "NSMenuItem"; title = "Quit Poster"; ObjectID = "4sb-4s-VLi";</note>
+      </trans-unit>
+      <trans-unit id="5kV-Vb-QxS.title" xml:space="preserve">
+        <source>About Poster</source>
+        <target>关于 咕唧</target>
+        <note>Class = "NSMenuItem"; title = "About Poster"; ObjectID = "5kV-Vb-QxS";</note>
+      </trans-unit>
+      <trans-unit id="5tL-wZ-Yes.title" xml:space="preserve">
+        <source>Edit</source>
+        <target>编辑</target>
+        <note>Class = "NSMenu"; title = "Edit"; ObjectID = "5tL-wZ-Yes";</note>
+      </trans-unit>
+      <trans-unit id="6qo-lj-RnC.title" xml:space="preserve">
+        <source>Close</source>
+        <target>关闭</target>
+        <note>Class = "NSMenuItem"; title = "Close"; ObjectID = "6qo-lj-RnC";</note>
+      </trans-unit>
+      <trans-unit id="7NL-If-OIP.title" xml:space="preserve">
+        <source>Copy</source>
+        <target>复制</target>
+        <note>Class = "NSMenuItem"; title = "Copy"; ObjectID = "7NL-If-OIP";</note>
+      </trans-unit>
+      <trans-unit id="AYu-sK-qS6.title" xml:space="preserve">
+        <source>Main Menu</source>
+        <target>主菜单</target>
+        <note>Class = "NSMenu"; title = "Main Menu"; ObjectID = "AYu-sK-qS6";</note>
+      </trans-unit>
+      <trans-unit id="BOF-NM-1cW.title" xml:space="preserve">
+        <source>Preferences…</source>
+        <target>偏好设置…</target>
+        <note>Class = "NSMenuItem"; title = "Preferences…"; ObjectID = "BOF-NM-1cW";</note>
+      </trans-unit>
+      <trans-unit id="Bwx-DK-ZHV.ibShadowedToolTips[0]" xml:space="preserve">
+        <source>When sending a tweet to more than one Twitter accounts, basing on the retweet preference, the main account will send the tweet, the other Twitter accounts will retweet or send comment with tweet with the main account's tweet.</source>
+        <target>当发送推特到多个推特账户时，基于转推选项，主账户将会发送推特，其它的推特账户将会转推或者转发并评论主账户的推特。</target>
+        <note>Class = "NSSegmentedCell"; Bwx-DK-ZHV.ibShadowedToolTips[0] = "When sending a tweet to more than one Twitter accounts, basing on the retweet preference, the main account will send the tweet, the other Twitter accounts will retweet or send comment with tweet with the main account's tweet."; ObjectID = "Bwx-DK-ZHV";</note>
+      </trans-unit>
+      <trans-unit id="F2S-fz-NVQ.title" xml:space="preserve">
+        <source>Help</source>
+        <target>帮助</target>
+        <note>Class = "NSMenu"; title = "Help"; ObjectID = "F2S-fz-NVQ";</note>
+      </trans-unit>
+      <trans-unit id="FKE-Sm-Kum.title" xml:space="preserve">
+        <source>Poster Help</source>
+        <target>咕唧 帮助</target>
+        <note>Class = "NSMenuItem"; title = "Poster Help"; ObjectID = "FKE-Sm-Kum";</note>
+      </trans-unit>
+      <trans-unit id="FbL-yf-sz5.label" xml:space="preserve">
+        <source>Set Profile Image</source>
+        <target>设置头像</target>
+        <note>Class = "NSToolbarItem"; label = "Set Profile Image"; ObjectID = "FbL-yf-sz5";</note>
+      </trans-unit>
+      <trans-unit id="FbL-yf-sz5.paletteLabel" xml:space="preserve">
+        <source>Set Profile Image</source>
+        <target>设置头像</target>
+        <note>Class = "NSToolbarItem"; paletteLabel = "Set Profile Image"; ObjectID = "FbL-yf-sz5";</note>
+      </trans-unit>
+      <trans-unit id="Fs1-ts-Tns.title" xml:space="preserve">
+        <source>Add Identity</source>
+        <target>创建身份账户</target>
+        <note>Class = "NSWindow"; title = "Add Identity"; ObjectID = "Fs1-ts-Tns";</note>
+      </trans-unit>
+      <trans-unit id="H8N-Yx-le7.label" xml:space="preserve">
+        <source>Accounts</source>
+        <target>账户</target>
+        <note>Class = "NSToolbarItem"; label = "Accounts"; ObjectID = "H8N-Yx-le7";</note>
+      </trans-unit>
+      <trans-unit id="H8N-Yx-le7.paletteLabel" xml:space="preserve">
+        <source>Accounts</source>
+        <target>账户</target>
+        <note>Class = "NSToolbarItem"; paletteLabel = "Accounts"; ObjectID = "H8N-Yx-le7";</note>
+      </trans-unit>
+      <trans-unit id="HRd-T1-tuw.title" xml:space="preserve">
+        <source>Paste</source>
+        <target>粘贴</target>
+        <note>Class = "NSMenuItem"; title = "Paste"; ObjectID = "HRd-T1-tuw";</note>
+      </trans-unit>
+      <trans-unit id="IQv-IB-iLA.title" xml:space="preserve">
+        <source>Poster 2</source>
+        <target>咕唧2</target>
+        <note>Class = "NSWindow"; title = "Poster 2"; ObjectID = "IQv-IB-iLA";</note>
+      </trans-unit>
+      <trans-unit id="Kd2-mp-pUS.title" xml:space="preserve">
+        <source>Show All</source>
+        <target>显示全部</target>
+        <note>Class = "NSMenuItem"; title = "Show All"; ObjectID = "Kd2-mp-pUS";</note>
+      </trans-unit>
+      <trans-unit id="KhE-Vc-ycD.title" xml:space="preserve">
+        <source>Add Identity</source>
+        <target>创建身份账户</target>
+        <note>Class = "NSViewController"; title = "Add Identity"; ObjectID = "KhE-Vc-ycD";</note>
+      </trans-unit>
+      <trans-unit id="LE2-aR-0XJ.title" xml:space="preserve">
+        <source>Bring All to Front</source>
+        <target>前置全部窗口</target>
+        <note>Class = "NSMenuItem"; title = "Bring All to Front"; ObjectID = "LE2-aR-0XJ";</note>
+      </trans-unit>
+      <trans-unit id="LjR-TJ-RTX.title" xml:space="preserve">
+        <source>Review me in App Store</source>
+        <target>评价此应用</target>
+        <note>Class = "NSMenuItem"; title = "Review me in App Store"; ObjectID = "LjR-TJ-RTX";</note>
+      </trans-unit>
+      <trans-unit id="MYe-FU-KkK.title" xml:space="preserve">
+        <source>Redo</source>
+        <target>重做</target>
+        <note>Class = "NSMenuItem"; title = "Redo"; ObjectID = "MYe-FU-KkK";</note>
+      </trans-unit>
+      <trans-unit id="NMo-om-nkz.title" xml:space="preserve">
+        <source>Services</source>
+        <target>服务</target>
+        <note>Class = "NSMenuItem"; title = "Services"; ObjectID = "NMo-om-nkz";</note>
+      </trans-unit>
+      <trans-unit id="OY7-WF-poV.title" xml:space="preserve">
+        <source>Minimize</source>
+        <target>最小化</target>
+        <note>Class = "NSMenuItem"; title = "Minimize"; ObjectID = "OY7-WF-poV";</note>
+      </trans-unit>
+      <trans-unit id="Olw-nP-bQN.title" xml:space="preserve">
+        <source>Hide Poster</source>
+        <target>隐藏 咕唧</target>
+        <note>Class = "NSMenuItem"; title = "Hide Poster"; ObjectID = "Olw-nP-bQN";</note>
+      </trans-unit>
+      <trans-unit id="OxD-Og-Bce.title" xml:space="preserve">
+        <source>Cut</source>
+        <target>剪切</target>
+        <note>Class = "NSMenuItem"; title = "Cut"; ObjectID = "OxD-Og-Bce";</note>
+      </trans-unit>
+      <trans-unit id="QGG-sD-r48.title" xml:space="preserve">
+        <source>Cancel</source>
+        <target>取消</target>
+        <note>Class = "NSButtonCell"; title = "Cancel"; ObjectID = "QGG-sD-r48";</note>
+      </trans-unit>
+      <trans-unit id="Qwc-dc-vaz.label" xml:space="preserve">
+        <source>Write</source>
+        <target>编写</target>
+        <note>Class = "NSToolbarItem"; label = "Write"; ObjectID = "Qwc-dc-vaz";</note>
+      </trans-unit>
+      <trans-unit id="Qwc-dc-vaz.paletteLabel" xml:space="preserve">
+        <source>Write</source>
+        <target>编写</target>
+        <note>Class = "NSToolbarItem"; paletteLabel = "Write"; ObjectID = "Qwc-dc-vaz";</note>
+      </trans-unit>
+      <trans-unit id="R4o-n2-Eq4.title" xml:space="preserve">
+        <source>Zoom</source>
+        <target>缩放</target>
+        <note>Class = "NSMenuItem"; title = "Zoom"; ObjectID = "R4o-n2-Eq4";</note>
+      </trans-unit>
+      <trans-unit id="Td7-aD-5lo.title" xml:space="preserve">
+        <source>Window</source>
+        <target>窗口</target>
+        <note>Class = "NSMenu"; title = "Window"; ObjectID = "Td7-aD-5lo";</note>
+      </trans-unit>
+      <trans-unit id="Vdr-fp-XzO.title" xml:space="preserve">
+        <source>Hide Others</source>
+        <target>隐藏其它窗口</target>
+        <note>Class = "NSMenuItem"; title = "Hide Others"; ObjectID = "Vdr-fp-XzO";</note>
+      </trans-unit>
+      <trans-unit id="aUF-d1-5bR.title" xml:space="preserve">
+        <source>Window</source>
+        <target>窗口</target>
+        <note>Class = "NSMenuItem"; title = "Window"; ObjectID = "aUF-d1-5bR";</note>
+      </trans-unit>
+      <trans-unit id="bsv-Px-K4i.title" xml:space="preserve">
+        <source>Done</source>
+        <target>完成</target>
+        <note>Class = "NSButtonCell"; title = "Done"; ObjectID = "bsv-Px-K4i";</note>
+      </trans-unit>
+      <trans-unit id="hz9-B4-Xy5.title" xml:space="preserve">
+        <source>Services</source>
+        <target>服务</target>
+        <note>Class = "NSMenu"; title = "Services"; ObjectID = "hz9-B4-Xy5";</note>
+      </trans-unit>
+      <trans-unit id="kNs-Wr-gFL.title" xml:space="preserve">
+        <source>Select All</source>
+        <target>全选</target>
+        <note>Class = "NSMenuItem"; title = "Select All"; ObjectID = "kNs-Wr-gFL";</note>
+      </trans-unit>
+      <trans-unit id="lEt-tU-GwV.title" xml:space="preserve">
+        <source>Documents and Videos</source>
+        <target>文档和视频</target>
+        <note>Class = "NSMenuItem"; title = "Documents and Videos"; ObjectID = "lEt-tU-GwV";</note>
+      </trans-unit>
+      <trans-unit id="mhG-4T-Qjk.title" xml:space="preserve">
+        <source>Delete</source>
+        <target>删除</target>
+        <note>Class = "NSMenuItem"; title = "Delete"; ObjectID = "mhG-4T-Qjk";</note>
+      </trans-unit>
+      <trans-unit id="nDa-Ml-XMY.title" xml:space="preserve">
+        <source>Weibo</source>
+        <target>微博</target>
+        <note>Class = "NSViewController"; title = "Weibo"; ObjectID = "nDa-Ml-XMY";</note>
+      </trans-unit>
+      <trans-unit id="ngG-93-w3W.title" xml:space="preserve">
+        <source>File</source>
+        <target>文件</target>
+        <note>Class = "NSMenuItem"; title = "File"; ObjectID = "ngG-93-w3W";</note>
+      </trans-unit>
+      <trans-unit id="ocR-SX-AbD.title" xml:space="preserve">
+        <source>Twitter</source>
+        <target>推特</target>
+        <note>Class = "NSViewController"; title = "Twitter"; ObjectID = "ocR-SX-AbD";</note>
+      </trans-unit>
+      <trans-unit id="rtS-qf-VC9.label" xml:space="preserve">
+        <source>Set Main Account</source>
+        <target>设为主账户</target>
+        <note>Class = "NSToolbarItem"; label = "Set Main Account"; ObjectID = "rtS-qf-VC9";</note>
+      </trans-unit>
+      <trans-unit id="rtS-qf-VC9.paletteLabel" xml:space="preserve">
+        <source>Set Main Account</source>
+        <target>设为主账户</target>
+        <note>Class = "NSToolbarItem"; paletteLabel = "Set Main Account"; ObjectID = "rtS-qf-VC9";</note>
+      </trans-unit>
+      <trans-unit id="uQy-DD-JDr.title" xml:space="preserve">
+        <source>Poster</source>
+        <target>咕唧</target>
+        <note>Class = "NSMenu"; title = "Poster"; ObjectID = "uQy-DD-JDr";</note>
+      </trans-unit>
+      <trans-unit id="vBv-sk-96f.placeholderString" xml:space="preserve">
+        <source>John's person accounts</source>
+        <target>小明的个人账户</target>
+        <note>Class = "NSTextFieldCell"; placeholderString = "John's person accounts"; ObjectID = "vBv-sk-96f";</note>
+      </trans-unit>
+      <trans-unit id="vI6-SI-bg1.title" xml:space="preserve">
+        <source>Give Feedback To Developer</source>
+        <target>向开发者提供反馈</target>
+        <note>Class = "NSMenuItem"; title = "Give Feedback To Developer"; ObjectID = "vI6-SI-bg1";</note>
+      </trans-unit>
+      <trans-unit id="woR-on-XUI.title" xml:space="preserve">
+        <source>Undo</source>
+        <target>撤销</target>
+        <note>Class = "NSMenuItem"; title = "Undo"; ObjectID = "woR-on-XUI";</note>
+      </trans-unit>
+      <trans-unit id="wpr-3q-Mcd.title" xml:space="preserve">
+        <source>Help</source>
+        <target>帮助</target>
+        <note>Class = "NSMenuItem"; title = "Help"; ObjectID = "wpr-3q-Mcd";</note>
+      </trans-unit>
+      <trans-unit id="xcU-NJ-UOf.title" xml:space="preserve">
+        <source>Edit</source>
+        <target>编辑</target>
+        <note>Class = "NSMenuItem"; title = "Edit"; ObjectID = "xcU-NJ-UOf";</note>
+      </trans-unit>
+      <trans-unit id="yHh-sb-djV.title" xml:space="preserve">
+        <source>Write</source>
+        <target>编写</target>
+        <note>Class = "NSMenuItem"; title = "Write"; ObjectID = "yHh-sb-djV";</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="Poster/Base.lproj/Preferences.storyboard" source-language="en" target-language="zh-Hans" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="11.3.1" build-num="11C504"/>
+    </header>
+    <body>
+      <trans-unit id="0L9-4g-pJM.title" xml:space="preserve">
+        <source>Spring Green</source>
+        <target>春绿</target>
+        <note>Class = "NSMenuItem"; title = "Spring Green"; ObjectID = "0L9-4g-pJM";</note>
+      </trans-unit>
+      <trans-unit id="1Cd-m1-xh3.title" xml:space="preserve">
+        <source>Text2Image</source>
+        <target>文字转图片</target>
+        <note>Class = "NSViewController"; title = "Text2Image"; ObjectID = "1Cd-m1-xh3";</note>
+      </trans-unit>
+      <trans-unit id="AgJ-Gc-dm7.title" xml:space="preserve">
+        <source>Show Theme Name</source>
+        <target>显示主题名称</target>
+        <note>Class = "NSButtonCell"; title = "Show Theme Name"; ObjectID = "AgJ-Gc-dm7";</note>
+      </trans-unit>
+      <trans-unit id="CSt-Tq-AQd.title" xml:space="preserve">
+        <source>❤️</source>
+        <target>❤️</target>
+        <note>Class = "NSTextFieldCell"; title = "❤️"; ObjectID = "CSt-Tq-AQd";</note>
+      </trans-unit>
+      <trans-unit id="KEn-MX-vJ2.title" xml:space="preserve">
+        <source>Theme</source>
+        <target>主题</target>
+        <note>Class = "NSTextFieldCell"; title = "Theme"; ObjectID = "KEn-MX-vJ2";</note>
+      </trans-unit>
+      <trans-unit id="SNy-1e-Cw0.title" xml:space="preserve">
+        <source>Winter White</source>
+        <target>冬白</target>
+        <note>Class = "NSMenuItem"; title = "Winter White"; ObjectID = "SNy-1e-Cw0";</note>
+      </trans-unit>
+      <trans-unit id="StK-Ul-OYP.title" xml:space="preserve">
+        <source>Remove GPS info.</source>
+        <target>移除GPS信息。</target>
+        <note>Class = "NSButtonCell"; title = "Remove GPS info."; ObjectID = "StK-Ul-OYP";</note>
+      </trans-unit>
+      <trans-unit id="UL2-d4-pJm.title" xml:space="preserve">
+        <source>Preferences</source>
+        <target>偏好设置</target>
+        <note>Class = "NSTabViewController"; title = "Preferences"; ObjectID = "UL2-d4-pJm";</note>
+      </trans-unit>
+      <trans-unit id="VO6-fW-VHF.title" xml:space="preserve">
+        <source>Quote with Comments</source>
+        <target>引用并评论</target>
+        <note>Class = "NSMenuItem"; title = "Quote with Comments"; ObjectID = "VO6-fW-VHF";</note>
+      </trans-unit>
+      <trans-unit id="XNq-jf-blV.title" xml:space="preserve">
+        <source>Narrow photos to save traffic.</source>
+        <target>缩小照片以节省流量。</target>
+        <note>Class = "NSButtonCell"; title = "Narrow photos to save traffic."; ObjectID = "XNq-jf-blV";</note>
+      </trans-unit>
+      <trans-unit id="anl-4r-hXn.title" xml:space="preserve">
+        <source>Summer Blue</source>
+        <target>夏蓝</target>
+        <note>Class = "NSMenuItem"; title = "Summer Blue"; ObjectID = "anl-4r-hXn";</note>
+      </trans-unit>
+      <trans-unit id="cr2-fP-nH3.title" xml:space="preserve">
+        <source>Classic</source>
+        <target>经典</target>
+        <note>Class = "NSMenuItem"; title = "Classic"; ObjectID = "cr2-fP-nH3";</note>
+      </trans-unit>
+      <trans-unit id="fLi-AR-w0f.title" xml:space="preserve">
+        <source>Url Detection Policy: Strict</source>
+        <target>链接识别策略：严格</target>
+        <note>Class = "NSButtonCell"; title = "Url Detection Policy: Strict"; ObjectID = "fLi-AR-w0f";</note>
+      </trans-unit>
+      <trans-unit id="gXD-nA-ndQ.title" xml:space="preserve">
+        <source>Retweet Mode</source>
+        <target>转推模式</target>
+        <note>Class = "NSTextFieldCell"; title = "Retweet Mode"; ObjectID = "gXD-nA-ndQ";</note>
+      </trans-unit>
+      <trans-unit id="kSz-oc-sMS.title" xml:space="preserve">
+        <source>Default Comments</source>
+        <target>默认评论</target>
+        <note>Class = "NSTextFieldCell"; title = "Default Comments"; ObjectID = "kSz-oc-sMS";</note>
+      </trans-unit>
+      <trans-unit id="mLw-B5-7lc.title" xml:space="preserve">
+        <source>Autumn Yellow</source>
+        <target>秋黄</target>
+        <note>Class = "NSMenuItem"; title = "Autumn Yellow"; ObjectID = "mLw-B5-7lc";</note>
+      </trans-unit>
+      <trans-unit id="sg9-Sy-On9.title" xml:space="preserve">
+        <source>Weibo</source>
+        <target>微博</target>
+        <note>Class = "NSViewController"; title = "Weibo"; ObjectID = "sg9-Sy-On9";</note>
+      </trans-unit>
+      <trans-unit id="t4c-oZ-L2c.title" xml:space="preserve">
+        <source>Privacy</source>
+        <target>隐私</target>
+        <note>Class = "NSViewController"; title = "Privacy"; ObjectID = "t4c-oZ-L2c";</note>
+      </trans-unit>
+      <trans-unit id="uDD-3z-e5p.title" xml:space="preserve">
+        <source>Remove Exif info.</source>
+        <target>移除Exif信息。</target>
+        <note>Class = "NSButtonCell"; title = "Remove Exif info."; ObjectID = "uDD-3z-e5p";</note>
+      </trans-unit>
+      <trans-unit id="wlX-Qr-fyL.title" xml:space="preserve">
+        <source>Retweet</source>
+        <target>转推</target>
+        <note>Class = "NSMenuItem"; title = "Retweet"; ObjectID = "wlX-Qr-fyL";</note>
+      </trans-unit>
+      <trans-unit id="xuf-cF-FUw.title" xml:space="preserve">
+        <source>Twitter</source>
+        <target>推特</target>
+        <note>Class = "NSViewController"; title = "Twitter"; ObjectID = "xuf-cF-FUw";</note>
+      </trans-unit>
+      <trans-unit id="yVy-d1-818.title" xml:space="preserve">
+        <source>Prefer video files to GIFs.</source>
+        <target>优先选择视频文件。</target>
+        <note>Class = "NSButtonCell"; title = "Prefer video files to GIFs."; ObjectID = "yVy-d1-818";</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="Poster/en.lproj/InfoPlist.strings" source-language="en" target-language="zh-Hans" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="11.3.1" build-num="11C504"/>
+    </header>
+    <body>
+      <trans-unit id="CFBundleDisplayName" xml:space="preserve">
+        <source>Poster 2</source>
+        <target>咕唧2</target>
+        <note>Bundle display name</note>
+      </trans-unit>
+      <trans-unit id="CFBundleName" xml:space="preserve">
+        <source>Poster 2</source>
+        <target>咕唧2</target>
+        <note>Bundle name</note>
+      </trans-unit>
+      <trans-unit id="NSHumanReadableCopyright" xml:space="preserve">
+        <source>Copyright © 2017 ParusSoft.com. All rights reserved.</source>
+        <target>版权所有 © 2017 ParusSoft.com。 所有权利保留。</target>
+        <note>Copyright (human-readable)</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="Poster/en.lproj/Localizable.strings" source-language="en" target-language="zh-Hans" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="11.3.1" build-num="11C504"/>
+    </header>
+    <body>
+      <trans-unit id="%@ • %@" xml:space="preserve">
+        <source>%1$@ • %2$@</source>
+        <target>%1$@ • %2$@</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="%d + image" xml:space="preserve">
+        <source>%d + image</source>
+        <target>%d + 图片</target>
+        <note>words count and image</note>
+      </trans-unit>
+      <trans-unit id="About" xml:space="preserve">
+        <source>About</source>
+        <target>关于</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Accounts" xml:space="preserve">
+        <source>Accounts</source>
+        <target>账户</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Accounts: %@" xml:space="preserve">
+        <source>Accounts: %@</source>
+        <target>账户：%@</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Add Content Template" xml:space="preserve">
+        <source>Add Content Template</source>
+        <target>添加内容模版</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Add a Twitter Account" xml:space="preserve">
+        <source>Add a Twitter Account</source>
+        <target>添加推特账户</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Add a Weibo Account" xml:space="preserve">
+        <source>Add a Weibo Account</source>
+        <target>添加微博账户</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Add an Identity Account" xml:space="preserve">
+        <source>Add an Identity Account</source>
+        <target>创建身份账户</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Adding more than 3 accounts in a same account type to an identity account is not allowed." xml:space="preserve">
+        <source>Adding more than 3 accounts in a same account type to an identity account is not allowed.</source>
+        <target>不允许添加超过3个以上的同种类型的账户到身份账户。</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="An invalid format is specified in your Tweet." xml:space="preserve">
+        <source>An invalid format is specified in your Tweet.</source>
+        <target>推特内包含不支持的格式。</target>
+        <note>An invalid format is specified in your Tweet.</note>
+      </trans-unit>
+      <trans-unit id="Animated Gifs" xml:space="preserve">
+        <source>Animated Gifs</source>
+        <target>动图</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Are you satified with Poster 2?" xml:space="preserve">
+        <source>Are you satified with Poster 2?</source>
+        <target>你对于咕唧2满意吗？</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Are you satified with the new version of Poster 2?" xml:space="preserve">
+        <source>Are you satified with the new version of Poster 2?</source>
+        <target>你对于咕唧2的新版满意吗？</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Auto Start When Login" xml:space="preserve">
+        <source>Auto Start When Login</source>
+        <target>登录时自动启动</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Auto start when you login." xml:space="preserve">
+        <source>Auto start when you login.</source>
+        <target>在您登录时自动启动。</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Bad format data Twitter returns." xml:space="preserve">
+        <source>Bad format data Twitter returns.</source>
+        <target>从推特返回的数据的格式是错误的。</target>
+        <note>Bad format data Twitter returns.</note>
+      </trans-unit>
+      <trans-unit id="Bad format data Weibo returns." xml:space="preserve">
+        <source>Bad format data Weibo returns.</source>
+        <target>从微博返回的数据的格式是错误的。</target>
+        <note>Bad format data Weibo returns.</note>
+      </trans-unit>
+      <trans-unit id="Can't add an identity account to another." xml:space="preserve">
+        <source>Can't add an identity account to another.</source>
+        <target>无法添加身份账户到另一个身份账户。</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Can't remove the Default Account unless it is the last account." xml:space="preserve">
+        <source>Can't remove the Default Account unless it is the last account.</source>
+        <target>无法移除默认账户，除非它是剩余的唯一账户。</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Cancel" xml:space="preserve">
+        <source>Cancel</source>
+        <target>取消</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Content Templates" xml:space="preserve">
+        <source>Content Templates</source>
+        <target>内容模版</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Continuous Posting" xml:space="preserve">
+        <source>Continuous Posting</source>
+        <target>直播模式</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Default" xml:space="preserve">
+        <source>Default</source>
+        <target>默认</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Default comments can't be empty!" xml:space="preserve">
+        <source>Default comments can't be empty!</source>
+        <target>默认评论不能为空！</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Dropped Images" xml:space="preserve">
+        <source>Dropped Images</source>
+        <target>拖拽添加的图片</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Edit Content Template" xml:space="preserve">
+        <source>Edit Content Template</source>
+        <target>编辑内容模版</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Email Address Copied" xml:space="preserve">
+        <source>Email Address Copied</source>
+        <target>邮箱地址已复制到粘贴板</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Enable" xml:space="preserve">
+        <source>Enable</source>
+        <target>启用</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Enable this option if you create original tweets often." xml:space="preserve">
+        <source>Enable this option if you create original tweets often.</source>
+        <target>如果您经常发布原创的推特，可以启用这个选项。</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Feedback" xml:space="preserve">
+        <source>Feedback</source>
+        <target>反馈</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Images" xml:space="preserve">
+        <source>Images</source>
+        <target>图片</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="It can be one and only one default account." xml:space="preserve">
+        <source>It can be one and only one default account.</source>
+        <target>有且只有一个默认账户。</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Later" xml:space="preserve">
+        <source>Later</source>
+        <target>以后</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Local Network Error" xml:space="preserve">
+        <source>Local Network Error</source>
+        <target>本地网络错误</target>
+        <note>Local Network Error</note>
+      </trans-unit>
+      <trans-unit id="Main account can only be set when there are two or more Twitter accounts in an identity." xml:space="preserve">
+        <source>Main account can only be set when there are two or more Twitter accounts in an identity.</source>
+        <target>仅在身份账户包含多个推特账户时，才能设置主账户。</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Maybe your network speed is too slow." xml:space="preserve">
+        <source>Maybe your network speed is too slow.</source>
+        <target>可能是您当前网速过慢。</target>
+        <note>Maybe your network speed is too slow.</note>
+      </trans-unit>
+      <trans-unit id="Monochrome Icon" xml:space="preserve">
+        <source>Monochrome Icon</source>
+        <target>单色图标</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Movies" xml:space="preserve">
+        <source>Movies</source>
+        <target>视频</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Name can't be empty!" xml:space="preserve">
+        <source>Name can't be empty!</source>
+        <target>名字不能为空</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="No" xml:space="preserve">
+        <source>No</source>
+        <target>否</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="No Accounts" xml:space="preserve">
+        <source>No Accounts</source>
+        <target>无账户</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="No accounts yet!" xml:space="preserve">
+        <source>No accounts yet!</source>
+        <target>还没有账户！</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="No selected template!" xml:space="preserve">
+        <source>No selected template!</source>
+        <target>没有选中的模板</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="OK" xml:space="preserve">
+        <source>OK</source>
+        <target>确定</target>
+        <note>OK</note>
+      </trans-unit>
+      <trans-unit id="Please Notify Me" xml:space="preserve">
+        <source>Please Notify Me</source>
+        <target>请通知我</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Please capture this screen and send this back to developer." xml:space="preserve">
+        <source>Please capture this screen and send this back to developer.</source>
+        <target>请截图并反馈给开发者。</target>
+        <note>untranslatated error</note>
+      </trans-unit>
+      <trans-unit id="Please do not post the same Weibo repeatedly." xml:space="preserve">
+        <source>Please do not post the same Weibo repeatedly.</source>
+        <target>请不要连续发布相同的微博内容。</target>
+        <note>Please do not post the same Weibo repeatedly.</note>
+      </trans-unit>
+      <trans-unit id="Please use Chinese or English in you mail." xml:space="preserve">
+        <source>Please use Chinese or English in you mail.</source>
+        <target>邮件请使用中文或英文。</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Post" xml:space="preserve">
+        <source>Post</source>
+        <target>发布</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Poster" xml:space="preserve">
+        <source>Poster</source>
+        <target>咕唧</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Poster posts to one account each time. If you want to post to multiple accounts, selecting the accounts you want to post, then creating an identity account." xml:space="preserve">
+        <source>Poster posts to one account each time. If you want to post to multiple accounts, selecting the accounts you want to post, then creating an identity account.</source>
+        <target>咕唧每次使用一个账户。如果你想发送到多个账户，选中你想要发送的账户，然后选择创建身份账户。</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Posting Account Choosing" xml:space="preserve">
+        <source>Posting Account Choosing</source>
+        <target>选择发布的账户</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Posting Weibo Failed" xml:space="preserve">
+        <source>Posting Weibo Failed</source>
+        <target>微博发布失败</target>
+        <note>Posting Weibo Failed</note>
+      </trans-unit>
+      <trans-unit id="Quit" xml:space="preserve">
+        <source>Quit</source>
+        <target>退出</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Related Identity accounts, if exist, will be changed accordingly." xml:space="preserve">
+        <source>Related Identity accounts, if exist, will be changed accordingly.</source>
+        <target>相关的身份账户，如果存在，将会做出相应的改变。</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Remove" xml:space="preserve">
+        <source>Remove</source>
+        <target>移除</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Remove Accounts" xml:space="preserve">
+        <source>Remove Accounts</source>
+        <target>移除账户</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Remove Templates?" xml:space="preserve">
+        <source>Remove Templates?</source>
+        <target>移除模板？</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Remove selected accounts?" xml:space="preserve">
+        <source>Remove selected accounts?</source>
+        <target>移除选中的账户？</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Resources" xml:space="preserve">
+        <source>Resources</source>
+        <target>资源</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Set Default Account" xml:space="preserve">
+        <source>Set Default Account</source>
+        <target>设为默认账户</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Set Main Account" xml:space="preserve">
+        <source>Set Main Account</source>
+        <target>设为主账户</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Set Profile Image" xml:space="preserve">
+        <source>Set Profile Image</source>
+        <target>设置头像</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="The Twitter servers are up, but overloaded with requests. Try again later." xml:space="preserve">
+        <source>The Twitter servers are up, but overloaded with requests. Try again later.</source>
+        <target>推特服务器过于繁忙，请稍后再试。</target>
+        <note>The Twitter servers are up, but overloaded with requests. Try again later.</note>
+      </trans-unit>
+      <trans-unit id="The URL value provided is not a URL that can be attached to this Tweet." xml:space="preserve">
+        <source>The URL value provided is not a URL that can be attached to this Tweet.</source>
+        <target>推特中网址对应的文件无法获取。</target>
+        <note>The URL value provided is not a URL that can be attached to this Tweet.</note>
+      </trans-unit>
+      <trans-unit id="The requested Tweet ID is not found (if it existed, it was probably deleted)." xml:space="preserve">
+        <source>The requested Tweet ID is not found (if it existed, it was probably deleted).</source>
+        <target>不存在此推特ID。可能该ID已经被删除。</target>
+        <note>The requested Tweet ID is not found (if it existed, it was probably deleted).</note>
+      </trans-unit>
+      <trans-unit id="The selected account had already been default." xml:space="preserve">
+        <source>The selected account had already been default.</source>
+        <target>选中的账户已经是默认账户。</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="The selected account must be a Twitter account." xml:space="preserve">
+        <source>The selected account must be a Twitter account.</source>
+        <target>选中的账户必须是推特账户。</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="The status text has already been Tweeted by the authenticated account." xml:space="preserve">
+        <source>The status text has already been Tweeted by the authenticated account.</source>
+        <target>内容重复。请不要反复发布相同的内容。</target>
+        <note>The status text has already been Tweeted by the authenticated account.</note>
+      </trans-unit>
+      <trans-unit id="The user account has been suspended and information cannot be retrieved." xml:space="preserve">
+        <source>The user account has been suspended and information cannot be retrieved.</source>
+        <target>该用户帐户被吊销。信息无法获得。</target>
+        <note>The user account has been suspended and information cannot be retrieved.</note>
+      </trans-unit>
+      <trans-unit id="This resource is gone." xml:space="preserve">
+        <source>This resource is gone.</source>
+        <target>资源不存在。</target>
+        <note>This resource is gone.</note>
+      </trans-unit>
+      <trans-unit id="This rule is not a technology limitation, but a precaution to keep Poster away from spam senders." xml:space="preserve">
+        <source>This rule is not a technology limitation, but a precaution to keep Poster away from spam senders.</source>
+        <target>这项规则不是技术限制，而是为了预防咕唧被用于发送广告。</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Timestamp out of bounds (check your system clock)." xml:space="preserve">
+        <source>Timestamp out of bounds (check your system clock).</source>
+        <target>推特无法验证你。请检查你的系统显示的时间是否正常。</target>
+        <note>Timestamp out of bounds (check your system clock).</note>
+      </trans-unit>
+      <trans-unit id="Title" xml:space="preserve">
+        <source>Title</source>
+        <target>标题</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Title can't be empty!" xml:space="preserve">
+        <source>Title can't be empty!</source>
+        <target>标题不能为空！</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Too many templates to apply!" xml:space="preserve">
+        <source>Too many templates to apply!</source>
+        <target>不能同时应用多个模板！</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Too many templates to edit. Only one each time." xml:space="preserve">
+        <source>Too many templates to edit. Only one each time.</source>
+        <target>选中了太多的模板。每次只能编辑一个模板！</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Tweeting Failed" xml:space="preserve">
+        <source>Tweeting Failed</source>
+        <target>推特发送失败</target>
+        <note>Tweeting Failed</note>
+      </trans-unit>
+      <trans-unit id="Twitter - %@" xml:space="preserve">
+        <source>Twitter - %@</source>
+        <target>推特 - %@</target>
+        <note>Twitter screen name</note>
+      </trans-unit>
+      <trans-unit id="Twitter is down or being upgraded. Try again later." xml:space="preserve">
+        <source>Twitter is down or being upgraded. Try again later.</source>
+        <target>推特网站出错或正在升级中。请稍后再试。</target>
+        <note>Twitter is down or being upgraded. Try again later.</note>
+      </trans-unit>
+      <trans-unit id="Twitter is temporarily over capacity. Please try again later." xml:space="preserve">
+        <source>Twitter is temporarily over capacity. Please try again later.</source>
+        <target>推特服务器负载过高。请稍后再试。</target>
+        <note>Twitter is temporarily over capacity. Please try again later.</note>
+      </trans-unit>
+      <trans-unit id="Twitter server internal error. Try again later." xml:space="preserve">
+        <source>Twitter server internal error. Try again later.</source>
+        <target>推特服务器内部错误。请稍后再试。</target>
+        <note>Twitter server internal error. Try again later.</note>
+      </trans-unit>
+      <trans-unit id="Twitter server timeout. Try again later." xml:space="preserve">
+        <source>Twitter server timeout. Try again later.</source>
+        <target>推特服务器超时。请稍后再试。</target>
+        <note>Twitter server timeout. Try again later.</note>
+      </trans-unit>
+      <trans-unit id="URLs" xml:space="preserve">
+        <source>URLs</source>
+        <target>链接</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Use &quot;Add a Weibo Account&quot; menu to login Weibo accounts again." xml:space="preserve">
+        <source>Use "Add a Weibo Account" menu to login Weibo accounts again.</source>
+        <target>使用“添加微博账户”菜单来重新登录微博账户。</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Weibo Account Notification" xml:space="preserve">
+        <source>Weibo Account Notification</source>
+        <target>微博账户通知</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Weibo Accounts Expired" xml:space="preserve">
+        <source>Weibo Accounts Expired</source>
+        <target>微博账户已过期</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Weibo Accounts Will Expire" xml:space="preserve">
+        <source>Weibo Accounts Will Expire</source>
+        <target>微博账户即将过期</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Weibo RPC error. Please wait a while and try again." xml:space="preserve">
+        <source>Weibo RPC error. Please wait a while and try again.</source>
+        <target>微博服务器故障，请稍后再试。</target>
+        <note>Weibo RPC error. Please wait a while and try again.</note>
+      </trans-unit>
+      <trans-unit id="Weibo request its user to reauthorize account every 30 days. Poster can check that and notify you to reauthorize so you won't get the authorized failed error when posting." xml:space="preserve">
+        <source>Weibo request its user to reauthorize account every 30 days. Poster can check that and notify you to reauthorize so you won't get the authorized failed error when posting.</source>
+        <target>微博要求用户每30天授权一次。咕唧可以查看当前授权是否过期，并提醒您重新授权。这样可以避免您在发送时出现授权过期的错误。</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Weibo server has too many pending tasks, system is busy. Please wait a while and retry." xml:space="preserve">
+        <source>Weibo server has too many pending tasks, system is busy. Please wait a while and retry.</source>
+        <target>微博服务器任务过多，系统繁忙。请稍后再试。</target>
+        <note>Weibo server has too many pending tasks, system is busy. Please wait a while and retry.</note>
+      </trans-unit>
+      <trans-unit id="Weibo service error. Please wait a while and try again." xml:space="preserve">
+        <source>Weibo service error. Please wait a while and try again.</source>
+        <target>微博服务器故障，请稍后再试。</target>
+        <note>Weibo service error. Please wait a while and try again.</note>
+      </trans-unit>
+      <trans-unit id="Weibo service is unavailable. Please wait a while and try again." xml:space="preserve">
+        <source>Weibo service is unavailable. Please wait a while and try again.</source>
+        <target>微博服务器故障，请稍后再试。</target>
+        <note>Weibo service is unavailable. Please wait a while and try again.</note>
+      </trans-unit>
+      <trans-unit id="Weibo system error. Please wait a while and try again." xml:space="preserve">
+        <source>Weibo system error. Please wait a while and try again.</source>
+        <target>微博服务器出错，请稍后再试。</target>
+        <note>Weibo system error. Please wait a while and try again.</note>
+      </trans-unit>
+      <trans-unit id="Would you like to give us your feedback on how to improve Poster 2?" xml:space="preserve">
+        <source>Would you like to give us your feedback on how to improve Poster 2?</source>
+        <target>您是否对于咕唧2有改进的建议？</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Write Post" xml:space="preserve">
+        <source>Write Post</source>
+        <target>编写内容</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Yes" xml:space="preserve">
+        <source>Yes</source>
+        <target>是</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="You account is labelled as a spam account. If you think you are not, please filing a ticket at https://support.twitter.com/forms/platform ." xml:space="preserve">
+        <source>You account is labelled as a spam account. If you think you are not, please filing a ticket at https://support.twitter.com/forms/platform .</source>
+        <target>您的帐户被推特官方归类为滥发广告。如果您对此有质疑，请与Twitter客服联系。网址：https://support.twitter.com/forms/platform</target>
+        <note>You account is labelled as a spam account. If you think you are not, please filing a ticket at https://support.twitter.com/forms/platform .</note>
+      </trans-unit>
+      <trans-unit id="You account is temporarily locked by Twitter because your account sent spam and did other malicious activity. You need to login to https://twitter.com to unlock your account." xml:space="preserve">
+        <source>You account is temporarily locked by Twitter because your account sent spam and did other malicious activity. You need to login to https://twitter.com to unlock your account.</source>
+        <target>您的帐户因滥发广告或其它可疑行为被推特官方临时锁定。您需要登录https://twitter.com来解锁。</target>
+        <note>You account is temporarily locked by Twitter because your account sent spam and did other malicious activity. You need to login to https://twitter.com to unlock your account.</note>
+      </trans-unit>
+      <trans-unit id="You didn't choose the profile image!" xml:space="preserve">
+        <source>You didn't choose the profile image!</source>
+        <target>您没有选择账户头像！</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="You have a draft, do you still want to quit?" xml:space="preserve">
+        <source>You have a draft, do you still want to quit?</source>
+        <target>您有尚未发布的草稿，是否确定要退出？</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="You have an unsaved content template!" xml:space="preserve">
+        <source>You have an unsaved content template!</source>
+        <target>您有未保存的内容模板！</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="You have not select any templates." xml:space="preserve">
+        <source>You have not select any templates.</source>
+        <target>您没有选中任何模板。</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="You have posted too many pieces of Weibo in a short time." xml:space="preserve">
+        <source>You have posted too many pieces of Weibo in a short time.</source>
+        <target>您短期内发布了过多的微博。</target>
+        <note>You have posted too many pieces of Weibo in a short time.</note>
+      </trans-unit>
+      <trans-unit id="You have sent too many Tweets. Please try again later." xml:space="preserve">
+        <source>You have sent too many Tweets. Please try again later.</source>
+        <target>您今天发布了过多的推特。请明天再试。</target>
+        <note>You have sent too many Tweets. Please try again later.</note>
+      </trans-unit>
+      <trans-unit id="You have sent too many pieces of Weibo on this IP address." xml:space="preserve">
+        <source>You have sent too many pieces of Weibo on this IP address.</source>
+        <target>您在当前的IP地址发布了太多的微博。</target>
+        <note>You have sent too many pieces of Weibo on this IP address.</note>
+      </trans-unit>
+      <trans-unit id="You must create an account in Poster main app before sharing anything." xml:space="preserve">
+        <source>You must create an account in Poster main app before sharing anything.</source>
+        <target>您必须先在咕唧的主程序中创建账户，然后才能进行分享。</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="You must select a Twitter account first." xml:space="preserve">
+        <source>You must select a Twitter account first.</source>
+        <target>您必须先选中一个推特账户。</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="You must select an account first." xml:space="preserve">
+        <source>You must select an account first.</source>
+        <target>你必须先选中一个账户。</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="You must select at least one account to remove." xml:space="preserve">
+        <source>You must select at least one account to remove.</source>
+        <target>您必须至少选中一个账户，才能删除。</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="You must select one template to edit." xml:space="preserve">
+        <source>You must select one template to edit.</source>
+        <target>您必须选择一个模板，才能编辑。</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="You need to select at least two accounts to create an identity account." xml:space="preserve">
+        <source>You need to select at least two accounts to create an identity account.</source>
+        <target>您必须选中至少两个账户，才能创建身份账户。</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="You sent too many Tweets. Please do not send a lot of Tweets in a short time." xml:space="preserve">
+        <source>You sent too many Tweets. Please do not send a lot of Tweets in a short time.</source>
+        <target>您发送推特超出限制。请不要在短时间内发布大量推特。</target>
+        <note>You sent too many Tweets. Please do not send a lot of Tweets in a short time.</note>
+      </trans-unit>
+      <trans-unit id="Your IP address is blocked by Weibo. If you are using WiFi, try to disconnect and reconnect you network through your router." xml:space="preserve">
+        <source>Your IP address is blocked by Weibo. If you are using WiFi, try to disconnect and reconnect you network through your router.</source>
+        <target>您当前的IP地址已经被微博屏蔽。如果是您是通过WiFi连接的，建议您在路由器中断开连接再重新连接。</target>
+        <note>Your IP address is blocked by Weibo. If you are using WiFi, try to disconnect and reconnect you network through your router.</note>
+      </trans-unit>
+      <trans-unit id="Your Weibo contains ads. Please revise and post again." xml:space="preserve">
+        <source>Your Weibo contains ads. Please revise and post again.</source>
+        <target>此条微博包含广告信息。请修改后再重新发布。</target>
+        <note>Your Weibo contains ads. Please revise and post again.</note>
+      </trans-unit>
+      <trans-unit id="Your Weibo contains forbid words. Please revise and post again." xml:space="preserve">
+        <source>Your Weibo contains forbid words. Please revise and post again.</source>
+        <target>此条微博包含违禁词。请修改后再重新发布。</target>
+        <note>Your Weibo contains forbid words. Please revise  and post again.</note>
+      </trans-unit>
+      <trans-unit id="Your Weibo contains illegal content. Please revise and post again." xml:space="preserve">
+        <source>Your Weibo contains illegal content. Please revise and post again.</source>
+        <target>此条微博包含非法内容。请修改后再重新发布。</target>
+        <note>Your Weibo contains illegal content. Please revise and post again.</note>
+      </trans-unit>
+      <trans-unit id="Your Weibo contains illegal website. Please revise and post again." xml:space="preserve">
+        <source>Your Weibo contains illegal website. Please revise and post again.</source>
+        <target>此条微博包含非法网站。请修改后再重新发布。</target>
+        <note>Your Weibo contains illegal website. Please revise and post again.</note>
+      </trans-unit>
+      <trans-unit id="Your account is invalid. Maybe your account is blocked." xml:space="preserve">
+        <source>Your account is invalid. Maybe your account is blocked.</source>
+        <target>您的账户非法。可能是被微博禁言或关闭。</target>
+        <note>Your account is invalid. Maybe your account is blocked.</note>
+      </trans-unit>
+      <trans-unit id="Your account is suspended by Twitter." xml:space="preserve">
+        <source>Your account is suspended by Twitter.</source>
+        <target>您的帐户已经被推特官方吊销。</target>
+        <note>Your account is suspended by Twitter.</note>
+      </trans-unit>
+      <trans-unit id="Your account or IP address is block by Weibo." xml:space="preserve">
+        <source>Your account or IP address is block by Weibo.</source>
+        <target>您的帐户或所在IP地址已被微博屏蔽。</target>
+        <note>Your account or IP address is block by Weibo.</note>
+      </trans-unit>
+      <trans-unit id="Your previous Weibo login in Poster is expired. Please re-login." xml:space="preserve">
+        <source>Your previous Weibo login in Poster is expired. Please re-login.</source>
+        <target>您之前的微博登录已过期。请重新登录。</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="Poster/Post/Base.lproj/PostViewController2.xib" source-language="en" target-language="zh-Hans" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="11.3.1" build-num="11C504"/>
+    </header>
+    <body>
+      <trans-unit id="B1A-4m-NPk.title" xml:space="preserve">
+        <source>Post</source>
+        <target>发布</target>
+        <note>Class = "NSButtonCell"; title = "Post"; ObjectID = "B1A-4m-NPk";</note>
+      </trans-unit>
+      <trans-unit id="Lqk-PI-sM8.title" xml:space="preserve">
+        <source>Cancel</source>
+        <target>取消</target>
+        <note>Class = "NSButtonCell"; title = "Cancel"; ObjectID = "Lqk-PI-sM8";</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="Poster/Post/Resources/Base.lproj/ResourcesViewController.xib" source-language="en" target-language="zh-Hans" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="11.3.1" build-num="11C504"/>
+    </header>
+    <body>
+      <trans-unit id="b6v-ar-397.title" xml:space="preserve">
+        <source>Cancel</source>
+        <target>取消</target>
+        <note>Class = "NSButtonCell"; title = "Cancel"; ObjectID = "b6v-ar-397";</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="Poster/Post/Templates/Base.lproj/ContentTemplateEditorViewController.xib" source-language="en" target-language="zh-Hans" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="11.3.1" build-num="11C504"/>
+    </header>
+    <body>
+      <trans-unit id="3Cp-IN-H3o.title" xml:space="preserve">
+        <source>Item 3</source>
+        <target>Item 3</target>
+        <note>Class = "NSMenuItem"; title = "Item 3"; ObjectID = "3Cp-IN-H3o";</note>
+      </trans-unit>
+      <trans-unit id="3H2-n2-fv4.title" xml:space="preserve">
+        <source>Help</source>
+        <target>帮助</target>
+        <note>Class = "NSButtonCell"; title = "Help"; ObjectID = "3H2-n2-fv4";</note>
+      </trans-unit>
+      <trans-unit id="6X8-89-vfw.title" xml:space="preserve">
+        <source>Item 1</source>
+        <target>Item 1</target>
+        <note>Class = "NSMenuItem"; title = "Item 1"; ObjectID = "6X8-89-vfw";</note>
+      </trans-unit>
+      <trans-unit id="gGN-5H-Ikk.placeholderString" xml:space="preserve">
+        <source>Title</source>
+        <target>标题</target>
+        <note>Class = "NSTextFieldCell"; placeholderString = "Title"; ObjectID = "gGN-5H-Ikk";</note>
+      </trans-unit>
+      <trans-unit id="jla-UO-b4p.ibShadowedLabels[0]" xml:space="preserve">
+        <source>Parameters</source>
+        <target>参数</target>
+        <note>Class = "NSSegmentedCell"; jla-UO-b4p.ibShadowedLabels[0] = "Parameters"; ObjectID = "jla-UO-b4p";</note>
+      </trans-unit>
+      <trans-unit id="oZj-ys-Jbd.title" xml:space="preserve">
+        <source>Cancel</source>
+        <target>取消</target>
+        <note>Class = "NSButtonCell"; title = "Cancel"; ObjectID = "oZj-ys-Jbd";</note>
+      </trans-unit>
+      <trans-unit id="u8P-xt-zWq.title" xml:space="preserve">
+        <source>Item 2</source>
+        <target>Item 2</target>
+        <note>Class = "NSMenuItem"; title = "Item 2"; ObjectID = "u8P-xt-zWq";</note>
+      </trans-unit>
+      <trans-unit id="zO5-gr-cOQ.title" xml:space="preserve">
+        <source>Done</source>
+        <target>完成</target>
+        <note>Class = "NSButtonCell"; title = "Done"; ObjectID = "zO5-gr-cOQ";</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="Poster/Post/Templates/Base.lproj/ContentTemplateViewController.xib" source-language="en" target-language="zh-Hans" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="11.3.1" build-num="11C504"/>
+    </header>
+    <body>
+      <trans-unit id="VE2-wI-CGY.title" xml:space="preserve">
+        <source>Edit</source>
+        <target>编辑</target>
+        <note>Class = "NSButtonCell"; title = "Edit"; ObjectID = "VE2-wI-CGY";</note>
+      </trans-unit>
+      <trans-unit id="f7N-Cy-bek.title" xml:space="preserve">
+        <source>Apply</source>
+        <target>使用</target>
+        <note>Class = "NSButtonCell"; title = "Apply"; ObjectID = "f7N-Cy-bek";</note>
+      </trans-unit>
+      <trans-unit id="mGw-Xj-E5X.title" xml:space="preserve">
+        <source>Remove</source>
+        <target>移除</target>
+        <note>Class = "NSButtonCell"; title = "Remove"; ObjectID = "mGw-Xj-E5X";</note>
+      </trans-unit>
+      <trans-unit id="rru-WD-DIm.title" xml:space="preserve">
+        <source>Add</source>
+        <target>添加</target>
+        <note>Class = "NSButtonCell"; title = "Add"; ObjectID = "rru-WD-DIm";</note>
+      </trans-unit>
+      <trans-unit id="usV-gr-Vzz.title" xml:space="preserve">
+        <source>Cancel</source>
+        <target>取消</target>
+        <note>Class = "NSButtonCell"; title = "Cancel"; ObjectID = "usV-gr-Vzz";</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="SharingAPI/en.lproj/InfoPlist.strings" source-language="en" target-language="zh-Hans" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="11.3.1" build-num="11C504"/>
+    </header>
+    <body>
+      <trans-unit id="CFBundleName" xml:space="preserve">
+        <source>SharingAPI</source>
+        <note>Bundle name</note>
+      </trans-unit>
+      <trans-unit id="NSHumanReadableCopyright" xml:space="preserve">
+        <source>Copyright © 2017 ParusSoft.com. All rights reserved.</source>
+        <target>版权所有 © 2017 ParusSoft.com。 所有权利保留。</target>
+        <note>Copyright (human-readable)</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="SharingAPI/en.lproj/Localizable.strings" source-language="en" target-language="zh-Hans" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="11.3.1" build-num="11C504"/>
+    </header>
+    <body>
+      <trans-unit id="ALT: %0.1fm" xml:space="preserve">
+        <source>ALT: %0.1fm</source>
+        <target>海拔：%0.1f米</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Autumn Yellow" xml:space="preserve">
+        <source>Autumn Yellow</source>
+        <target>秋黄</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Classic" xml:space="preserve">
+        <source>Classic</source>
+        <target>经典</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Facebook" xml:space="preserve">
+        <source>Facebook</source>
+        <target>脸书</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Facebook only accepts a movie under 20 minutes." xml:space="preserve">
+        <source>Facebook only accepts a movie under 20 minutes.</source>
+        <target>脸书规定视频不能超过20分钟。</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="For account type %@, a movie must not be bigger than %@ MB." xml:space="preserve">
+        <source>For account type %1$@, a movie must not be bigger than %2$@ MB.</source>
+        <target>对于%1$@类型的账户，视频不能超过%2$@ MB。</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Gif is too big or too long." xml:space="preserve">
+        <source>Gif is too big or too long.</source>
+        <target>Gif过大或过长。</target>
+        <note>Gif is too big or too long.</note>
+      </trans-unit>
+      <trans-unit id="Got an attributed String.&#10;Will create a image.&#10;&#10;" xml:space="preserve">
+        <source>Got an attributed String.
+Will create a image.
+
+</source>
+        <target>获得了带格式的文本。
+将创建为图片。
+</target>
+        <note>Got an attributed String</note>
+      </trans-unit>
+      <trans-unit id="Identity" xml:space="preserve">
+        <source>Identity</source>
+        <target>身份</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Quote with Comments" xml:space="preserve">
+        <source>Quote with Comments</source>
+        <target>引用并评论</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Retweet" xml:space="preserve">
+        <source>Retweet</source>
+        <target>转推</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Spring Green" xml:space="preserve">
+        <source>Spring Green</source>
+        <target>春绿</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Summer Blue" xml:space="preserve">
+        <source>Summer Blue</source>
+        <target>夏蓝</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Twitter" xml:space="preserve">
+        <source>Twitter</source>
+        <target>推特</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Twitter only accepts a movie in 0.5 to 140 seconds." xml:space="preserve">
+        <source>Twitter only accepts a movie in 0.5 to 140 seconds.</source>
+        <target>推特仅支持时长为0.5秒到140秒的视频。</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Unsupported attachment type." xml:space="preserve">
+        <source>Unsupported attachment type.</source>
+        <target>不支持的附件类型。</target>
+        <note>Unsupported attachment file</note>
+      </trans-unit>
+      <trans-unit id="Unsupported file type: .%@" xml:space="preserve">
+        <source>Unsupported file type: .%@</source>
+        <target>不支持的文件类型：.%@</target>
+        <note>Unsupported file type</note>
+      </trans-unit>
+      <trans-unit id="Weibo" xml:space="preserve">
+        <source>Weibo</source>
+        <target>微博</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Winter White" xml:space="preserve">
+        <source>Winter White</source>
+        <target>冬白</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="Watch Poster Extension/en.lproj/InfoPlist.strings" source-language="en" target-language="zh-Hans" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="11.3.1" build-num="11C504"/>
+    </header>
+    <body>
+      <trans-unit id="CFBundleDisplayName" xml:space="preserve">
+        <source>Poster 2</source>
+        <target>咕唧2</target>
+        <note>Bundle display name</note>
+      </trans-unit>
+      <trans-unit id="CFBundleName" xml:space="preserve">
+        <source>Watch Poster 2 Extension</source>
+        <note>Bundle name</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="Watch Poster Extension/en.lproj/Localizable.strings" source-language="en" target-language="zh-Hans" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="11.3.1" build-num="11C504"/>
+    </header>
+    <body>
+      <trans-unit id="%@ • %@" xml:space="preserve">
+        <source>%1$@ • %2$@</source>
+        <target>%1$@ • %2$@</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Accounts: %@" xml:space="preserve">
+        <source>Accounts: %@</source>
+        <target>账户：%@</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="An invalid format is specified in your Tweet." xml:space="preserve">
+        <source>An invalid format is specified in your Tweet.</source>
+        <target>推特内包含不支持的格式。</target>
+        <note>An invalid format is specified in your Tweet.</note>
+      </trans-unit>
+      <trans-unit id="Bad format data Twitter returns." xml:space="preserve">
+        <source>Bad format data Twitter returns.</source>
+        <target>从推特返回的数据的格式是错误的。</target>
+        <note>Bad format data Twitter returns.</note>
+      </trans-unit>
+      <trans-unit id="Bad format data Weibo returns." xml:space="preserve">
+        <source>Bad format data Weibo returns.</source>
+        <target>从微博返回的数据的格式是错误的。</target>
+        <note>Bad format data Weibo returns.</note>
+      </trans-unit>
+      <trans-unit id="Cancel" xml:space="preserve">
+        <source>Cancel</source>
+        <target>取消</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Error happened" xml:space="preserve">
+        <source>Error happened</source>
+        <target>发生错误</target>
+        <note>Error happened</note>
+      </trans-unit>
+      <trans-unit id="Local Network Error" xml:space="preserve">
+        <source>Local Network Error</source>
+        <target>本地网络错误</target>
+        <note>Local Network Error</note>
+      </trans-unit>
+      <trans-unit id="Maybe your network speed is too slow." xml:space="preserve">
+        <source>Maybe your network speed is too slow.</source>
+        <target>可能是您当前网速过慢。</target>
+        <note>Maybe your network speed is too slow.</note>
+      </trans-unit>
+      <trans-unit id="No Accounts" xml:space="preserve">
+        <source>No Accounts</source>
+        <target>无账户</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="OK" xml:space="preserve">
+        <source>OK</source>
+        <target>确定</target>
+        <note>OK</note>
+      </trans-unit>
+      <trans-unit id="Please Notify Me" xml:space="preserve">
+        <source>Please Notify Me</source>
+        <target>请通知我</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Please capture this screen and send this back to developer." xml:space="preserve">
+        <source>Please capture this screen and send this back to developer.</source>
+        <target>请截图并反馈给开发者。</target>
+        <note>untranslatated error</note>
+      </trans-unit>
+      <trans-unit id="Please do not post the same Weibo repeatedly." xml:space="preserve">
+        <source>Please do not post the same Weibo repeatedly.</source>
+        <target>请不要连续发布相同的微博内容。</target>
+        <note>Please do not post the same Weibo repeatedly.</note>
+      </trans-unit>
+      <trans-unit id="Poster" xml:space="preserve">
+        <source>Poster</source>
+        <target>咕唧</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Posting Weibo Failed" xml:space="preserve">
+        <source>Posting Weibo Failed</source>
+        <target>微博发布失败</target>
+        <note>Posting Weibo Failed</note>
+      </trans-unit>
+      <trans-unit id="Refetch User Info" xml:space="preserve">
+        <source>Refetch User Info</source>
+        <target>重新获取用户信息</target>
+        <note>Refetch User Info</note>
+      </trans-unit>
+      <trans-unit id="The Twitter servers are up, but overloaded with requests. Try again later." xml:space="preserve">
+        <source>The Twitter servers are up, but overloaded with requests. Try again later.</source>
+        <target>推特服务器过于繁忙，请稍后再试。</target>
+        <note>The Twitter servers are up, but overloaded with requests. Try again later.</note>
+      </trans-unit>
+      <trans-unit id="The URL value provided is not a URL that can be attached to this Tweet." xml:space="preserve">
+        <source>The URL value provided is not a URL that can be attached to this Tweet.</source>
+        <target>推特中网址对应的文件无法获取。</target>
+        <note>The URL value provided is not a URL that can be attached to this Tweet.</note>
+      </trans-unit>
+      <trans-unit id="The requested Tweet ID is not found (if it existed, it was probably deleted)." xml:space="preserve">
+        <source>The requested Tweet ID is not found (if it existed, it was probably deleted).</source>
+        <target>不存在此推特ID。可能该ID已经被删除。</target>
+        <note>The requested Tweet ID is not found (if it existed, it was probably deleted).</note>
+      </trans-unit>
+      <trans-unit id="The status text has already been Tweeted by the authenticated account." xml:space="preserve">
+        <source>The status text has already been Tweeted by the authenticated account.</source>
+        <target>内容重复。请不要反复发布相同的内容。</target>
+        <note>The status text has already been Tweeted by the authenticated account.</note>
+      </trans-unit>
+      <trans-unit id="The user account has been suspended and information cannot be retrieved." xml:space="preserve">
+        <source>The user account has been suspended and information cannot be retrieved.</source>
+        <target>该用户帐户被吊销。信息无法获得。</target>
+        <note>The user account has been suspended and information cannot be retrieved.</note>
+      </trans-unit>
+      <trans-unit id="This resource is gone." xml:space="preserve">
+        <source>This resource is gone.</source>
+        <target>资源不存在。</target>
+        <note>This resource is gone.</note>
+      </trans-unit>
+      <trans-unit id="Timestamp out of bounds (check your system clock)." xml:space="preserve">
+        <source>Timestamp out of bounds (check your system clock).</source>
+        <target>推特无法验证你。请检查你的系统显示的时间是否正常。</target>
+        <note>Timestamp out of bounds (check your system clock).</note>
+      </trans-unit>
+      <trans-unit id="Tweeting Failed" xml:space="preserve">
+        <source>Tweeting Failed</source>
+        <target>推特发送失败</target>
+        <note>Tweeting Failed</note>
+      </trans-unit>
+      <trans-unit id="Twitter is down or being upgraded. Try again later." xml:space="preserve">
+        <source>Twitter is down or being upgraded. Try again later.</source>
+        <target>推特网站出错或正在升级中。请稍后再试。</target>
+        <note>Twitter is down or being upgraded. Try again later.</note>
+      </trans-unit>
+      <trans-unit id="Twitter is temporarily over capacity. Please try again later." xml:space="preserve">
+        <source>Twitter is temporarily over capacity. Please try again later.</source>
+        <target>推特服务器负载过高。请稍后再试。</target>
+        <note>Twitter is temporarily over capacity. Please try again later.</note>
+      </trans-unit>
+      <trans-unit id="Twitter server internal error. Try again later." xml:space="preserve">
+        <source>Twitter server internal error. Try again later.</source>
+        <target>推特服务器内部错误。请稍后再试。</target>
+        <note>Twitter server internal error. Try again later.</note>
+      </trans-unit>
+      <trans-unit id="Twitter server timeout. Try again later." xml:space="preserve">
+        <source>Twitter server timeout. Try again later.</source>
+        <target>推特服务器超时。请稍后再试。</target>
+        <note>Twitter server timeout. Try again later.</note>
+      </trans-unit>
+      <trans-unit id="Use &quot;Add a Weibo Account&quot; menu to login Weibo accounts again." xml:space="preserve">
+        <source>Use "Add a Weibo Account" menu to login Weibo accounts again.</source>
+        <target>使用“添加微博账户”菜单来重新登录微博账户。</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Weibo Account Notification" xml:space="preserve">
+        <source>Weibo Account Notification</source>
+        <target>微博账户通知</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Weibo Accounts Expired" xml:space="preserve">
+        <source>Weibo Accounts Expired</source>
+        <target>微博账户已过期</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Weibo Accounts Will Expire" xml:space="preserve">
+        <source>Weibo Accounts Will Expire</source>
+        <target>微博账户即将过期</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Weibo RPC error. Please wait a while and try again." xml:space="preserve">
+        <source>Weibo RPC error. Please wait a while and try again.</source>
+        <target>微博服务器故障，请稍后再试。</target>
+        <note>Weibo RPC error. Please wait a while and try again.</note>
+      </trans-unit>
+      <trans-unit id="Weibo request its user to reauthorize account every 30 days. Poster can check that and notify you to reauthorize so you won't get the authorized failed error when posting." xml:space="preserve">
+        <source>Weibo request its user to reauthorize account every 30 days. Poster can check that and notify you to reauthorize so you won't get the authorized failed error when posting.</source>
+        <target>微博要求用户每30天授权一次。咕唧可以查看当前授权是否过期，并提醒您重新授权。这样可以避免您在发送时出现授权过期的错误。</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Weibo server has too many pending tasks, system is busy. Please wait a while and retry." xml:space="preserve">
+        <source>Weibo server has too many pending tasks, system is busy. Please wait a while and retry.</source>
+        <target>微博服务器任务过多，系统繁忙。请稍后再试。</target>
+        <note>Weibo server has too many pending tasks, system is busy. Please wait a while and retry.</note>
+      </trans-unit>
+      <trans-unit id="Weibo service error. Please wait a while and try again." xml:space="preserve">
+        <source>Weibo service error. Please wait a while and try again.</source>
+        <target>微博服务器故障，请稍后再试。</target>
+        <note>Weibo service error. Please wait a while and try again.</note>
+      </trans-unit>
+      <trans-unit id="Weibo service is unavailable. Please wait a while and try again." xml:space="preserve">
+        <source>Weibo service is unavailable. Please wait a while and try again.</source>
+        <target>微博服务器故障，请稍后再试。</target>
+        <note>Weibo service is unavailable. Please wait a while and try again.</note>
+      </trans-unit>
+      <trans-unit id="Weibo system error. Please wait a while and try again." xml:space="preserve">
+        <source>Weibo system error. Please wait a while and try again.</source>
+        <target>微博服务器出错，请稍后再试。</target>
+        <note>Weibo system error. Please wait a while and try again.</note>
+      </trans-unit>
+      <trans-unit id="You account is labelled as a spam account. If you think you are not, please filing a ticket at https://support.twitter.com/forms/platform ." xml:space="preserve">
+        <source>You account is labelled as a spam account. If you think you are not, please filing a ticket at https://support.twitter.com/forms/platform .</source>
+        <target>您的帐户被推特官方归类为滥发广告。如果您对此有质疑，请与Twitter客服联系。网址：https://support.twitter.com/forms/platform</target>
+        <note>You account is labelled as a spam account. If you think you are not, please filing a ticket at https://support.twitter.com/forms/platform .</note>
+      </trans-unit>
+      <trans-unit id="You account is temporarily locked by Twitter because your account sent spam and did other malicious activity. You need to login to https://twitter.com to unlock your account." xml:space="preserve">
+        <source>You account is temporarily locked by Twitter because your account sent spam and did other malicious activity. You need to login to https://twitter.com to unlock your account.</source>
+        <target>您的帐户因滥发广告或其它可疑行为被推特官方临时锁定。您需要登录https://twitter.com来解锁。</target>
+        <note>You account is temporarily locked by Twitter because your account sent spam and did other malicious activity. You need to login to https://twitter.com to unlock your account.</note>
+      </trans-unit>
+      <trans-unit id="You have posted too many pieces of Weibo in a short time." xml:space="preserve">
+        <source>You have posted too many pieces of Weibo in a short time.</source>
+        <target>您短期内发布了过多的微博。</target>
+        <note>You have posted too many pieces of Weibo in a short time.</note>
+      </trans-unit>
+      <trans-unit id="You have sent too many Tweets. Please try again later." xml:space="preserve">
+        <source>You have sent too many Tweets. Please try again later.</source>
+        <target>您今天发布了过多的推特。请明天再试。</target>
+        <note>You have sent too many Tweets. Please try again later.</note>
+      </trans-unit>
+      <trans-unit id="You have sent too many pieces of Weibo on this IP address." xml:space="preserve">
+        <source>You have sent too many pieces of Weibo on this IP address.</source>
+        <target>您在当前的IP地址发布了太多的微博。</target>
+        <note>You have sent too many pieces of Weibo on this IP address.</note>
+      </trans-unit>
+      <trans-unit id="You sent too many Tweets. Please do not send a lot of Tweets in a short time." xml:space="preserve">
+        <source>You sent too many Tweets. Please do not send a lot of Tweets in a short time.</source>
+        <target>您发送推特超出限制。请不要在短时间内发布大量推特。</target>
+        <note>You sent too many Tweets. Please do not send a lot of Tweets in a short time.</note>
+      </trans-unit>
+      <trans-unit id="Your IP address is blocked by Weibo. If you are using WiFi, try to disconnect and reconnect you network through your router." xml:space="preserve">
+        <source>Your IP address is blocked by Weibo. If you are using WiFi, try to disconnect and reconnect you network through your router.</source>
+        <target>您当前的IP地址已经被微博屏蔽。如果是您是通过WiFi连接的，建议您在路由器中断开连接再重新连接。</target>
+        <note>Your IP address is blocked by Weibo. If you are using WiFi, try to disconnect and reconnect you network through your router.</note>
+      </trans-unit>
+      <trans-unit id="Your Weibo contains ads. Please revise and post again." xml:space="preserve">
+        <source>Your Weibo contains ads. Please revise and post again.</source>
+        <target>此条微博包含广告信息。请修改后再重新发布。</target>
+        <note>Your Weibo contains ads. Please revise and post again.</note>
+      </trans-unit>
+      <trans-unit id="Your Weibo contains forbid words. Please revise and post again." xml:space="preserve">
+        <source>Your Weibo contains forbid words. Please revise and post again.</source>
+        <target>此条微博包含违禁词。请修改后再重新发布。</target>
+        <note>Your Weibo contains forbid words. Please revise  and post again.</note>
+      </trans-unit>
+      <trans-unit id="Your Weibo contains illegal content. Please revise and post again." xml:space="preserve">
+        <source>Your Weibo contains illegal content. Please revise and post again.</source>
+        <target>此条微博包含非法内容。请修改后再重新发布。</target>
+        <note>Your Weibo contains illegal content. Please revise and post again.</note>
+      </trans-unit>
+      <trans-unit id="Your Weibo contains illegal website. Please revise and post again." xml:space="preserve">
+        <source>Your Weibo contains illegal website. Please revise and post again.</source>
+        <target>此条微博包含非法网站。请修改后再重新发布。</target>
+        <note>Your Weibo contains illegal website. Please revise and post again.</note>
+      </trans-unit>
+      <trans-unit id="Your account is invalid. Maybe your account is blocked." xml:space="preserve">
+        <source>Your account is invalid. Maybe your account is blocked.</source>
+        <target>您的账户非法。可能是被微博禁言或关闭。</target>
+        <note>Your account is invalid. Maybe your account is blocked.</note>
+      </trans-unit>
+      <trans-unit id="Your account is suspended by Twitter." xml:space="preserve">
+        <source>Your account is suspended by Twitter.</source>
+        <target>您的帐户已经被推特官方吊销。</target>
+        <note>Your account is suspended by Twitter.</note>
+      </trans-unit>
+      <trans-unit id="Your account or IP address is block by Weibo." xml:space="preserve">
+        <source>Your account or IP address is block by Weibo.</source>
+        <target>您的帐户或所在IP地址已被微博屏蔽。</target>
+        <note>Your account or IP address is block by Weibo.</note>
+      </trans-unit>
+      <trans-unit id="Your previous Weibo login in Poster is expired. Please re-login." xml:space="preserve">
+        <source>Your previous Weibo login in Poster is expired. Please re-login.</source>
+        <target>您之前的微博登录已过期。请重新登录。</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="Watch Poster/Base.lproj/Interface.storyboard" source-language="en" target-language="zh-Hans" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="11.3.1" build-num="11C504"/>
+    </header>
+    <body>
+      <trans-unit id="E3j-6j-369.text" xml:space="preserve">
+        <source>...</source>
+        <target>...</target>
+        <note>Class = "WKInterfaceLabel"; text = "..."; ObjectID = "E3j-6j-369";</note>
+      </trans-unit>
+      <trans-unit id="QSK-qn-C7Y.text" xml:space="preserve">
+        <source>Label</source>
+        <target>标签</target>
+        <note>Class = "WKInterfaceLabel"; text = "Label"; ObjectID = "QSK-qn-C7Y";</note>
+      </trans-unit>
+      <trans-unit id="ZGy-0D-0nE.text" xml:space="preserve">
+        <source>Label</source>
+        <target>标签</target>
+        <note>Class = "WKInterfaceLabel"; text = "Label"; ObjectID = "ZGy-0D-0nE";</note>
+      </trans-unit>
+      <trans-unit id="oj4-DM-RgG.text" xml:space="preserve">
+        <source>No Accounts</source>
+        <target>无账户</target>
+        <note>Class = "WKInterfaceLabel"; text = "No Accounts"; ObjectID = "oj4-DM-RgG";</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="watchOS SharingAPI/en.lproj/InfoPlist.strings" source-language="en" target-language="zh-Hans" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="11.3.1" build-num="11C504"/>
+    </header>
+    <body>
+      <trans-unit id="CFBundleName" xml:space="preserve">
+        <source>watchOS_SharingAPI</source>
+        <note>Bundle name</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="watchOS SharingAPI/en.lproj/Localizable.strings" source-language="en" target-language="zh-Hans" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="11.3.1" build-num="11C504"/>
+    </header>
+    <body>
+      <trans-unit id="ALT: %0.1fm" xml:space="preserve">
+        <source>ALT: %0.1fm</source>
+        <target>海拔：%0.1f米</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Autumn Yellow" xml:space="preserve">
+        <source>Autumn Yellow</source>
+        <target>秋黄</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Classic" xml:space="preserve">
+        <source>Classic</source>
+        <target>经典</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Facebook" xml:space="preserve">
+        <source>Facebook</source>
+        <target>脸书</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Identity" xml:space="preserve">
+        <source>Identity</source>
+        <target>身份</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Quote with Comments" xml:space="preserve">
+        <source>Quote with Comments</source>
+        <target>引用并评论</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Retweet" xml:space="preserve">
+        <source>Retweet</source>
+        <target>转推</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Spring Green" xml:space="preserve">
+        <source>Spring Green</source>
+        <target>春绿</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Summer Blue" xml:space="preserve">
+        <source>Summer Blue</source>
+        <target>夏蓝</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Twitter" xml:space="preserve">
+        <source>Twitter</source>
+        <target>推特</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Weibo" xml:space="preserve">
+        <source>Weibo</source>
+        <target>微博</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Winter White" xml:space="preserve">
+        <source>Winter White</source>
+        <target>冬白</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
