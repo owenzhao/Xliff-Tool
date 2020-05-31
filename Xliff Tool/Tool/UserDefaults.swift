@@ -7,17 +7,16 @@
 //
 
 import Foundation
+import AppKit
 
 extension UserDefaults {
     enum Key:String {
-        case skipVerifiedResults
         case skipTranslatedResults
     }
     
     static func register() {
         let defaults:[String:Any] = [
-            UserDefaults.Key.skipVerifiedResults.rawValue : true,
-            UserDefaults.Key.skipTranslatedResults.rawValue: false
+            UserDefaults.Key.skipTranslatedResults.rawValue: NSControl.StateValue.off.rawValue
         ]
         
         UserDefaults.standard.register(defaults: defaults)

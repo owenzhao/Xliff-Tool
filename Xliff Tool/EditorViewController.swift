@@ -13,19 +13,12 @@ import Unrealm
 class EditorViewController: NSViewController {
     var transUnits:Results<XTTransUnit>!
     var transUnit:XTTransUnit? {
-        var results:Results<XTTransUnit> = transUnits
-        
+        var results = transUnits.filter("isVerified = false")
         let defaults = UserDefaults.standard
-        let skipVerifiedResults = defaults.bool(forKey: UserDefaults.Key.skipVerifiedResults.rawValue)
-        
-        if skipVerifiedResults {
-            results = results.filter("isVerified = false")
-        }
-        
-        let skipTranslatedResults = defaults.bool(forKey: UserDefaults.Key.skipTranslatedResults.rawValue)
+        let skipTranslatedResults = (defaults.integer(forKey: UserDefaults.Key.skipTranslatedResults.rawValue) == NSControl.StateValue.on.rawValue)
         
         if skipTranslatedResults {
-            results = results.filter("target != nil AND target != ''")
+            results = results.filter("target = nil || target = ''")
         }
         
         return results.first
@@ -260,24 +253,15 @@ extension EditorViewController {
             lowerBound = range.lowerBound + newLineData.count
         }
         
-//        var str = String(data: xmlData, encoding: .utf8)!
-//        str = str.replacingOccurrences(of: uuid, with: "&#10;")
-//        xmlData = str.data(using: .utf8)!
-        
         let url = (NSApp.delegate as! AppDelegate).xliffURL!
         try! xmlData.write(to: url, options: .atomic)
     }
     
-    @objc func skipVerifiedResults(_ sender: Any?) {
-        let isOn = ((sender as! NSMenuItem).state == .on)
-        UserDefaults.standard.set(isOn, forKey: UserDefaults.Key.skipVerifiedResults.rawValue)
-        
-        updateUI()
-    }
-    
-    @objc func skipTranslatedResults(_ sender: Any?) {
-        let isOn = ((sender as! NSMenuItem).state == .on)
-        UserDefaults.standard.set(isOn, forKey: UserDefaults.Key.skipTranslatedResults.rawValue)
+    @IBAction public func skipTranslatedResults(_ sender: Any?) {
+        let menuItem = (sender as! NSMenuItem)
+        let stateValue:NSControl.StateValue = (menuItem.state == .on) ? .off : .on
+        menuItem.state = stateValue
+        UserDefaults.standard.set(stateValue, forKey: UserDefaults.Key.skipTranslatedResults.rawValue)
         
         updateUI()
     }
