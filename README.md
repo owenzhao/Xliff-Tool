@@ -15,13 +15,13 @@ Xliff Tool makes you do your job a lot easier.
 
 ## Screenshots
 
-![Choose An Action-w50%](choose_action.png)
+![Choose An Action](choose_action.png)
 
-![Editor-w50%](editor.png)
+![Editor](editor.png)
 
 ## Icon
 
-![app icon-w256](xliff_tool_icon.png)
+![app icon](xliff_tool_icon.png)
 
 The icon of this app is from below.
 
