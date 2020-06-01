@@ -112,9 +112,6 @@
 /* Class = "NSMenuItem"; title = "View"; ObjectID = "H8h-7b-M4v"; */
 "H8h-7b-M4v.title" = "查看";
 
-/* Class = "NSMenuItem"; title = "Skip Verified Results"; ObjectID = "hUI-Ho-QHI"; */
-"hUI-Ho-QHI.title" = "跳过已审核的结果";
-
 /* Class = "NSMenu"; title = "View"; ObjectID = "HyV-fh-RgO"; */
 "HyV-fh-RgO.title" = "查看";
 

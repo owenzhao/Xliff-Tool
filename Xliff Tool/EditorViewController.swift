@@ -243,6 +243,7 @@ extension EditorViewController {
         
         let encoder = XMLEncoder()
         encoder.outputFormatting = .prettyPrinted
+        encoder.prettyPrintIndentation = .spaces(2)
         xmlData += try! encoder.encode(xliff, withRootKey: "xliff")
         let uuidData = uuid.data(using: .utf8)!
         let newLineData = "&#10;".data(using: .utf8)!
