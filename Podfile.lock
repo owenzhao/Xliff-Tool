@@ -13,7 +13,7 @@ PODS:
 DEPENDENCIES:
   - RealmSwift (< 5.0)
   - Unrealm
-  - XMLCoder (~> 0.11.1)
+  - XMLCoder (from `https://github.com/MaxDesiatov/XMLCoder.git`)
 
 SPEC REPOS:
   trunk:
@@ -21,7 +21,15 @@ SPEC REPOS:
     - RealmSwift
     - RuntimeNew
     - Unrealm
-    - XMLCoder
+
+EXTERNAL SOURCES:
+  XMLCoder:
+    :git: https://github.com/MaxDesiatov/XMLCoder.git
+
+CHECKOUT OPTIONS:
+  XMLCoder:
+    :commit: 0d1c1b9ee7b98dbb7ac770b1468899581c2dd65d
+    :git: https://github.com/MaxDesiatov/XMLCoder.git
 
 SPEC CHECKSUMS:
   Realm: 4eb04d7487bd43c0581256f40b424eafb711deff
@@ -30,6 +38,6 @@ SPEC CHECKSUMS:
   Unrealm: 96b011e441fcd0a51d749f14b140056a70610f0e
   XMLCoder: c4638336674de7ba279cd23f2005817d69f538e0
 
-PODFILE CHECKSUM: 5f6542505837dd2443c443c235e04b71159e4859
+PODFILE CHECKSUM: 8e8397d9d3aece83a24b6ca3da05d2d21e8038bd
 
 COCOAPODS: 1.9.3
