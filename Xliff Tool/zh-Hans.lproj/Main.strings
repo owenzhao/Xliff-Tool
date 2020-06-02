@@ -37,6 +37,9 @@
 /* Class = "NSTextFieldCell"; title = "Table View Cell"; ObjectID = "9pM-Se-qwd"; */
 "9pM-Se-qwd.title" = "Table View Cell";
 
+/* Class = "NSMenuItem"; title = "Open in Xcode"; ObjectID = "9Vj-hj-jhI"; */
+"9Vj-hj-jhI.title" = "使用Xcode打开";
+
 /* Class = "NSButtonCell"; title = "Open Google Translate"; ObjectID = "66u-Js-oNU"; */
 "66u-Js-oNU.title" = "打开谷歌翻译";
 
@@ -73,8 +76,8 @@
 /* Class = "NSMenuItem"; title = "Preferences…"; ObjectID = "BOF-NM-1cW"; */
 "BOF-NM-1cW.title" = "偏好设置…";
 
-/* Class = "NSMenuItem"; title = "Save As…"; ObjectID = "Bw7-FT-i3A"; */
-"Bw7-FT-i3A.title" = "保存为…";
+/* Class = "NSMenuItem"; title = "Export Xliff File…"; ObjectID = "Bw7-FT-i3A"; */
+"Bw7-FT-i3A.title" = "导出Xliff文件…";
 
 /* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "D2b-UJ-iHN"; */
 "D2b-UJ-iHN.title" = "Text Cell";
@@ -139,6 +142,9 @@
 /* Class = "NSMenuItem"; title = "Bring All to Front"; ObjectID = "LE2-aR-0XJ"; */
 "LE2-aR-0XJ.title" = "牵制全部窗口";
 
+/* Class = "NSMenuItem"; title = "Open Database Directory..."; ObjectID = "Mlc-gY-U1q"; */
+"Mlc-gY-U1q.title" = "打开数据库文件夹";
+
 /* Class = "NSTableColumn"; headerCell.title = "Data Type"; ObjectID = "mY8-la-btl"; */
 "mY8-la-btl.headerCell.title" = "数据类型";
 
@@ -163,8 +169,8 @@
 /* Class = "NSTextFieldCell"; title = "Source"; ObjectID = "pg9-yh-40W"; */
 "pg9-yh-40W.title" = "源";
 
-/* Class = "NSMenuItem"; title = "Save…"; ObjectID = "pxx-59-PXV"; */
-"pxx-59-PXV.title" = "保存…";
+/* Class = "NSMenuItem"; title = "Save"; ObjectID = "pxx-59-PXV"; */
+"pxx-59-PXV.title" = "保存";
 
 /* Class = "NSTextFieldCell"; title = "Table View Cell"; ObjectID = "q0P-Z3-915"; */
 "q0P-Z3-915.title" = "Table View Cell";

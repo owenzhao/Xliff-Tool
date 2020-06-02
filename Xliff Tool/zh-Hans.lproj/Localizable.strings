@@ -8,10 +8,19 @@
 "Create New Project" = "创建新项目";
 
 /* No comment provided by engineer. */
+"Export" = "导出";
+
+/* No comment provided by engineer. */
+"Make sure to backup before you delete anything." = "删除任何东西之前，一定要先备份。";
+
+/* No comment provided by engineer. */
 "Name Your Project" = "项目名称";
 
 /* No comment provided by engineer. */
 "New Project" = "新项目";
+
+/* No comment provided by engineer. */
+"No Xcode Found" = "找不到Xcode";
 
 /* No comment provided by engineer. */
 "Note" = "备注";
@@ -30,6 +39,12 @@
 
 /* No comment provided by engineer. */
 "Source" = "源";
+
+/* No comment provided by engineer. */
+"The operations you do next may get your data lost." = "您之后的操作可能导致您的数据丢失。";
+
+/* No comment provided by engineer. */
+"There is no Xcode.app in /Applications directory." = "/Applications（/应用程序）目录下没有Xcode.app应用。";
 
 /* No comment provided by engineer. */
 "Translated: " = "翻译：";
