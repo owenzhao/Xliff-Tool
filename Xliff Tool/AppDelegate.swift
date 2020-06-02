@@ -16,6 +16,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     var xliffURL:URL!
     var databaseURL:URL!
 
+    @IBOutlet weak var openRecentMenu: NSMenu!
+    
     func applicationWillFinishLaunching(_ notification: Notification) {
         UserDefaults.register()
         
@@ -40,6 +42,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             openDocument(nil)
         }
         
+        openRecentMenu.delegate = self
+        
         NotificationCenter.default.addObserver(self, selector: #selector(openEditor(_:)), name: DetailViewController.openEditor, object: nil)
     }
     
@@ -59,28 +63,19 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
 
     func application(_ sender: NSApplication, openFile filename: String) -> Bool {
-        print(filename)
+        let xliffExtension = ".xliff"
+        
+        guard filename.lowercased().hasSuffix(xliffExtension) else {
+            return false
+        }
         
         fileOpened = true
+        openFile(with: URL(fileURLWithPath: filename))
         
-        return false    
+        return true
     }
     
-    @objc func openDocument(_ sender: Any?) {
-        closeSplitWindow()
-        
-        let panel = NSOpenPanel()
-        panel.allowedFileTypes = ["xliff"]
-        panel.message = NSLocalizedString("Open Xliff", comment: "")
-
-        let response = panel.runModal()
-        if response == .OK {
-            xliffURL = panel.url!
-            setupUI()
-        } else if response == .cancel {
-            print("Cancel")
-        }
-    }
+    
     
     private func closeSplitWindow() {
         NSApp.windows.forEach {
@@ -178,5 +173,66 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         let originalFileIdSet = Set(realm.objects(XTFile.self).map { $0.id })
         
         return originalFileIdSet.intersection(fileIds)
+    }
+}
+
+extension AppDelegate {
+    @objc func openDocument(_ sender: Any?) {
+        closeSplitWindow()
+        
+        let panel = NSOpenPanel()
+        panel.allowedFileTypes = ["xliff"]
+        panel.message = NSLocalizedString("Open Xliff", comment: "")
+
+        let response = panel.runModal()
+        if response == .OK {
+            openFile(with:panel.url!)
+        }
+    }
+    
+    private func openFile(with url:URL) {
+        xliffURL = url
+        addToOpenRecent()
+        setupUI()
+    }
+    
+    @objc private func openFile(_ menuItem:NSMenuItem) {
+        xliffURL = URL(fileURLWithPath: menuItem.title)
+        addToOpenRecent()
+        setupUI()
+    }
+    
+    private func addToOpenRecent() {
+        NSDocumentController.shared.noteNewRecentDocumentURL(xliffURL)
+    }
+    
+    @IBAction func openDatabaseDirectory(_ sender: Any?) {
+        let alert = NSAlert()
+        alert.alertStyle = .critical
+        alert.messageText = NSLocalizedString("Make sure to backup before you delete anything.", comment: "")
+        alert.informativeText = NSLocalizedString("The operations you do next may get your data lost.", comment: "")
+        alert.addButton(withTitle: "Proceed")
+        alert.addButton(withTitle: "Cancel")
+        
+        NSSound.beep()
+        let response = alert.runModal()
+        if response == .alertFirstButtonReturn {
+            NSWorkspace.shared.open(URL.rootURL)
+        }
+    }
+}
+
+extension AppDelegate:NSMenuDelegate {
+    func menuNeedsUpdate(_ menu: NSMenu) {
+        let clearMenuMenuItem = menu.items.last!
+        let urls = NSDocumentController.shared.recentDocumentURLs
+        let menuItems = urls.map {
+            NSMenuItem(title: $0.path, action: #selector(openFile(_:)), keyEquivalent: "")
+        }
+        
+        menu.items = [
+            menuItems,
+            [NSMenuItem.separator(), clearMenuMenuItem]
+        ].flatMap({$0})
     }
 }

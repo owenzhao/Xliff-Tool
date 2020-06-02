@@ -150,6 +150,8 @@ class EditorViewController: NSViewController {
     }
     
     func updateUI() {
+        updateWindowTitle()
+        
         guard let transUnit = self.transUnit else {
             updateUIAllComplete()
 
@@ -162,29 +164,36 @@ class EditorViewController: NSViewController {
             return
         }
         
-        let isModifiedString = isEdited ? NSLocalizedString(" - Edited", comment: "") : ""
-        view.window?.title = (file?.original ?? "") + isModifiedString
-        
         updateProgress()
         
         sourceLabel.stringValue = transUnit.source
-        setAttributedString(transUnit.target ?? "")
+        targetTextView.string = transUnit.target ?? ""
+        setAttributes()
         noteLabel.stringValue = transUnit.note ?? ""
         copyNoteObjectIDButton.isEnabled = hasObjectID()
         verifyButton.isEnabled = !(transUnit.target?.isEmpty ?? true)
     }
     
     private func updateUIAllComplete() {
-        let isModifiedString = isEdited ? NSLocalizedString(" - Edited", comment: "") : ""
-        view.window?.title = isModifiedString
-        
         updateProgress()
         
         sourceLabel.stringValue = NSLocalizedString("Source", comment: "")
-        setAttributedString("")
+        targetTextView.string = ""
+        setAttributes()
         noteLabel.stringValue = NSLocalizedString("Note", comment: "")
         copyNoteObjectIDButton.isEnabled = false
         verifyButton.isEnabled = false
+    }
+    
+    private func updateWindowTitle() {
+        let isModifiedString = isEdited ? NSLocalizedString(" - Edited", comment: "") : ""
+        
+        guard self.transUnit != nil else {
+            view.window?.title = (NSApp.delegate as! AppDelegate).xliffURL.lastPathComponent + isModifiedString
+            return
+        }
+        
+        view.window?.title = (file?.original ?? "") + isModifiedString
     }
 
     override var representedObject: Any? {
@@ -202,23 +211,44 @@ class EditorViewController: NSViewController {
 
 extension EditorViewController:NSTextDelegate {
     func textDidChange(_ notification: Notification) {
-        setAttributedString(targetTextView.string)
+        setAttributes()
         verifyButton.isEnabled = !targetTextView.string.isEmpty
     }
     
-    private func setAttributedString(_ str:String) {
+    private func setAttributes() {
         let attributes:[NSAttributedString.Key:Any] = [
             .font:NSFont.systemFont(ofSize: 16.0),
             .foregroundColor:NSColor(named: "targetColor")!
         ]
-        let attritubtedString = NSAttributedString(string: str, attributes: attributes)
-        targetTextView.textStorage?.setAttributedString(attritubtedString)
+        targetTextView.textStorage?.setAttributes(attributes, range: NSRange(location: 0, length: (targetTextView.string as NSString).length))
     }
 }
 
 // MARK: - Menu
 extension EditorViewController {
+    @IBAction func openInXcode(_ sender: Any?) {
+        do {
+            let xliffURL = (NSApp.delegate as! AppDelegate).xliffURL!
+            let xcodeURL = URL(fileURLWithPath: "/Applications/Xcode.app")
+            try NSWorkspace.shared.open([xliffURL], withApplicationAt: xcodeURL, options: .default, configuration: .init())
+        } catch {
+            let alert = NSAlert()
+            alert.alertStyle = .warning
+            alert.messageText = NSLocalizedString("No Xcode Found", comment: "")
+            alert.informativeText = NSLocalizedString("There is no Xcode.app in /Applications directory.", comment: "")
+            alert.addButton(withTitle: NSLocalizedString("OK", comment: ""))
+            NSSound.beep()
+            alert.runModal()
+        }
+    }
+    
     @objc func saveDocument(_ sender: Any?) {
+        let url = (NSApp.delegate as! AppDelegate).xliffURL!
+        save(to: url)
+        updateWindowTitle()
+    }
+    
+    private func save(to url:URL) {
         defer {
             isEdited = false
         }
@@ -231,34 +261,38 @@ extension EditorViewController {
         let realm = (transUnits.first?.realm)!
         let xliff = realm.objects(XTXliff.self).first!
         
-        // replace /n to &#10; // & is &amp;
-        // replace /n to UUID().uuidString, then replacing UUID().uuidString to &#10;
-        let uuid = UUID().uuidString
-        xliff.files.flatMap({ $0.body!.transUnits })
-            .forEach({
-                if $0.id.contains("\n") {
-                    $0.id = $0.id.replacingOccurrences(of: "\n", with: uuid)
-                }
-            })
-        
         let encoder = XMLEncoder()
         encoder.outputFormatting = .prettyPrinted
         encoder.prettyPrintIndentation = .spaces(2)
+        // stop escaping " as  &quot; in Element value by reset other escaping
+        encoder.charactersEscapedInElements = [
+            ("&", "&amp;"),
+            ("<", "&lt;"),
+            (">", "&gt;"),
+            ("'", "&apos;"),
+        ]
+        // escping \n as "&#10;" in attribute value
+        encoder.charactersEscapedInAttributes += [("\n", "&#10;")]
         xmlData += try! encoder.encode(xliff, withRootKey: "xliff")
-        let uuidData = uuid.data(using: .utf8)!
-        let newLineData = "&#10;".data(using: .utf8)!
         
-        var lowerBound = xmlData.startIndex
-        while let range = xmlData.range(of: uuidData, in: lowerBound..<xmlData.endIndex) {
-            xmlData.replaceSubrange(range, with: newLineData)
-            lowerBound = range.lowerBound + newLineData.count
-        }
-        
-        let url = (NSApp.delegate as! AppDelegate).xliffURL!
         try! xmlData.write(to: url, options: .atomic)
     }
     
-    @IBAction public func skipTranslatedResults(_ sender: Any?) {
+    @objc func exportXliffFile(_ sender: Any?) {
+        let exportPanel = NSSavePanel()
+        exportPanel.prompt = NSLocalizedString("Export", comment: "")
+        exportPanel.allowedFileTypes = ["xliff"]
+        let xliffURL = (NSApp.delegate as? AppDelegate)?.xliffURL
+        exportPanel.directoryURL = xliffURL
+        exportPanel.nameFieldStringValue = xliffURL!.lastPathComponent
+        exportPanel.beginSheetModal(for: view.window!) { [unowned self] (response) in
+            if response == .OK {
+                self.save(to: exportPanel.url!)
+            }
+        }
+    }
+    
+    @IBAction func skipTranslatedResults(_ sender: Any?) {
         let menuItem = (sender as! NSMenuItem)
         let stateValue:NSControl.StateValue = (menuItem.state == .on) ? .off : .on
         menuItem.state = stateValue
@@ -266,6 +300,4 @@ extension EditorViewController {
         
         updateUI()
     }
-    
-    
 }

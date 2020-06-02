@@ -117,11 +117,37 @@ class DetailViewController: NSViewController {
     }
     
     private func updateProject() {
+        let fm = FileManager.default
+        
         // backup current realm file
         let originalURL = URL(fileURLWithPath: projectFilename, relativeTo: URL.rootURL)
         (NSApp.delegate as? AppDelegate)?.databaseURL = originalURL
         let backupFileURL = URL(fileURLWithPath: getBackupFilename(), relativeTo: URL.backupRootURL)
-        try! FileManager.default.copyItem(at: originalURL, to: backupFileURL)
+        try! fm.copyItem(at: originalURL, to: backupFileURL)
+        
+        // remove backups more than latest 5.
+        let backupfileURLs = try! fm.contentsOfDirectory(at: URL.backupRootURL, includingPropertiesForKeys: [.contentModificationDateKey], options: [.skipsHiddenFiles, .skipsPackageDescendants, .skipsSubdirectoryDescendants])
+        let fileSuffix = "." + "yyyyMMddHHmmssSSS" + ".realm"
+        var projectName = self.projectFilename!
+        projectName.removeLast(".realm".count)
+        
+        let backupOfCurrentProjectURLs = backupfileURLs.filter({
+            var filename = $0.lastPathComponent
+            filename.removeLast(fileSuffix.count)
+            
+            return filename == projectName
+        }).sorted(by: {
+            let date1 = try! $0.resourceValues(forKeys:[.contentModificationDateKey]).contentModificationDate!
+            let date2 = try! $1.resourceValues(forKeys:[.contentModificationDateKey]).contentModificationDate!
+            
+            return date1 < date2
+        })
+        
+        if backupOfCurrentProjectURLs.count > 5 {
+            backupOfCurrentProjectURLs[5...].forEach {
+                try! fm.removeItem(at: $0)
+            }
+        }
 
         // merge old xliff to new xliff
         let originalXliff = getXliff(form: originalURL)
