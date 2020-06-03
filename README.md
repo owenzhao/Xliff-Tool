@@ -1,6 +1,14 @@
 # Xliff Tool
 Xliff Tool is an app helping you deal with Xliff files, especially for Xliff 1.2 that Xcode exported. 
 
+## Install & Upgrade
+See the above [Release Link](https://github.com/owenzhao/Xliff-Tool/releases).
+
+#### brew cask
+I'd love to bring Xliff Tool to brew cask.
+
+However, to add a public brew cask, it needs at least 75 stars to get accepted in brew's pull requests . So if you love Xliff Tool, please star this project so I could make the brew cask earlier.
+
 ## Design Purpose
 When developing apps with Xcode for multiple targets, say supporting iOS, watchOS and macOS in one project, there are a lot of pains on translations. You have to provide translations for each platform though most of them are the same. 
 
