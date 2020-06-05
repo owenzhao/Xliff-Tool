@@ -11,12 +11,12 @@ import AppKit
 
 extension UserDefaults {
     enum Key:String {
-        case skipTranslatedResults
+        case verifyTranslatedResultsFirst
     }
     
     static func register() {
         let defaults:[String:Any] = [
-            UserDefaults.Key.skipTranslatedResults.rawValue: NSControl.StateValue.off.rawValue
+            UserDefaults.Key.verifyTranslatedResultsFirst.rawValue: NSControl.StateValue.on.rawValue,
         ]
         
         UserDefaults.standard.register(defaults: defaults)

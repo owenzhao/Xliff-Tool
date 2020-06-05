@@ -15,10 +15,14 @@ class EditorViewController: NSViewController {
     var transUnit:XTTransUnit? {
         var results = transUnits.filter("isVerified = false")
         let defaults = UserDefaults.standard
-        let skipTranslatedResults = (defaults.integer(forKey: UserDefaults.Key.skipTranslatedResults.rawValue) == NSControl.StateValue.on.rawValue)
+        let verifyTranslatedResultsFirst = (defaults.integer(forKey: UserDefaults.Key.verifyTranslatedResultsFirst.rawValue) == NSControl.StateValue.on.rawValue)
         
-        if skipTranslatedResults {
-            results = results.filter("target = nil || target = ''")
+        if verifyTranslatedResultsFirst {
+            let translatedResults = results.filter("target != nil AND target != ''")
+            
+            if !translatedResults.isEmpty {
+                results = translatedResults
+            }
         }
         
         return results.first
@@ -129,8 +133,20 @@ class EditorViewController: NSViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        addViewMenuDelegate()
+        
         DispatchQueue.main.async {
             NotificationCenter.default.addObserver(self, selector: #selector(self.willCloseNotification(_:)), name: NSWindow.willCloseNotification, object: self.view.window!)
+        }
+    }
+    
+    private func addViewMenuDelegate() {
+        let menu = NSApp.mainMenu!
+        for menuItem in menu.items {
+            if menuItem.submenu?.identifier == NSUserInterfaceItemIdentifier("viewMenu") {
+                menuItem.submenu?.delegate = self
+                break
+            }
         }
     }
     
@@ -309,12 +325,24 @@ extension EditorViewController {
         }
     }
     
-    @IBAction func skipTranslatedResults(_ sender: Any?) {
+    @IBAction func verifyTranslatedResultsFirst(_ sender: Any?) {
         let menuItem = (sender as! NSMenuItem)
         let stateValue:NSControl.StateValue = (menuItem.state == .on) ? .off : .on
         menuItem.state = stateValue
-        UserDefaults.standard.set(stateValue, forKey: UserDefaults.Key.skipTranslatedResults.rawValue)
-        
+        UserDefaults.standard.set(stateValue, forKey: UserDefaults.Key.verifyTranslatedResultsFirst.rawValue)
         updateUI()
+    }
+}
+
+extension EditorViewController:NSMenuDelegate {
+    func menuNeedsUpdate(_ menu: NSMenu) {
+        let defaults = UserDefaults.standard
+        let verifyTranslatedResultsFirst = defaults.integer(forKey: UserDefaults.Key.verifyTranslatedResultsFirst.rawValue)
+        
+        for menuItem in menu.items {
+            if menuItem.identifier == NSUserInterfaceItemIdentifier("verifyTranslatedResultsFirst") {
+                menuItem.state = (verifyTranslatedResultsFirst == NSControl.StateValue.on.rawValue) ? .on : .off
+            }
+        }
     }
 }

@@ -159,12 +159,12 @@
                             </menuItem>
                             <menuItem title="View" id="H8h-7b-M4v">
                                 <modifierMask key="keyEquivalentModifierMask"/>
-                                <menu key="submenu" title="View" id="HyV-fh-RgO">
+                                <menu key="submenu" title="View" identifier="viewMenu" id="HyV-fh-RgO">
                                     <items>
-                                        <menuItem title="Skip Translated Results" id="b6Y-ST-q3r">
+                                        <menuItem title="Verify Tranlsated Results First" identifier="verifyTranslatedResultsFirst" id="LYo-eu-CzR">
                                             <modifierMask key="keyEquivalentModifierMask"/>
                                             <connections>
-                                                <action selector="skipTranslatedResults:" target="Ady-hI-5gd" id="hMZ-8L-wNt"/>
+                                                <action selector="verifyTranslatedResultsFirst:" target="Ady-hI-5gd" id="8YD-uj-PcO"/>
                                             </connections>
                                         </menuItem>
                                     </items>
