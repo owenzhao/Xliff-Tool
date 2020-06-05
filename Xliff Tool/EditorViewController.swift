@@ -44,7 +44,11 @@ class EditorViewController: NSViewController {
     @IBOutlet weak var progressLabel: NSTextField!
     
     @IBOutlet weak var sourceLabel: NSTextField!
-    @IBOutlet var targetTextView: NSTextView!
+    @IBOutlet var targetTextView: NSTextView! {
+        didSet {
+            targetTextView.textStorage?.delegate = self
+        }
+    }
     @IBOutlet weak var noteLabel: NSTextField!
     @IBOutlet weak var copyNoteObjectIDButton: NSButton!
     
@@ -168,7 +172,6 @@ class EditorViewController: NSViewController {
         
         sourceLabel.stringValue = transUnit.source
         targetTextView.string = transUnit.target ?? ""
-        setAttributes()
         noteLabel.stringValue = transUnit.note ?? ""
         copyNoteObjectIDButton.isEnabled = hasObjectID()
         verifyButton.isEnabled = !(transUnit.target?.isEmpty ?? true)
@@ -179,7 +182,6 @@ class EditorViewController: NSViewController {
         
         sourceLabel.stringValue = NSLocalizedString("Source", comment: "")
         targetTextView.string = ""
-        setAttributes()
         noteLabel.stringValue = NSLocalizedString("Note", comment: "")
         copyNoteObjectIDButton.isEnabled = false
         verifyButton.isEnabled = false
@@ -211,16 +213,22 @@ class EditorViewController: NSViewController {
 
 extension EditorViewController:NSTextDelegate {
     func textDidChange(_ notification: Notification) {
-        setAttributes()
+        if !isEdited {
+            isEdited = true
+            self.updateWindowTitle()
+        }
+        
+        if transUnit?.isVerified == true {
+            transUnit?.isVerified = false
+        }
+        
         verifyButton.isEnabled = !targetTextView.string.isEmpty
     }
-    
-    private func setAttributes() {
-        let attributes:[NSAttributedString.Key:Any] = [
-            .font:NSFont.systemFont(ofSize: 16.0),
-            .foregroundColor:NSColor(named: "targetColor")!
-        ]
-        targetTextView.textStorage?.setAttributes(attributes, range: NSRange(location: 0, length: (targetTextView.string as NSString).length))
+}
+
+extension EditorViewController:NSTextStorageDelegate {
+    func textStorage(_ textStorage: NSTextStorage, willProcessEditing editedMask: NSTextStorageEditActions, range editedRange: NSRange, changeInLength delta: Int) {
+        textStorage.font = NSFont.userFont(ofSize: 16.0) ?? NSFont.systemFont(ofSize: 16.0)
     }
 }
 
@@ -243,9 +251,21 @@ extension EditorViewController {
     }
     
     @objc func saveDocument(_ sender: Any?) {
+        saveCurrentTransUnit()
         let url = (NSApp.delegate as! AppDelegate).xliffURL!
         save(to: url)
         updateWindowTitle()
+    }
+    
+    private func saveCurrentTransUnit() {
+        if let transUnit = self.transUnit {
+            transUnit.target = targetTextView.string
+            
+            let realm = transUnit.realm!
+            try! realm.write {
+                realm.add(transUnit, update: .all)
+            }
+        }
     }
     
     private func save(to url:URL) {
