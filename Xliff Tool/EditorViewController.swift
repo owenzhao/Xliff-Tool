@@ -44,9 +44,13 @@ class EditorViewController: NSViewController {
     @IBOutlet weak var progressLabel: NSTextField!
     
     @IBOutlet weak var sourceLabel: NSTextField!
-    @IBOutlet var targetTextView: NSTextView! {
+    @IBOutlet var targetTextView: NSTextView!{
         didSet {
-            targetTextView.textStorage?.delegate = self
+            let attributes:[NSAttributedString.Key:Any] = [
+                .font:NSFont.userFont(ofSize: 16.0) ?? NSFont.systemFont(ofSize: 16.0),
+                .foregroundColor:NSColor(named: "targetColor")!
+            ]
+            targetTextView.typingAttributes = attributes
         }
     }
     @IBOutlet weak var noteLabel: NSTextField!
@@ -71,7 +75,6 @@ class EditorViewController: NSViewController {
         
         NSWorkspace.shared.open(URL(string: webString + source)!)
     }
-    
     
     // "Class =\"NSButtonCell\"; title =\"Cancel\"; ObjectID =\"0uT-sC-hK8\";"
     // or "Class = \"NSButtonCell\"; title = \"Cancel\"; ObjectID = \"0uT-sC-hK8\";"
@@ -226,12 +229,6 @@ extension EditorViewController:NSTextDelegate {
     }
 }
 
-extension EditorViewController:NSTextStorageDelegate {
-    func textStorage(_ textStorage: NSTextStorage, willProcessEditing editedMask: NSTextStorageEditActions, range editedRange: NSRange, changeInLength delta: Int) {
-        textStorage.font = NSFont.userFont(ofSize: 16.0) ?? NSFont.systemFont(ofSize: 16.0)
-    }
-}
-
 // MARK: - Menu
 extension EditorViewController {
     @IBAction func openInXcode(_ sender: Any?) {
@@ -298,7 +295,7 @@ extension EditorViewController {
         try! xmlData.write(to: url, options: .atomic)
     }
     
-    @objc func exportXliffFile(_ sender: Any?) {
+    @IBAction func exportXliffFile(_ sender: Any?) {
         let exportPanel = NSSavePanel()
         exportPanel.prompt = NSLocalizedString("Export", comment: "")
         exportPanel.allowedFileTypes = ["xliff"]

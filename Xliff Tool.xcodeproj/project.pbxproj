@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DCC66BFE247BB674007DEF99 /* zh-Hans.xliff in Resources */ = {isa = PBXBuildFile; fileRef = DCC66BFD247BB674007DEF99 /* zh-Hans.xliff */; };
 		DCC66C00247BF40C007DEF99 /* RealmObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC66BFF247BF40C007DEF99 /* RealmObjects.swift */; };
 		DCC66C02247CE524007DEF99 /* IndexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC66C01247CE524007DEF99 /* IndexViewController.swift */; };
 		DCC66C05247CF767007DEF99 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC66C03247CF767007DEF99 /* DetailViewController.swift */; };
@@ -29,7 +28,6 @@
 		0F8884B28BCAB604A11327E1 /* Pods-Xliff Tool.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Xliff Tool.debug.xcconfig"; path = "Target Support Files/Pods-Xliff Tool/Pods-Xliff Tool.debug.xcconfig"; sourceTree = "<group>"; };
 		CB94EF637DEC7161C1EF81E3 /* Pods_Xliff_Tool.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Xliff_Tool.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5393191F2544ABE60B2C51F /* Pods-Xliff Tool.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Xliff Tool.release.xcconfig"; path = "Target Support Files/Pods-Xliff Tool/Pods-Xliff Tool.release.xcconfig"; sourceTree = "<group>"; };
-		DCC66BFD247BB674007DEF99 /* zh-Hans.xliff */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "zh-Hans.xliff"; sourceTree = "<group>"; };
 		DCC66BFF247BF40C007DEF99 /* RealmObjects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmObjects.swift; sourceTree = "<group>"; };
 		DCC66C01247CE524007DEF99 /* IndexViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexViewController.swift; sourceTree = "<group>"; };
 		DCC66C03247CF767007DEF99 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
@@ -124,7 +122,6 @@
 				DCFB3DB62483801F001BCA3A /* Localizable.strings */,
 				DCFB3DB32483801F001BCA3A /* InfoPlist.strings */,
 				DCD3E7D0247B9F66009D0339 /* Xliff_Tool.entitlements */,
-				DCC66BFD247BB674007DEF99 /* zh-Hans.xliff */,
 			);
 			path = "Xliff Tool";
 			sourceTree = "<group>";
@@ -193,7 +190,6 @@
 				DCC66C0A247E339E007DEF99 /* NSTextFiledWithIndicator.xib in Resources */,
 				DCFB3DB82483801F001BCA3A /* Localizable.strings in Resources */,
 				DCD3E7CB247B9F66009D0339 /* Assets.xcassets in Resources */,
-				DCC66BFE247BB674007DEF99 /* zh-Hans.xliff in Resources */,
 				DCD3E7CE247B9F66009D0339 /* Main.storyboard in Resources */,
 				DCFB3DB52483801F001BCA3A /* InfoPlist.strings in Resources */,
 			);

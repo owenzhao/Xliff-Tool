@@ -336,7 +336,7 @@ DQ
                                     <rect key="frame" x="0.0" y="0.0" width="728" height="263"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
-                                        <textView importsGraphics="NO" richText="NO" verticallyResizable="YES" findStyle="bar" spellingCorrection="YES" smartInsertDelete="YES" id="t7n-9w-Kcg">
+                                        <textView importsGraphics="NO" richText="NO" verticallyResizable="YES" findStyle="bar" allowsUndo="YES" spellingCorrection="YES" smartInsertDelete="YES" id="t7n-9w-Kcg">
                                             <rect key="frame" x="0.0" y="0.0" width="728" height="263"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <color key="textColor" name="targetColor"/>
@@ -345,7 +345,7 @@ DQ
                                             <size key="maxSize" width="728" height="10000000"/>
                                             <color key="insertionPointColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                             <connections>
-                                                <outlet property="delegate" destination="XfG-lQ-9wD" id="zXx-uw-jZT"/>
+                                                <outlet property="delegate" destination="XfG-lQ-9wD" id="BF5-3D-541"/>
                                             </connections>
                                         </textView>
                                     </subviews>
