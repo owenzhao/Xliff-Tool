@@ -61,9 +61,6 @@
 /* Class = "NSTableColumn"; headerCell.title = "Original"; ObjectID = "b2Z-Rb-wJX"; */
 "b2Z-Rb-wJX.headerCell.title" = "源";
 
-/* Class = "NSMenuItem"; title = "Skip Translated Results"; ObjectID = "b6Y-ST-q3r"; */
-"b6Y-ST-q3r.title" = "跳过已翻译的结果";
-
 /* Class = "NSTableColumn"; headerCell.title = "Source Language"; ObjectID = "bBb-kn-HHb"; */
 "bBb-kn-HHb.headerCell.title" = "源语言";
 
@@ -141,6 +138,9 @@
 
 /* Class = "NSMenuItem"; title = "Bring All to Front"; ObjectID = "LE2-aR-0XJ"; */
 "LE2-aR-0XJ.title" = "牵制全部窗口";
+
+/* Class = "NSMenuItem"; title = "Verify Tranlsated Results First"; ObjectID = "LYo-eu-CzR"; */
+"LYo-eu-CzR.title" = "优先审核已翻译的结果";
 
 /* Class = "NSMenuItem"; title = "Open Database Directory..."; ObjectID = "Mlc-gY-U1q"; */
 "Mlc-gY-U1q.title" = "打开数据库文件夹";
