@@ -39,6 +39,16 @@ Xliff Tool makes a backup every time you choose "Update Project", and leaves the
 
 Make sure to do you backup if you want to manually delete or undo databases. 
 
+## Verify Translated Results First
+Starting from version 1.0.2, Xliff Tool introduced a new menu item "Verify Translated Results First" with on state by default.
+
+For translations with multiple targets, for example, with iOS and watchOS, if you translates one source on iOS target, with this menu item on, Xliff Tool, will do two things:
+
+1. Replacing the counterpart transunit on target watchOS as both of them shares the same source and the watchOS's target is untranslated.
+2. Showing the translation in watchOS target to you to verify next.
+
+Also, if you have revised some translations in your code, this feature will show them to verify first before showing other untranslated translations.
+
 ## Screenshots
 
 ![Choose An Action](choose_action.png)
