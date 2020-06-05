@@ -331,17 +331,17 @@ DQ
                                 </textFieldCell>
                             </textField>
                             <scrollView borderType="none" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kxc-nv-3uz">
-                                <rect key="frame" x="20" y="132" width="728" height="250"/>
+                                <rect key="frame" x="20" y="119" width="728" height="263"/>
                                 <clipView key="contentView" drawsBackground="NO" copiesOnScroll="NO" id="2er-yK-o7Q">
-                                    <rect key="frame" x="0.0" y="0.0" width="728" height="250"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="728" height="263"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <textView importsGraphics="NO" richText="NO" verticallyResizable="YES" findStyle="bar" spellingCorrection="YES" smartInsertDelete="YES" id="t7n-9w-Kcg">
-                                            <rect key="frame" x="0.0" y="0.0" width="728" height="250"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="728" height="263"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <color key="textColor" name="targetColor"/>
                                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                            <size key="minSize" width="728" height="250"/>
+                                            <size key="minSize" width="728" height="263"/>
                                             <size key="maxSize" width="728" height="10000000"/>
                                             <color key="insertionPointColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                             <connections>
@@ -359,7 +359,7 @@ DQ
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                                 <scroller key="verticalScroller" wantsLayer="YES" verticalHuggingPriority="750" horizontal="NO" id="cbe-vR-nr2">
-                                    <rect key="frame" x="712" y="0.0" width="16" height="250"/>
+                                    <rect key="frame" x="712" y="0.0" width="16" height="263"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                             </scrollView>
@@ -412,6 +412,7 @@ DQ
                             <constraint firstItem="C9Y-ch-Wx7" firstAttribute="trailing" secondItem="t7n-9w-Kcg" secondAttribute="trailing" id="PeE-tP-4Zr"/>
                             <constraint firstItem="itV-cV-u5y" firstAttribute="centerY" secondItem="Dxg-Ae-zJb" secondAttribute="centerY" id="Q79-CF-l2g"/>
                             <constraint firstItem="C9Y-ch-Wx7" firstAttribute="top" secondItem="ASg-cn-BKz" secondAttribute="bottom" constant="50" id="TLY-FR-OR1"/>
+                            <constraint firstItem="XzG-dd-1P0" firstAttribute="top" secondItem="t7n-9w-Kcg" secondAttribute="bottom" constant="8" id="UQz-eA-Mcq"/>
                             <constraint firstItem="Kxc-nv-3uz" firstAttribute="top" secondItem="8BX-jd-agJ" secondAttribute="bottom" constant="8" symbolic="YES" id="VMa-oh-Dwj"/>
                             <constraint firstItem="OMX-1x-8cL" firstAttribute="trailing" secondItem="Dxg-Ae-zJb" secondAttribute="trailing" id="W0F-J7-qxw"/>
                             <constraint firstAttribute="trailing" secondItem="Dxg-Ae-zJb" secondAttribute="trailing" constant="20" id="XV6-Mk-au5"/>
@@ -429,7 +430,6 @@ DQ
                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="ASg-cn-BKz" secondAttribute="trailing" constant="20" symbolic="YES" id="ucV-aS-Bfz"/>
                             <constraint firstItem="qSa-nA-HmO" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8BX-jd-agJ" secondAttribute="trailing" constant="8" symbolic="YES" id="uiJ-jB-OFC"/>
                             <constraint firstItem="8BX-jd-agJ" firstAttribute="centerY" secondItem="OMX-1x-8cL" secondAttribute="centerY" id="wAj-H7-7et"/>
-                            <constraint firstItem="ASg-cn-BKz" firstAttribute="top" secondItem="Kxc-nv-3uz" secondAttribute="bottom" constant="20" symbolic="YES" id="yCc-MV-Nyc"/>
                             <constraint firstItem="Dxg-Ae-zJb" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="20" id="yfM-JA-kMm"/>
                             <constraint firstItem="8BX-jd-agJ" firstAttribute="leading" secondItem="ihV-r3-Jhv" secondAttribute="leading" id="yuj-Eg-yAU"/>
                         </constraints>
