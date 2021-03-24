@@ -7,7 +7,6 @@
 //
 
 import Cocoa
-import Unrealm
 
 class IndexViewController: NSViewController {
     static let selectedProjectChanged = Notification.Name("selectedProjectChanged")
@@ -19,8 +18,6 @@ class IndexViewController: NSViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-    
-    
 }
 
 extension IndexViewController:NSTableViewDataSource, NSTableViewDelegate {

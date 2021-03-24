@@ -8,7 +8,7 @@
 
 import Cocoa
 import XMLCoder
-import Unrealm
+import RealmSwift
 
 class DetailViewController: NSViewController {
     static let openEditor = Notification.Name("openEditor")

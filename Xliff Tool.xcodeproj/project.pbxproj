@@ -27,7 +27,6 @@
 		DCD3E7C9247B9F65009D0339 /* EditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD3E7C8247B9F65009D0339 /* EditorViewController.swift */; };
 		DCD3E7CB247B9F66009D0339 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCD3E7CA247B9F66009D0339 /* Assets.xcassets */; };
 		DCD3E7CE247B9F66009D0339 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCD3E7CC247B9F66009D0339 /* Main.storyboard */; };
-		DCD3E7D9247BA080009D0339 /* Structures.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD3E7D8247BA080009D0339 /* Structures.swift */; };
 		DCFB3DB52483801F001BCA3A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DCFB3DB32483801F001BCA3A /* InfoPlist.strings */; };
 		DCFB3DB82483801F001BCA3A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DCFB3DB62483801F001BCA3A /* Localizable.strings */; };
 /* End PBXBuildFile section */
@@ -70,7 +69,6 @@
 		DCD3E7CD247B9F66009D0339 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DCD3E7CF247B9F66009D0339 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DCD3E7D0247B9F66009D0339 /* Xliff_Tool.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Xliff_Tool.entitlements; sourceTree = "<group>"; };
-		DCD3E7D8247BA080009D0339 /* Structures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Structures.swift; sourceTree = "<group>"; };
 		DCFB3DB42483801F001BCA3A /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		DCFB3DB72483801F001BCA3A /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -137,7 +135,6 @@
 				DCD3E7C8247B9F65009D0339 /* EditorViewController.swift */,
 				DCC66C01247CE524007DEF99 /* IndexViewController.swift */,
 				DCC66C03247CF767007DEF99 /* DetailViewController.swift */,
-				DCD3E7D8247BA080009D0339 /* Structures.swift */,
 				DCC66BFF247BF40C007DEF99 /* RealmObjects.swift */,
 				DCD3E7CA247B9F66009D0339 /* Assets.xcassets */,
 				DCD3E7CC247B9F66009D0339 /* Main.storyboard */,
@@ -230,7 +227,6 @@
 				DCD3E7C9247B9F65009D0339 /* EditorViewController.swift in Sources */,
 				DCC66C00247BF40C007DEF99 /* RealmObjects.swift in Sources */,
 				DCC66C1E247E52B4007DEF99 /* URL+Base.swift in Sources */,
-				DCD3E7D9247BA080009D0339 /* Structures.swift in Sources */,
 				DCC66C05247CF767007DEF99 /* DetailViewController.swift in Sources */,
 				DC160BD326043B0C00A00890 /* SidebarViewController.swift in Sources */,
 				DCC66C22247E91A6007DEF99 /* UserDefaults.swift in Sources */,
