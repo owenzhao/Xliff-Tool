@@ -3,10 +3,19 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DC160BD326043B0C00A00890 /* SidebarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC160BD126043B0C00A00890 /* SidebarViewController.swift */; };
+		DC589D20260B65B200B34C5D /* RealmSwift.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC589D1E260B65B200B34C5D /* RealmSwift.xcframework */; };
+		DC589D21260B65B200B34C5D /* RealmSwift.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DC589D1E260B65B200B34C5D /* RealmSwift.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DC589D22260B65B200B34C5D /* Realm.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC589D1F260B65B200B34C5D /* Realm.xcframework */; };
+		DC589D23260B65B200B34C5D /* Realm.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DC589D1F260B65B200B34C5D /* Realm.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DC589D26260B65C900B34C5D /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = DC589D25260B65C900B34C5D /* libc++.tbd */; };
+		DC589D28260B65CF00B34C5D /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = DC589D27260B65CF00B34C5D /* libz.tbd */; };
+		DC589D2A260B65E800B34C5D /* XMLCoder.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC589D29260B65E800B34C5D /* XMLCoder.xcframework */; };
+		DC589D2B260B65E800B34C5D /* XMLCoder.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DC589D29260B65E800B34C5D /* XMLCoder.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		DCC66C00247BF40C007DEF99 /* RealmObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC66BFF247BF40C007DEF99 /* RealmObjects.swift */; };
 		DCC66C02247CE524007DEF99 /* IndexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC66C01247CE524007DEF99 /* IndexViewController.swift */; };
 		DCC66C05247CF767007DEF99 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC66C03247CF767007DEF99 /* DetailViewController.swift */; };
@@ -21,13 +30,31 @@
 		DCD3E7D9247BA080009D0339 /* Structures.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD3E7D8247BA080009D0339 /* Structures.swift */; };
 		DCFB3DB52483801F001BCA3A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DCFB3DB32483801F001BCA3A /* InfoPlist.strings */; };
 		DCFB3DB82483801F001BCA3A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DCFB3DB62483801F001BCA3A /* Localizable.strings */; };
-		FFFEFCDB020C032B9698B66D /* Pods_Xliff_Tool.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB94EF637DEC7161C1EF81E3 /* Pods_Xliff_Tool.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		DC589D24260B65B200B34C5D /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				DC589D21260B65B200B34C5D /* RealmSwift.xcframework in Embed Frameworks */,
+				DC589D2B260B65E800B34C5D /* XMLCoder.xcframework in Embed Frameworks */,
+				DC589D23260B65B200B34C5D /* Realm.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		0F8884B28BCAB604A11327E1 /* Pods-Xliff Tool.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Xliff Tool.debug.xcconfig"; path = "Target Support Files/Pods-Xliff Tool/Pods-Xliff Tool.debug.xcconfig"; sourceTree = "<group>"; };
-		CB94EF637DEC7161C1EF81E3 /* Pods_Xliff_Tool.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Xliff_Tool.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D5393191F2544ABE60B2C51F /* Pods-Xliff Tool.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Xliff Tool.release.xcconfig"; path = "Target Support Files/Pods-Xliff Tool/Pods-Xliff Tool.release.xcconfig"; sourceTree = "<group>"; };
+		DC160BD126043B0C00A00890 /* SidebarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarViewController.swift; sourceTree = "<group>"; };
+		DC589D1E260B65B200B34C5D /* RealmSwift.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = RealmSwift.xcframework; path = "Frameworks/realm-swift-10.7.2/12.4/RealmSwift.xcframework"; sourceTree = "<group>"; };
+		DC589D1F260B65B200B34C5D /* Realm.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Realm.xcframework; path = "Frameworks/realm-swift-10.7.2/12.4/Realm.xcframework"; sourceTree = "<group>"; };
+		DC589D25260B65C900B34C5D /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		DC589D27260B65CF00B34C5D /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		DC589D29260B65E800B34C5D /* XMLCoder.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = XMLCoder.xcframework; path = Carthage/Build/XMLCoder.xcframework; sourceTree = "<group>"; };
 		DCC66BFF247BF40C007DEF99 /* RealmObjects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmObjects.swift; sourceTree = "<group>"; };
 		DCC66C01247CE524007DEF99 /* IndexViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexViewController.swift; sourceTree = "<group>"; };
 		DCC66C03247CF767007DEF99 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
@@ -53,28 +80,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FFFEFCDB020C032B9698B66D /* Pods_Xliff_Tool.framework in Frameworks */,
+				DC589D28260B65CF00B34C5D /* libz.tbd in Frameworks */,
+				DC589D26260B65C900B34C5D /* libc++.tbd in Frameworks */,
+				DC589D2A260B65E800B34C5D /* XMLCoder.xcframework in Frameworks */,
+				DC589D20260B65B200B34C5D /* RealmSwift.xcframework in Frameworks */,
+				DC589D22260B65B200B34C5D /* Realm.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		65B801372A5A8F8B509FF996 /* Frameworks */ = {
+		DC589D1D260B65B200B34C5D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				CB94EF637DEC7161C1EF81E3 /* Pods_Xliff_Tool.framework */,
+				DC589D29260B65E800B34C5D /* XMLCoder.xcframework */,
+				DC589D27260B65CF00B34C5D /* libz.tbd */,
+				DC589D25260B65C900B34C5D /* libc++.tbd */,
+				DC589D1F260B65B200B34C5D /* Realm.xcframework */,
+				DC589D1E260B65B200B34C5D /* RealmSwift.xcframework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		C3BBBDBE253ED88627A9BDB0 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				0F8884B28BCAB604A11327E1 /* Pods-Xliff Tool.debug.xcconfig */,
-				D5393191F2544ABE60B2C51F /* Pods-Xliff Tool.release.xcconfig */,
-			);
-			path = Pods;
 			sourceTree = "<group>";
 		};
 		DCC66C1F247E52BE007DEF99 /* Tool */ = {
@@ -91,8 +117,7 @@
 			children = (
 				DCD3E7C5247B9F65009D0339 /* Xliff Tool */,
 				DCD3E7C4247B9F65009D0339 /* Products */,
-				C3BBBDBE253ED88627A9BDB0 /* Pods */,
-				65B801372A5A8F8B509FF996 /* Frameworks */,
+				DC589D1D260B65B200B34C5D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -108,6 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				DCD3E7C6247B9F65009D0339 /* AppDelegate.swift */,
+				DC160BD126043B0C00A00890 /* SidebarViewController.swift */,
 				DCD3E7C8247B9F65009D0339 /* EditorViewController.swift */,
 				DCC66C01247CE524007DEF99 /* IndexViewController.swift */,
 				DCC66C03247CF767007DEF99 /* DetailViewController.swift */,
@@ -133,11 +159,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DCD3E7D3247B9F66009D0339 /* Build configuration list for PBXNativeTarget "Xliff Tool" */;
 			buildPhases = (
-				07CEB6B583BB76E7696BE338 /* [CP] Check Pods Manifest.lock */,
 				DCD3E7BF247B9F65009D0339 /* Sources */,
 				DCD3E7C0247B9F65009D0339 /* Frameworks */,
 				DCD3E7C1247B9F65009D0339 /* Resources */,
-				44F4C683539B93492F535802 /* [CP] Embed Pods Frameworks */,
+				DC589D24260B65B200B34C5D /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -197,48 +222,6 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		07CEB6B583BB76E7696BE338 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Xliff Tool-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		44F4C683539B93492F535802 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Xliff Tool/Pods-Xliff Tool-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Xliff Tool/Pods-Xliff Tool-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Xliff Tool/Pods-Xliff Tool-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		DCD3E7BF247B9F65009D0339 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -249,6 +232,7 @@
 				DCC66C1E247E52B4007DEF99 /* URL+Base.swift in Sources */,
 				DCD3E7D9247BA080009D0339 /* Structures.swift in Sources */,
 				DCC66C05247CF767007DEF99 /* DetailViewController.swift in Sources */,
+				DC160BD326043B0C00A00890 /* SidebarViewController.swift in Sources */,
 				DCC66C22247E91A6007DEF99 /* UserDefaults.swift in Sources */,
 				DCC66C08247E338E007DEF99 /* NSTextFiledWithIndicator.swift in Sources */,
 				DCD3E7C7247B9F65009D0339 /* AppDelegate.swift in Sources */,
@@ -406,11 +390,10 @@
 		};
 		DCD3E7D4247B9F66009D0339 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0F8884B28BCAB604A11327E1 /* Pods-Xliff Tool.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Xliff Tool/Xliff_Tool.entitlements";
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 4;
@@ -430,11 +413,10 @@
 		};
 		DCD3E7D5247B9F66009D0339 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D5393191F2544ABE60B2C51F /* Pods-Xliff Tool.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Xliff Tool/Xliff_Tool.entitlements";
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 4;
