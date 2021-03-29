@@ -101,6 +101,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		DC589D2C260B778A00B34C5D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DCC66BFF247BF40C007DEF99 /* RealmObjects.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		DCC66C1F247E52BE007DEF99 /* Tool */ = {
 			isa = PBXGroup;
 			children = (
@@ -135,7 +143,7 @@
 				DCD3E7C8247B9F65009D0339 /* EditorViewController.swift */,
 				DCC66C01247CE524007DEF99 /* IndexViewController.swift */,
 				DCC66C03247CF767007DEF99 /* DetailViewController.swift */,
-				DCC66BFF247BF40C007DEF99 /* RealmObjects.swift */,
+				DC589D2C260B778A00B34C5D /* Model */,
 				DCD3E7CA247B9F66009D0339 /* Assets.xcassets */,
 				DCD3E7CC247B9F66009D0339 /* Main.storyboard */,
 				DCC66C07247E338E007DEF99 /* NSTextFiledWithIndicator.swift */,

@@ -7,8 +7,8 @@
 //
 
 import Cocoa
-import Unrealm
 import XMLCoder
+import RealmSwift
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
@@ -24,17 +24,6 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         // create folder
         _ = URL.rootURL
         _ = URL.backupRootURL
-        
-        Realm.registerRealmables([
-            XTXliff.self,
-            XTFile.self,
-            XTHeader.self,
-            XTTool.self,
-            XTBody.self,
-            XTTransUnit.self
-        ])
-        
-        print()
     }
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
@@ -48,14 +37,26 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
     
     @objc private func openEditor(_ noti:Notification) {
-        let windowController = NSStoryboard.main?.instantiateController(withIdentifier: "editorWindowController") as? NSWindowController
-        let editorViewController = windowController?.contentViewController as? EditorViewController
-        let realm = try! Realm(fileURL: databaseURL)
-        editorViewController?.transUnits = realm.objects(XTTransUnit.self)
-        editorViewController?.files = realm.objects(XTFile.self)
-        editorViewController?.updateUI()
-        windowController?.window?.center()
-        windowController?.showWindow(nil)
+        if let windowController = NSStoryboard.main?.instantiateController(withIdentifier: "editorWindowController") as? NSWindowController,
+           let splitViewController = windowController.contentViewController as? NSSplitViewController,
+           let sidebarSplitViewItem = splitViewController.splitViewItems.last,
+           let editorViewController = splitViewController.splitViewItems.first?.viewController as? EditorViewController,
+           let sidebarViewController = sidebarSplitViewItem.viewController as? SidebarViewController {
+            
+            
+            
+            let realm = try! Realm(fileURL: databaseURL)
+            editorViewController.transUnits = realm.objects(RLMXTTransUnit.self)
+            editorViewController.files = realm.objects(RLMXTFile.self)
+            editorViewController.updateUI()
+            
+//            sidebarSplitViewItem.isCollapsed = true // MARK: - TODO add a new preference here.
+            sidebarViewController.files = editorViewController.files
+            sidebarViewController.outlineView.headerView = nil
+            sidebarViewController.outlineView.reloadData()
+            
+            windowController.showWindow(nil)
+        }
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {
@@ -97,15 +98,15 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         setupDetailViewController(windowController, xliff: xliff)
     }
     
-    private func getXliff() -> XTXliff {
+    private func getXliff() -> RLMXTXliff {
         let data = try! Data(contentsOf: xliffURL)
         let decoder = XMLDecoder()
         decoder.trimValueWhitespaces = false
         
-        return try! decoder.decode(XTXliff.self, from: data)
+        return try! decoder.decode(RLMXTXliff.self, from: data)
     }
     
-    private func setupIndexViewController(_ windowController:NSWindowController?, xliff:XTXliff) {
+    private func setupIndexViewController(_ windowController:NSWindowController?, xliff:RLMXTXliff) {
         var indexViewController:IndexViewController? = nil
         for vc in ((windowController?.window?.contentViewController as? NSSplitViewController)?.children)! {
             if vc is IndexViewController {
@@ -120,7 +121,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         NotificationCenter.default.post(name: IndexViewController.selectedProjectChanged, object: nil, userInfo: userInfo)
     }
     
-    private func setupDetailViewController(_ windowController:NSWindowController?, xliff:XTXliff) {
+    private func setupDetailViewController(_ windowController:NSWindowController?, xliff:RLMXTXliff) {
         var detailViewController:DetailViewController? = nil
         for vc in ((windowController?.window?.contentViewController as? NSSplitViewController)?.children)! {
             if vc is DetailViewController {
@@ -134,7 +135,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         detailViewController?.lastModifiedDateLabel.stringValue = DateFormatter.localizedString(from: lastModifiedDate, dateStyle: .short, timeStyle: .short)
     }
     
-    private func getIndices(with xliff:XTXliff) -> [(String, Date)] {
+    private func getIndices(with xliff:RLMXTXliff) -> [(String, Date)] {
         let fm = FileManager.default
         let openURL = URL.rootURL
         
@@ -144,9 +145,11 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         
         let urls = try! fm.contentsOfDirectory(at: openURL, includingPropertiesForKeys: [.nameKey, .contentModificationDateKey], options: [.skipsHiddenFiles, .skipsPackageDescendants, .skipsSubdirectoryDescendants])
         
-        let xliffFileIds = xliff.files.map { $0.id }
+        let xliffFileIds:[String] = xliff.files.map { $0.id }
         var array:[(String, Date)] = urls.filter({ $0.path.hasSuffix(".realm") })
-            .filter({ !self.fileIdsInterSection(from: $0, to: xliffFileIds).isEmpty })
+            .filter({
+                        !self.fileIdsInterSection(from: $0, to: xliffFileIds).isEmpty
+            })
             .sorted(by: {
                 let filesInCommonLeftCount = self.fileIdsInterSection(from: $0, to: xliffFileIds).count
                 let filesInCommonRightCount = self.fileIdsInterSection(from: $1, to: xliffFileIds).count
@@ -169,8 +172,24 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
     
     private func fileIdsInterSection(from url:URL, to fileIds:[String]) -> Set<String> {
-        let realm = try! Realm(fileURL: url)
-        let originalFileIdSet = Set(realm.objects(XTFile.self).map { $0.id })
+        let configuration = Realm.Configuration(fileURL: url,
+                                                schemaVersion: 1)
+        { migration, oldSchemaVersion in
+            if oldSchemaVersion < 1 {
+                migration.enumerateObjects(ofType: RLMXTFile.className()) { (oldObject, newObject) in
+                    newObject!["id"] = oldObject!["id"]
+                }
+                
+                migration.enumerateObjects(ofType: RLMXTTransUnit.className()) { (oldObject, newObject) in
+                    newObject!["uid"] = oldObject!["uid"]
+                }
+            }
+        }
+        
+        Realm.Configuration.defaultConfiguration.schemaVersion = 1
+        
+        let realm = try! Realm(configuration: configuration)
+        let originalFileIdSet = Set(realm.objects(RLMXTFile.self).map { $0.id })
         
         return originalFileIdSet.intersection(fileIds)
     }

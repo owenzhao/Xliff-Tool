@@ -8,11 +8,11 @@
 
 import Cocoa
 import XMLCoder
-import Unrealm
+import RealmSwift
 
 class EditorViewController: NSViewController {
-    var transUnits:Results<XTTransUnit>!
-    var transUnit:XTTransUnit? {
+    var transUnits:Results<RLMXTTransUnit>!
+    var transUnit:RLMXTTransUnit? {
         var results = transUnits.filter("isVerified = false")
         let defaults = UserDefaults.standard
         let verifyTranslatedResultsFirst = (defaults.integer(forKey: UserDefaults.Key.verifyTranslatedResultsFirst.rawValue) == NSControl.StateValue.on.rawValue)
@@ -28,8 +28,8 @@ class EditorViewController: NSViewController {
         return results.first
     }
     
-    var files:Results<XTFile>!
-    var file:XTFile? {
+    var files:Results<RLMXTFile>!
+    var file:RLMXTFile? {
         guard let transUnit = self.transUnit else {
             return nil
         }
@@ -104,12 +104,11 @@ class EditorViewController: NSViewController {
         }
         
         let transUnit = self.transUnit!
-        transUnit.target = targetTextView.string
-        transUnit.isVerified = true
-
         let realm = transUnit.realm!
+        
         try! realm.write {
-            realm.add(transUnit, update: .all)
+            transUnit.target = targetTextView.string
+            transUnit.isVerified = true
         }
         
         // tried to translate other translations
@@ -119,12 +118,10 @@ class EditorViewController: NSViewController {
                 ($0.target == nil || $0.target!.isEmpty || $0.target == $0.source)
         })
         
-        transUnits.forEach {
-            $0.target = transUnit.target
-        }
-        
         try! realm.write {
-            realm.add(transUnits, update: true)
+            transUnits.forEach {
+                $0.target = transUnit.target
+            }
         }
 
         updateUI()
@@ -292,7 +289,7 @@ extension EditorViewController {
         var xmlData = xmlString.data(using: .utf8)!
         
         let realm = (transUnits.first?.realm)!
-        let xliff = realm.objects(XTXliff.self).first!
+        let xliff = realm.objects(RLMXTXliff.self).first!
         
         let encoder = XMLEncoder()
         encoder.outputFormatting = .prettyPrinted
@@ -344,5 +341,15 @@ extension EditorViewController:NSMenuDelegate {
                 menuItem.state = (verifyTranslatedResultsFirst == NSControl.StateValue.on.rawValue) ? .on : .off
             }
         }
+    }
+}
+
+extension EditorViewController {
+    @IBAction func showOrHideSidebar(_ sender:Any?) {
+        guard let splitViewController = view.window?.contentViewController as? NSSplitViewController else {
+            return
+        }
+        
+        splitViewController.splitViewItems.last?.isCollapsed.toggle()
     }
 }

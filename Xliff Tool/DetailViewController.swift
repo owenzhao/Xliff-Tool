@@ -13,7 +13,7 @@ import RealmSwift
 class DetailViewController: NSViewController {
     static let openEditor = Notification.Name("openEditor")
     
-    var xliff:XTXliff? {
+    var xliff:RLMXTXliff? {
         didSet {
             if xliff != nil {
                 tableView.reloadData()
@@ -180,12 +180,12 @@ class DetailViewController: NSViewController {
         let fileSet = Set(xliff.files)
         let newFileSet = fileSet.union(originalXliff.files).subtracting(fileSet)
         for transUnit in newFileSet.flatMap({ $0.body!.transUnits }) {
-            if let originalTransUnit = xliff.realm?.objects(XTTransUnit.self)
+            if let originalTransUnit = xliff.realm?.objects(RLMXTTransUnit.self)
                 .filter("source = %@ AND note = %@", transUnit.source, transUnit.note ?? "")
                 .sorted(byKeyPath: "isVerified").first {
                 
                 transUnit.target = originalTransUnit.target
-            } else if let originalTransUnit = xliff.realm?.objects(XTTransUnit.self)
+            } else if let originalTransUnit = xliff.realm?.objects(RLMXTTransUnit.self)
                 .filter("source = %@", transUnit.source)
                 .sorted(byKeyPath: "isVerified").first {
                 
@@ -211,9 +211,9 @@ class DetailViewController: NSViewController {
         NotificationCenter.default.post(name: DetailViewController.openEditor, object: nil)
     }
     
-    private func getXliff(form url:URL) -> XTXliff {
+    private func getXliff(form url:URL) -> RLMXTXliff {
         let realm = try! Realm(fileURL: url)
-        return realm.objects(XTXliff.self).first!
+        return realm.objects(RLMXTXliff.self).first!
     }
     
     private func getBackupFilename() -> String {

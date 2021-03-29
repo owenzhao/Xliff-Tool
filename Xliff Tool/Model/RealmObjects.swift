@@ -11,12 +11,12 @@ import RealmSwift
 import XMLCoder
 
 
-class XTXliff:Object, Codable, DynamicNodeEncoding {
+class RLMXTXliff:Object, Codable, DynamicNodeEncoding {
     @objc dynamic var xmlns:String = ""
     @objc dynamic var xmlnsXsi:String = ""
     @objc dynamic var version:String = ""
     @objc dynamic var xsiSchemaLocation:String = ""
-    @objc dynamic var files:[XTFile] = []
+    let files = List<RLMXTFile>()
     
     enum CodingKeys: String, CodingKey {
         case xmlns
@@ -34,18 +34,19 @@ class XTXliff:Object, Codable, DynamicNodeEncoding {
         xmlnsXsi = try values.decode(String.self, forKey: .xmlnsXsi)
         version = try values.decode(String.self, forKey: .version)
         xsiSchemaLocation = try values.decode(String.self, forKey: .xsiSchemaLocation)
-        files = try values.decode([XTFile].self, forKey: .files)
+        let files = try values.decode([RLMXTFile].self, forKey: .files)
+        self.files.append(objectsIn: files)
     }
     
     static func nodeEncoding(for key: CodingKey) -> XMLEncoder.NodeEncoding {
         switch key {
-        case XTXliff.CodingKeys.xmlns:
+        case RLMXTXliff.CodingKeys.xmlns:
             return .attribute
-        case XTXliff.CodingKeys.xmlnsXsi:
+        case RLMXTXliff.CodingKeys.xmlnsXsi:
             return .attribute
-        case XTXliff.CodingKeys.version:
+        case RLMXTXliff.CodingKeys.version:
             return .attribute
-        case XTXliff.CodingKeys.xsiSchemaLocation:
+        case RLMXTXliff.CodingKeys.xsiSchemaLocation:
             return .attribute
         default:
             return .element
@@ -53,8 +54,8 @@ class XTXliff:Object, Codable, DynamicNodeEncoding {
     }
 }
 
-class XTFile:Object, Codable, DynamicNodeEncoding {
-    static func == (lhs: XTFile, rhs: XTFile) -> Bool {
+class RLMXTFile:Object, Codable, DynamicNodeEncoding {
+    static func == (lhs: RLMXTFile, rhs: RLMXTFile) -> Bool {
         return lhs.id == rhs.id
     }
     
@@ -68,8 +69,8 @@ class XTFile:Object, Codable, DynamicNodeEncoding {
     @objc dynamic var sourceLanguage:String = ""
     @objc dynamic var targetLanguage:String = ""
     @objc dynamic var dataType:String = ""
-    @objc dynamic var header:XTHeader? = nil
-    @objc dynamic var body:XTBody? = nil
+    @objc dynamic var header:RLMXTHeader? = nil
+    @objc dynamic var body:RLMXTBody? = nil
     
     @objc dynamic var id:String = ""
     
@@ -90,21 +91,21 @@ class XTFile:Object, Codable, DynamicNodeEncoding {
         sourceLanguage = try values.decode(String.self, forKey: .sourceLanguage)
         targetLanguage = try values.decode(String.self, forKey: .targetLanguage)
         dataType = try values.decode(String.self, forKey: .dataType)
-        header = try values.decode(XTHeader.self, forKey: .header)
-        body = try values.decode(XTBody.self, forKey: .body)
+        header = try values.decode(RLMXTHeader.self, forKey: .header)
+        body = try values.decode(RLMXTBody.self, forKey: .body)
         
         id = "\(original);\(sourceLanguage);\(targetLanguage);\(dataType)"
     }
     
     static func nodeEncoding(for key: CodingKey) -> XMLEncoder.NodeEncoding {
         switch key {
-        case XTFile.CodingKeys.original:
+        case RLMXTFile.CodingKeys.original:
             return .attribute
-        case XTFile.CodingKeys.sourceLanguage:
+        case RLMXTFile.CodingKeys.sourceLanguage:
             return .attribute
-        case XTFile.CodingKeys.targetLanguage:
+        case RLMXTFile.CodingKeys.targetLanguage:
             return .attribute
-        case XTFile.CodingKeys.dataType:
+        case RLMXTFile.CodingKeys.dataType:
             return .attribute
         default:
             return .element
@@ -116,11 +117,11 @@ class XTFile:Object, Codable, DynamicNodeEncoding {
     }
 }
 
-class XTHeader:Object, Codable {
-    @objc dynamic var tool:XTTool? = nil
+class RLMXTHeader:Object, Codable {
+    @objc dynamic var tool:RLMXTTool? = nil
 }
 
-class XTTool:Object, Codable, DynamicNodeEncoding {
+class RLMXTTool:Object, Codable, DynamicNodeEncoding {
     @objc dynamic var toolId:String = ""
     @objc dynamic var toolName:String = ""
     @objc dynamic var toolVersion:String = ""
@@ -148,9 +149,8 @@ class XTTool:Object, Codable, DynamicNodeEncoding {
     }
 }
 
-class XTBody:Object, Codable {
-    
-    @objc dynamic var transUnits:[XTTransUnit] = []
+class RLMXTBody:Object, Codable {
+    let transUnits = List<RLMXTTransUnit>()
     
     enum CodingKeys: String, CodingKey {
         case transUnits = "trans-unit"
@@ -160,12 +160,13 @@ class XTBody:Object, Codable {
         self.init()
         
         let values = try decoder.container(keyedBy: CodingKeys.self)
-        transUnits = try values.decode([XTTransUnit].self, forKey: .transUnits)
+        let transUnits = try values.decode([RLMXTTransUnit].self, forKey: .transUnits)
+        self.transUnits.append(objectsIn: transUnits)
     }
 }
 
-class XTTransUnit:Object, Codable, DynamicNodeEncoding {
-    static func == (lhs: XTTransUnit, rhs: XTTransUnit) -> Bool {
+class RLMXTTransUnit:Object, Codable, DynamicNodeEncoding {
+    static func == (lhs: RLMXTTransUnit, rhs: RLMXTTransUnit) -> Bool {
         return lhs.uid == rhs.uid
     }
     
@@ -201,9 +202,9 @@ class XTTransUnit:Object, Codable, DynamicNodeEncoding {
     
     static func nodeEncoding(for key: CodingKey) -> XMLEncoder.NodeEncoding {
         switch key {
-        case XTTransUnit.CodingKeys.id:
+        case RLMXTTransUnit.CodingKeys.id:
             return .attribute
-        case XTTransUnit.CodingKeys.xmlSpace:
+        case RLMXTTransUnit.CodingKeys.xmlSpace:
             return .attribute
         default:
             return .element
