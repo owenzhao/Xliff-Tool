@@ -11,31 +11,37 @@ import XMLCoder
 import RealmSwift
 
 class EditorViewController: NSViewController {
+    static let transUnitDidChanged = Notification.Name("transUnitDidChanged")
+    
     var transUnits:Results<RLMXTTransUnit>!
-    var transUnit:RLMXTTransUnit? {
+    var transUnit:RLMXTTransUnit?
+    
+    private func nextTransUnit() -> RLMXTTransUnit? {
         var results = transUnits.filter("isVerified = false")
         let defaults = UserDefaults.standard
         let verifyTranslatedResultsFirst = (defaults.integer(forKey: UserDefaults.Key.verifyTranslatedResultsFirst.rawValue) == NSControl.StateValue.on.rawValue)
-        
+
         if verifyTranslatedResultsFirst {
             let translatedResults = results.filter("target != nil AND target != ''")
-            
+
             if !translatedResults.isEmpty {
                 results = translatedResults
             }
         }
         
-        return results.first
+        let result = results.first
+        
+        DispatchQueue.main.async {
+            let userInfo:[AnyHashable:Any] = ["transUnit.uid":result?.uid ?? "nil"]
+            NotificationCenter.default.post(name: EditorViewController.transUnitDidChanged,
+                                            object: nil,
+                                            userInfo: userInfo)
+        }
+
+        return result
     }
     
     var files:Results<RLMXTFile>!
-    var file:RLMXTFile? {
-        guard let transUnit = self.transUnit else {
-            return nil
-        }
-        
-        return files.filter { $0.body!.transUnits.contains(transUnit)}.first
-    }
     
     lazy private var total = self.transUnits.count
     lazy private var translated = self.transUnits.filter("target != nil AND target != ''")
@@ -159,17 +165,15 @@ class EditorViewController: NSViewController {
         }
         
         if transUnit.target != targetTextView.string {
-            transUnit.isVerified = false
-            transUnit.target = targetTextView.string
-            
-            let realm = try! Realm(fileURL: (NSApp.delegate as! AppDelegate).databaseURL)
-            try! realm.write {
-                realm.add(transUnit, update: .all)
+            try! transUnit.realm!.write {
+                transUnit.isVerified = false
+                transUnit.target = targetTextView.string
             }
         }
     }
     
     func updateUI() {
+        transUnit = nextTransUnit()
         updateWindowTitle()
         
         guard let transUnit = self.transUnit else {
@@ -211,6 +215,7 @@ class EditorViewController: NSViewController {
             return
         }
         
+        let file = transUnit?.bodies.first?.files.first
         view.window?.title = (file?.original ?? "") + isModifiedString
     }
 
@@ -269,11 +274,8 @@ extension EditorViewController {
     
     private func saveCurrentTransUnit() {
         if let transUnit = self.transUnit {
-            transUnit.target = targetTextView.string
-            
-            let realm = transUnit.realm!
-            try! realm.write {
-                realm.add(transUnit, update: .all)
+            try! transUnit.realm!.write {
+                transUnit.target = targetTextView.string
             }
         }
     }
@@ -287,10 +289,7 @@ extension EditorViewController {
 <?xml version="1.0" encoding="UTF-8"?>\n
 """
         var xmlData = xmlString.data(using: .utf8)!
-        
-        let realm = (transUnits.first?.realm)!
-        let xliff = realm.objects(RLMXTXliff.self).first!
-        
+        let xliff = transUnit?.bodies.first?.files.first
         let encoder = XMLEncoder()
         encoder.outputFormatting = .prettyPrinted
         encoder.prettyPrintIndentation = .spaces(2)

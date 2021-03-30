@@ -216,9 +216,8 @@ extension AppDelegate {
     }
     
     @objc private func openFile(_ menuItem:NSMenuItem) {
-        xliffURL = URL(fileURLWithPath: menuItem.title)
-        addToOpenRecent()
-        setupUI()
+        let url = URL(fileURLWithPath: menuItem.title)
+        openFile(with: url)
     }
     
     private func addToOpenRecent() {

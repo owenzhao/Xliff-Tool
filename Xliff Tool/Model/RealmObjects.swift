@@ -163,6 +163,8 @@ class RLMXTBody:Object, Codable {
         let transUnits = try values.decode([RLMXTTransUnit].self, forKey: .transUnits)
         self.transUnits.append(objectsIn: transUnits)
     }
+    
+    let files = LinkingObjects(fromType: RLMXTFile.self, property: "body")
 }
 
 class RLMXTTransUnit:Object, Codable, DynamicNodeEncoding {
@@ -178,6 +180,8 @@ class RLMXTTransUnit:Object, Codable, DynamicNodeEncoding {
     
     @objc dynamic var uid:String = UUID().uuidString
     @objc dynamic var isVerified: Bool = false
+    
+    let bodies = LinkingObjects(fromType: RLMXTBody.self, property: "transUnits")
     
     enum CodingKeys: String, CodingKey {
         case id
