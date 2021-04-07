@@ -47,7 +47,9 @@ class EditorViewController: NSViewController {
     lazy private var translated = self.transUnits.filter("target != nil AND target != ''")
     lazy private var verified = self.transUnits.filter("isVerified = true")
     
-    var isEdited = false
+    var isEdited:Bool {
+        !(transUnit?.target?.isEmpty ?? true)
+    }
     
     @IBOutlet weak var translatedLabel: NSTextField!
     @IBOutlet weak var verifiedLabel: NSTextField!
@@ -105,15 +107,10 @@ class EditorViewController: NSViewController {
     
     @IBAction func verifyButtonClicked(_ sender: Any) {
         // save current
-        if !isEdited {
-            isEdited = true
-        }
-        
         let transUnit = self.transUnit!
         let realm = transUnit.realm!
         
         try! realm.write {
-            transUnit.target = targetTextView.string
             transUnit.isVerified = true
         }
         
@@ -234,15 +231,24 @@ class EditorViewController: NSViewController {
 
 extension EditorViewController:NSTextDelegate {
     func textDidChange(_ notification: Notification) {
+        // title
         if !isEdited {
-            isEdited = true
-            self.updateWindowTitle()
+            updateWindowTitle()
+        }
+
+        // save changes
+        let transUnit = self.transUnit!
+        let realm = transUnit.realm!
+        
+        try! realm.write {
+            if transUnit.isVerified == true {
+                transUnit.isVerified = false
+            }
+            
+            transUnit.target = targetTextView.string
         }
         
-        if transUnit?.isVerified == true {
-            transUnit?.isVerified = false
-        }
-        
+        // verify button
         verifyButton.isEnabled = !targetTextView.string.isEmpty
     }
 }
@@ -281,15 +287,11 @@ extension EditorViewController {
     }
     
     private func save(to url:URL) {
-        defer {
-            isEdited = false
-        }
-        
         let xmlString = """
 <?xml version="1.0" encoding="UTF-8"?>\n
 """
         var xmlData = xmlString.data(using: .utf8)!
-        let xliff = transUnit?.bodies.first?.files.first
+        let xliff = transUnit?.bodies.first?.files.first?.xliffs.first
         let encoder = XMLEncoder()
         encoder.outputFormatting = .prettyPrinted
         encoder.prettyPrintIndentation = .spaces(2)
@@ -302,7 +304,7 @@ extension EditorViewController {
         ]
         // escping \n as "&#10;" in attribute value
         encoder.charactersEscapedInAttributes += [("\n", "&#10;")]
-        xmlData += try! encoder.encode(xliff, withRootKey: "xliff")
+        xmlData += try! encoder.encode(xliff!, withRootKey: "xliff")
         
         try! xmlData.write(to: url, options: .atomic)
     }
