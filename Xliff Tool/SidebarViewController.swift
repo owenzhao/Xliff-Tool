@@ -13,8 +13,9 @@ class SidebarViewController: NSViewController {
     @IBOutlet weak var searchField: NSSearchField!
     @IBOutlet weak var outlineView: NSOutlineView!
     
-    var notificationToken: NotificationToken? = nil
+    private var expandedItem:RLMXTFile?
     
+    private var notificationToken: NotificationToken? = nil
     var files:Results<RLMXTFile>!
     
     override func viewDidLoad() {
@@ -57,8 +58,15 @@ class SidebarViewController: NSViewController {
         let realm = files.first?.realm
         if let uid = notification.userInfo?["transUnit.uid"] as? String, uid != "nil",
            let transUnit = realm?.object(ofType: RLMXTTransUnit.self, forPrimaryKey: uid) {
-            outlineView.expandItem(transUnit.bodies.first?.files.first)
-//            outlineView.expandItem(files.first)
+            
+            let toExpandItem = transUnit.bodies.first?.files.first
+            
+            if expandedItem != toExpandItem {
+                outlineView.collapseItem(expandedItem)
+                outlineView.expandItem(toExpandItem)
+                expandedItem = toExpandItem
+            }
+
             let row = outlineView.row(forItem: transUnit)
             outlineView.selectRowIndexes(IndexSet([row]), byExtendingSelection: false)
             outlineView.scrollRowToVisible(row)
