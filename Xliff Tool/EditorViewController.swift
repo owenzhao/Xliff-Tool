@@ -47,9 +47,7 @@ class EditorViewController: NSViewController {
     lazy private var translated = self.transUnits.filter("target != nil AND target != ''")
     lazy private var verified = self.transUnits.filter("isVerified = true")
     
-    var isEdited:Bool {
-        !(transUnit?.target?.isEmpty ?? true)
-    }
+    var isEdited = false
     
     @IBOutlet weak var translatedLabel: NSTextField!
     @IBOutlet weak var verifiedLabel: NSTextField!
@@ -106,6 +104,10 @@ class EditorViewController: NSViewController {
     }
     
     @IBAction func verifyButtonClicked(_ sender: Any) {
+        if !isEdited {
+            isEdited = true
+        }
+        
         // save current
         let transUnit = self.transUnit!
         let realm = transUnit.realm!
@@ -233,6 +235,7 @@ extension EditorViewController:NSTextDelegate {
     func textDidChange(_ notification: Notification) {
         // title
         if !isEdited {
+            isEdited = true
             updateWindowTitle()
         }
 
@@ -307,6 +310,7 @@ extension EditorViewController {
         xmlData += try! encoder.encode(xliff!, withRootKey: "xliff")
         
         try! xmlData.write(to: url, options: .atomic)
+        isEdited = false
     }
     
     @IBAction func exportXliffFile(_ sender: Any?) {
