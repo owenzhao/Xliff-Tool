@@ -115,6 +115,8 @@ class RLMXTFile:Object, Codable, DynamicNodeEncoding {
     override static func primaryKey() -> String? {
         return "id"
     }
+    
+    let xliffs = LinkingObjects(fromType: RLMXTXliff.self, property: "files")
 }
 
 class RLMXTHeader:Object, Codable {
@@ -217,5 +219,11 @@ class RLMXTTransUnit:Object, Codable, DynamicNodeEncoding {
     
     override static func primaryKey() -> String? {
         return "uid"
+    }
+}
+
+extension List: DynamicNodeEncoding where Element: DynamicNodeEncoding {
+    public static func nodeEncoding(for key: CodingKey) -> XMLEncoder.NodeEncoding {
+        return Element.nodeEncoding(for: key)
     }
 }
