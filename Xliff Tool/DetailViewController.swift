@@ -140,7 +140,7 @@ class DetailViewController: NSViewController {
             let date1 = try! $0.resourceValues(forKeys:[.contentModificationDateKey]).contentModificationDate!
             let date2 = try! $1.resourceValues(forKeys:[.contentModificationDateKey]).contentModificationDate!
             
-            return date1 < date2
+            return date1 > date2
         })
         
         if backupOfCurrentProjectURLs.count > 5 {
