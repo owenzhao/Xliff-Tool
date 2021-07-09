@@ -13,6 +13,9 @@ extension UserDefaults {
     enum Key:String {
         case verifyTranslatedResultsFirst
         
+        // sidebar
+        case showSideBar
+        
         // for advanced search options
         case searchSource
         case searchTarget
@@ -23,6 +26,7 @@ extension UserDefaults {
     static func register() {
         let defaults:[String:Any] = [
             UserDefaults.Key.verifyTranslatedResultsFirst.rawValue: NSControl.StateValue.on.rawValue,
+            UserDefaults.Key.showSideBar.rawValue: true,
             UserDefaults.Key.searchSource.rawValue: NSControl.StateValue.on.rawValue,
             UserDefaults.Key.searchTarget.rawValue: NSControl.StateValue.on.rawValue,
             UserDefaults.Key.searchNote.rawValue: NSControl.StateValue.off.rawValue,

@@ -51,7 +51,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             editorViewController.xliff = realm.objects(RLMXTXliff.self).first
             editorViewController.updateUI()
             
-//            sidebarSplitViewItem.isCollapsed = true // MARK: - TODO add a new preference here.
+            sidebarSplitViewItem.isCollapsed = UserDefaults.standard.bool(forKey: UserDefaults.Key.showSideBar.rawValue)
             sidebarViewController.files = editorViewController.files
             sidebarViewController.outlineView.headerView = nil
             sidebarViewController.outlineView.reloadData()
@@ -276,10 +276,11 @@ extension AppDelegate:NSMenuDelegate {
 
 extension AppDelegate {
     @IBAction func showOrHideSidebar(_ sender:Any?) {
-        guard let splitViewController = NSApp.mainWindow?.contentViewController as? NSSplitViewController else {
+        guard let splitViewItem = (NSApp.mainWindow?.contentViewController as? NSSplitViewController)?.splitViewItems.last else {
             return
         }
         
-        splitViewController.splitViewItems.last?.isCollapsed.toggle()
+        splitViewItem.isCollapsed.toggle()
+        UserDefaults.standard.setValue(splitViewItem.isCollapsed, forKey: UserDefaults.Key.showSideBar.rawValue)
     }
 }
