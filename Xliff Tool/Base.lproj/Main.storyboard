@@ -451,9 +451,6 @@
                                     <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </searchFieldCell>
-                                <connections>
-                                    <outlet property="delegate" destination="pYm-d7-7GQ" id="nIq-Gj-aTO"/>
-                                </connections>
                             </searchField>
                         </subviews>
                         <constraints>
@@ -702,14 +699,14 @@ DQ
         <scene sceneID="64z-Me-PQX">
             <objects>
                 <viewController id="KVp-Qk-RrP" customClass="IndexViewController" customModule="Xliff_Tool" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" misplaced="YES" id="BMM-28-WYG">
+                    <view key="view" id="BMM-28-WYG">
                         <rect key="frame" x="0.0" y="0.0" width="325" height="200"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <scrollView autohidesScrollers="YES" horizontalLineScroll="19" horizontalPageScroll="10" verticalLineScroll="19" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="blP-n3-DeW">
-                                <rect key="frame" x="0.0" y="0.0" width="305" height="200"/>
+                                <rect key="frame" x="0.0" y="0.0" width="325" height="200"/>
                                 <clipView key="contentView" id="ZEw-c9-bfY">
-                                    <rect key="frame" x="1" y="1" width="303" height="198"/>
+                                    <rect key="frame" x="1" y="1" width="323" height="198"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" columnSelection="YES" multipleSelection="NO" emptySelection="NO" autosaveColumns="NO" rowSizeStyle="automatic" headerView="25s-s7-Fqy" viewBased="YES" id="iFD-T5-VtU">
@@ -810,7 +807,7 @@ DQ
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="dSr-BY-6GE"/>
                                 </constraints>
                                 <scroller key="horizontalScroller" wantsLayer="YES" verticalHuggingPriority="750" horizontal="YES" id="wrG-04-gRD">
-                                    <rect key="frame" x="1" y="183" width="303" height="16"/>
+                                    <rect key="frame" x="1" y="183" width="323" height="16"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                                 <scroller key="verticalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="eTb-Va-bO3">
@@ -999,7 +996,7 @@ DQ
                                                     <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                                     <prototypeCellViews>
                                                         <tableCellView id="mIE-fb-QTQ">
-                                                            <rect key="frame" x="572" y="1" width="128" height="17"/>
+                                                            <rect key="frame" x="571.5" y="1" width="128" height="17"/>
                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                             <subviews>
                                                                 <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="FWc-ZH-D5d">
