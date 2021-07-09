@@ -15,6 +15,7 @@ class EditorViewController: NSViewController {
     
     var transUnits:Results<RLMXTTransUnit>!
     var transUnit:RLMXTTransUnit?
+    var xliff:RLMXTXliff!
     
     private func nextTransUnit() -> RLMXTTransUnit? {
         var results = transUnits.filter("isVerified = false")
@@ -137,8 +138,9 @@ class EditorViewController: NSViewController {
         
         addViewMenuDelegate()
         
-        DispatchQueue.main.async {
-            NotificationCenter.default.addObserver(self, selector: #selector(self.willCloseNotification(_:)), name: NSWindow.willCloseNotification, object: self.view.window!)
+        DispatchQueue.main.async { [self] in
+            NotificationCenter.default.addObserver(self, selector: #selector(willCloseNotification(_:)), name: NSWindow.willCloseNotification, object: self.view.window!)
+            NotificationCenter.default.addObserver(self, selector: #selector(selectionDidChangeNotification(_:)), name: NSOutlineView.selectionDidChangeNotification, object: nil)
         }
     }
     
@@ -171,6 +173,21 @@ class EditorViewController: NSViewController {
         }
     }
     
+    @objc private func selectionDidChangeNotification(_ noti:Notification) {
+        if let outlineView = noti.object as? NSOutlineView {
+            let row = outlineView.selectedRow
+            let item = outlineView.item(atRow: row)
+            
+            if let file = item as? RLMXTFile {
+                debugPrint(file.original)
+            } else if let transUnit = item as? RLMXTTransUnit {
+                updateUI(with: transUnit)
+            } else {
+               debugPrint("")
+            }
+        }
+    }
+    
     func updateUI() {
         transUnit = nextTransUnit()
         updateWindowTitle()
@@ -188,6 +205,17 @@ class EditorViewController: NSViewController {
         }
         
         updateProgress()
+        
+        sourceLabel.stringValue = transUnit.source
+        targetTextView.string = transUnit.target ?? ""
+        noteLabel.stringValue = transUnit.note ?? ""
+        copyNoteObjectIDButton.isEnabled = hasObjectID()
+        verifyButton.isEnabled = !(transUnit.target?.isEmpty ?? true)
+    }
+    
+    func updateUI(with transUnit:RLMXTTransUnit) {
+        self.transUnit = transUnit
+        updateWindowTitle()
         
         sourceLabel.stringValue = transUnit.source
         targetTextView.string = transUnit.target ?? ""
@@ -238,6 +266,8 @@ extension EditorViewController:NSTextDelegate {
             isEdited = true
             updateWindowTitle()
         }
+        
+        updateProgress()
 
         // save changes
         let transUnit = self.transUnit!
@@ -294,7 +324,6 @@ extension EditorViewController {
 <?xml version="1.0" encoding="UTF-8"?>\n
 """
         var xmlData = xmlString.data(using: .utf8)!
-        let xliff = transUnit?.bodies.first?.files.first?.xliffs.first
         let encoder = XMLEncoder()
         encoder.outputFormatting = .prettyPrinted
         encoder.prettyPrintIndentation = .spaces(2)
@@ -346,15 +375,5 @@ extension EditorViewController:NSMenuDelegate {
                 menuItem.state = (verifyTranslatedResultsFirst == NSControl.StateValue.on.rawValue) ? .on : .off
             }
         }
-    }
-}
-
-extension EditorViewController {
-    @IBAction func showOrHideSidebar(_ sender:Any?) {
-        guard let splitViewController = view.window?.contentViewController as? NSSplitViewController else {
-            return
-        }
-        
-        splitViewController.splitViewItems.last?.isCollapsed.toggle()
     }
 }

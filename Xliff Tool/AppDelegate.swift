@@ -48,6 +48,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             let realm = try! Realm(fileURL: databaseURL)
             editorViewController.transUnits = realm.objects(RLMXTTransUnit.self)
             editorViewController.files = realm.objects(RLMXTFile.self)
+            editorViewController.xliff = realm.objects(RLMXTXliff.self).first
             editorViewController.updateUI()
             
 //            sidebarSplitViewItem.isCollapsed = true // MARK: - TODO add a new preference here.
@@ -200,8 +201,8 @@ extension AppDelegate {
         closeSplitWindow()
         
         let panel = NSOpenPanel()
-        panel.allowedFileTypes = ["xliff"]
-        panel.message = NSLocalizedString("Open Xliff", comment: "")
+        panel.allowedFileTypes = ["xliff", "xcloc"]
+        panel.message = NSLocalizedString("Open Xliff/Xcloc", comment: "")
 
         let response = panel.runModal()
         if response == .OK {
@@ -210,9 +211,27 @@ extension AppDelegate {
     }
     
     private func openFile(with url:URL) {
-        xliffURL = url
+        xliffURL = getXliffURL(url)
         addToOpenRecent()
         setupUI()
+    }
+    
+    private func getXliffURL(_ url:URL) -> URL {
+        if url.lastPathComponent.hasSuffix(".xliff") {
+            return url
+        }
+        
+        return xliffURLFromXclocURL(url)
+    }
+    
+    private func xliffURLFromXclocURL(_ xcloc:URL) -> URL {
+        let xliffFilename = xcloc.deletingPathExtension().lastPathComponent + ".xliff"
+        return URL(fileURLWithPath: [
+                    xcloc.path,
+                    "Localized Contents",
+                    xliffFilename
+        ].joined(separator: "/"),
+        isDirectory: false)
     }
     
     @objc private func openFile(_ menuItem:NSMenuItem) {
@@ -252,5 +271,15 @@ extension AppDelegate:NSMenuDelegate {
             menuItems,
             [NSMenuItem.separator(), clearMenuMenuItem]
         ].flatMap({$0})
+    }
+}
+
+extension AppDelegate {
+    @IBAction func showOrHideSidebar(_ sender:Any?) {
+        guard let splitViewController = NSApp.mainWindow?.contentViewController as? NSSplitViewController else {
+            return
+        }
+        
+        splitViewController.splitViewItems.last?.isCollapsed.toggle()
     }
 }
