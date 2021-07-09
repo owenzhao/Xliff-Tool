@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DC05EF8F2692B27500BC0422 /* Realm.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC05EF8D2692B27500BC0422 /* Realm.xcframework */; };
+		DC05EF902692B27500BC0422 /* Realm.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DC05EF8D2692B27500BC0422 /* Realm.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DC05EF912692B27500BC0422 /* RealmSwift.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC05EF8E2692B27500BC0422 /* RealmSwift.xcframework */; };
+		DC05EF922692B27500BC0422 /* RealmSwift.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DC05EF8E2692B27500BC0422 /* RealmSwift.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		DC160BD326043B0C00A00890 /* SidebarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC160BD126043B0C00A00890 /* SidebarViewController.swift */; };
-		DC589D20260B65B200B34C5D /* RealmSwift.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC589D1E260B65B200B34C5D /* RealmSwift.xcframework */; };
-		DC589D21260B65B200B34C5D /* RealmSwift.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DC589D1E260B65B200B34C5D /* RealmSwift.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		DC589D22260B65B200B34C5D /* Realm.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC589D1F260B65B200B34C5D /* Realm.xcframework */; };
-		DC589D23260B65B200B34C5D /* Realm.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DC589D1F260B65B200B34C5D /* Realm.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		DC589D26260B65C900B34C5D /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = DC589D25260B65C900B34C5D /* libc++.tbd */; };
 		DC589D28260B65CF00B34C5D /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = DC589D27260B65CF00B34C5D /* libz.tbd */; };
 		DC589D2A260B65E800B34C5D /* XMLCoder.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC589D29260B65E800B34C5D /* XMLCoder.xcframework */; };
@@ -38,9 +38,9 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				DC589D21260B65B200B34C5D /* RealmSwift.xcframework in Embed Frameworks */,
 				DC589D2B260B65E800B34C5D /* XMLCoder.xcframework in Embed Frameworks */,
-				DC589D23260B65B200B34C5D /* Realm.xcframework in Embed Frameworks */,
+				DC05EF922692B27500BC0422 /* RealmSwift.xcframework in Embed Frameworks */,
+				DC05EF902692B27500BC0422 /* Realm.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -48,9 +48,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		DC05EF8D2692B27500BC0422 /* Realm.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Realm.xcframework; path = Frameworks/10.9.0/Carthage.xcframework/Realm.xcframework; sourceTree = "<group>"; };
+		DC05EF8E2692B27500BC0422 /* RealmSwift.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = RealmSwift.xcframework; path = Frameworks/10.9.0/Carthage.xcframework/RealmSwift.xcframework; sourceTree = "<group>"; };
 		DC160BD126043B0C00A00890 /* SidebarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarViewController.swift; sourceTree = "<group>"; };
-		DC589D1E260B65B200B34C5D /* RealmSwift.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = RealmSwift.xcframework; path = "Frameworks/realm-swift-10.7.2/12.4/RealmSwift.xcframework"; sourceTree = "<group>"; };
-		DC589D1F260B65B200B34C5D /* Realm.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Realm.xcframework; path = "Frameworks/realm-swift-10.7.2/12.4/Realm.xcframework"; sourceTree = "<group>"; };
 		DC589D25260B65C900B34C5D /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		DC589D27260B65CF00B34C5D /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		DC589D29260B65E800B34C5D /* XMLCoder.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = XMLCoder.xcframework; path = Carthage/Build/XMLCoder.xcframework; sourceTree = "<group>"; };
@@ -79,10 +79,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC589D28260B65CF00B34C5D /* libz.tbd in Frameworks */,
+				DC05EF8F2692B27500BC0422 /* Realm.xcframework in Frameworks */,
+				DC05EF912692B27500BC0422 /* RealmSwift.xcframework in Frameworks */,
 				DC589D26260B65C900B34C5D /* libc++.tbd in Frameworks */,
 				DC589D2A260B65E800B34C5D /* XMLCoder.xcframework in Frameworks */,
-				DC589D20260B65B200B34C5D /* RealmSwift.xcframework in Frameworks */,
-				DC589D22260B65B200B34C5D /* Realm.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,11 +92,11 @@
 		DC589D1D260B65B200B34C5D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DC05EF8D2692B27500BC0422 /* Realm.xcframework */,
+				DC05EF8E2692B27500BC0422 /* RealmSwift.xcframework */,
 				DC589D29260B65E800B34C5D /* XMLCoder.xcframework */,
 				DC589D27260B65CF00B34C5D /* libz.tbd */,
 				DC589D25260B65C900B34C5D /* libc++.tbd */,
-				DC589D1F260B65B200B34C5D /* Realm.xcframework */,
-				DC589D1E260B65B200B34C5D /* RealmSwift.xcframework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -400,7 +400,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_TEAM = 96NM39SGJ5;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = "Xliff Tool/Info.plist";
@@ -408,7 +408,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = 1.1.0;
+				MARKETING_VERSION = 1.1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.parussoft.Xliff-Tool";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -423,7 +423,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_TEAM = 96NM39SGJ5;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = "Xliff Tool/Info.plist";
@@ -431,7 +431,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = 1.1.0;
+				MARKETING_VERSION = 1.1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.parussoft.Xliff-Tool";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
