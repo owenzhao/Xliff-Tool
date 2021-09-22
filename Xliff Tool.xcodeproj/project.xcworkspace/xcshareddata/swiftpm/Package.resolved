@@ -1,0 +1,34 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "MyAppStore",
+        "repositoryURL": "git@github.com:owenzhao/MyAppStore.git",
+        "state": {
+          "branch": null,
+          "revision": "2622cc04e8158f57a8544c2e788e8aaa99425824",
+          "version": "1.1.3"
+        }
+      },
+      {
+        "package": "QRCodeKit",
+        "repositoryURL": "git@github.com:owenzhao/QRCodeKit.git",
+        "state": {
+          "branch": null,
+          "revision": "de4175c3cf86816ed800e48b67ddf44ed5a50082",
+          "version": "1.0.1"
+        }
+      },
+      {
+        "package": "ZIPFoundation",
+        "repositoryURL": "git@github.com:weichsel/ZIPFoundation.git",
+        "state": {
+          "branch": null,
+          "revision": "cf10bbff6ac3b873e97b36b9784c79866a051a8e",
+          "version": "0.9.12"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

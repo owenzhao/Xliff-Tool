@@ -12,6 +12,8 @@
 		DC05EF912692B27500BC0422 /* RealmSwift.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC05EF8E2692B27500BC0422 /* RealmSwift.xcframework */; };
 		DC05EF922692B27500BC0422 /* RealmSwift.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DC05EF8E2692B27500BC0422 /* RealmSwift.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		DC160BD326043B0C00A00890 /* SidebarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC160BD126043B0C00A00890 /* SidebarViewController.swift */; };
+		DC4F63D926EF338100C39C09 /* Support.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC4F63D826EF338100C39C09 /* Support.storyboard */; };
+		DC4F63DC26EF33BF00C39C09 /* MyAppStore in Frameworks */ = {isa = PBXBuildFile; productRef = DC4F63DB26EF33BF00C39C09 /* MyAppStore */; };
 		DC589D26260B65C900B34C5D /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = DC589D25260B65C900B34C5D /* libc++.tbd */; };
 		DC589D28260B65CF00B34C5D /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = DC589D27260B65CF00B34C5D /* libz.tbd */; };
 		DC589D2A260B65E800B34C5D /* XMLCoder.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC589D29260B65E800B34C5D /* XMLCoder.xcframework */; };
@@ -51,6 +53,7 @@
 		DC05EF8D2692B27500BC0422 /* Realm.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Realm.xcframework; path = Frameworks/10.9.0/Carthage.xcframework/Realm.xcframework; sourceTree = "<group>"; };
 		DC05EF8E2692B27500BC0422 /* RealmSwift.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = RealmSwift.xcframework; path = Frameworks/10.9.0/Carthage.xcframework/RealmSwift.xcframework; sourceTree = "<group>"; };
 		DC160BD126043B0C00A00890 /* SidebarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarViewController.swift; sourceTree = "<group>"; };
+		DC4F63D826EF338100C39C09 /* Support.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Support.storyboard; sourceTree = "<group>"; };
 		DC589D25260B65C900B34C5D /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		DC589D27260B65CF00B34C5D /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		DC589D29260B65E800B34C5D /* XMLCoder.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = XMLCoder.xcframework; path = Carthage/Build/XMLCoder.xcframework; sourceTree = "<group>"; };
@@ -82,6 +85,7 @@
 				DC05EF8F2692B27500BC0422 /* Realm.xcframework in Frameworks */,
 				DC05EF912692B27500BC0422 /* RealmSwift.xcframework in Frameworks */,
 				DC589D26260B65C900B34C5D /* libc++.tbd in Frameworks */,
+				DC4F63DC26EF33BF00C39C09 /* MyAppStore in Frameworks */,
 				DC589D2A260B65E800B34C5D /* XMLCoder.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -146,6 +150,7 @@
 				DC589D2C260B778A00B34C5D /* Model */,
 				DCD3E7CA247B9F66009D0339 /* Assets.xcassets */,
 				DCD3E7CC247B9F66009D0339 /* Main.storyboard */,
+				DC4F63D826EF338100C39C09 /* Support.storyboard */,
 				DCC66C07247E338E007DEF99 /* NSTextFiledWithIndicator.swift */,
 				DCC66C09247E339E007DEF99 /* NSTextFiledWithIndicator.xib */,
 				DCC66C1F247E52BE007DEF99 /* Tool */,
@@ -174,6 +179,9 @@
 			dependencies = (
 			);
 			name = "Xliff Tool";
+			packageProductDependencies = (
+				DC4F63DB26EF33BF00C39C09 /* MyAppStore */,
+			);
 			productName = "Xliff Tool";
 			productReference = DCD3E7C3247B9F65009D0339 /* Xliff Tool.app */;
 			productType = "com.apple.product-type.application";
@@ -203,6 +211,9 @@
 				"zh-Hans",
 			);
 			mainGroup = DCD3E7BA247B9F65009D0339;
+			packageReferences = (
+				DC4F63DA26EF33BF00C39C09 /* XCRemoteSwiftPackageReference "MyAppStore" */,
+			);
 			productRefGroup = DCD3E7C4247B9F65009D0339 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -221,6 +232,7 @@
 				DCFB3DB82483801F001BCA3A /* Localizable.strings in Resources */,
 				DCD3E7CB247B9F66009D0339 /* Assets.xcassets in Resources */,
 				DCD3E7CE247B9F66009D0339 /* Main.storyboard in Resources */,
+				DC4F63D926EF338100C39C09 /* Support.storyboard in Resources */,
 				DCFB3DB52483801F001BCA3A /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -460,6 +472,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DC4F63DA26EF33BF00C39C09 /* XCRemoteSwiftPackageReference "MyAppStore" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@github.com:owenzhao/MyAppStore.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DC4F63DB26EF33BF00C39C09 /* MyAppStore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DC4F63DA26EF33BF00C39C09 /* XCRemoteSwiftPackageReference "MyAppStore" */;
+			productName = MyAppStore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DCD3E7BB247B9F65009D0339 /* Project object */;
 }

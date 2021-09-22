@@ -9,6 +9,7 @@
 import Cocoa
 import XMLCoder
 import RealmSwift
+import SwiftUI
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
@@ -282,5 +283,11 @@ extension AppDelegate {
         
         splitViewItem.isCollapsed.toggle()
         UserDefaults.standard.setValue(splitViewItem.isCollapsed, forKey: UserDefaults.Key.showSideBar.rawValue)
+    }
+    
+    @IBAction func showSupport(_ sender:Any?) {
+        if let vc = NSStoryboard(name: "Support", bundle: nil).instantiateInitialController() as? NSViewController {
+            NSApp.mainWindow?.contentViewController?.presentAsModalWindow(vc)
+        }
     }
 }

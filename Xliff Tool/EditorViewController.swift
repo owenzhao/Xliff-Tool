@@ -289,19 +289,13 @@ extension EditorViewController:NSTextDelegate {
 // MARK: - Menu
 extension EditorViewController {
     @IBAction func openInXcode(_ sender: Any?) {
-        do {
-            let xliffURL = (NSApp.delegate as! AppDelegate).xliffURL!
-            let xcodeURL = URL(fileURLWithPath: "/Applications/Xcode.app")
-            try NSWorkspace.shared.open([xliffURL], withApplicationAt: xcodeURL, options: .default, configuration: .init())
-        } catch {
-            let alert = NSAlert()
-            alert.alertStyle = .warning
-            alert.messageText = NSLocalizedString("No Xcode Found", comment: "")
-            alert.informativeText = NSLocalizedString("There is no Xcode.app in /Applications directory.", comment: "")
-            alert.addButton(withTitle: NSLocalizedString("OK", comment: ""))
-            NSSound.beep()
-            alert.runModal()
-        }
+        let xliffURL = (NSApp.delegate as! AppDelegate).xliffURL!
+        let xcodeURL = URL(fileURLWithPath: "/Applications/Xcode.app")
+        NSWorkspace.shared.open([xliffURL], withApplicationAt: xcodeURL, configuration: NSWorkspace.OpenConfiguration(), completionHandler: { app, error in
+            if error != nil {
+                print(error!.localizedDescription)
+            }
+        })
     }
     
     @objc func saveDocument(_ sender: Any?) {
