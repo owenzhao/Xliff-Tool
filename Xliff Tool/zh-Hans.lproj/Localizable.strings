@@ -20,9 +20,6 @@
 "New Project" = "新项目";
 
 /* No comment provided by engineer. */
-"No Xcode Found" = "找不到Xcode";
-
-/* No comment provided by engineer. */
 "Note" = "备注";
 
 /* No comment provided by engineer. */
@@ -42,9 +39,6 @@
 
 /* No comment provided by engineer. */
 "The operations you do next may get your data lost." = "您之后的操作可能导致您的数据丢失。";
-
-/* No comment provided by engineer. */
-"There is no Xcode.app in /Applications directory." = "/Applications（/应用程序）目录下没有Xcode.app应用。";
 
 /* No comment provided by engineer. */
 "Translated: " = "翻译：";

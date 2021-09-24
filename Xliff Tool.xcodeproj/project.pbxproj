@@ -7,17 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DC05EF8F2692B27500BC0422 /* Realm.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC05EF8D2692B27500BC0422 /* Realm.xcframework */; };
-		DC05EF902692B27500BC0422 /* Realm.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DC05EF8D2692B27500BC0422 /* Realm.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		DC05EF912692B27500BC0422 /* RealmSwift.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC05EF8E2692B27500BC0422 /* RealmSwift.xcframework */; };
-		DC05EF922692B27500BC0422 /* RealmSwift.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DC05EF8E2692B27500BC0422 /* RealmSwift.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		DC160BD326043B0C00A00890 /* SidebarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC160BD126043B0C00A00890 /* SidebarViewController.swift */; };
 		DC4F63D926EF338100C39C09 /* Support.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC4F63D826EF338100C39C09 /* Support.storyboard */; };
 		DC4F63DC26EF33BF00C39C09 /* MyAppStore in Frameworks */ = {isa = PBXBuildFile; productRef = DC4F63DB26EF33BF00C39C09 /* MyAppStore */; };
 		DC589D26260B65C900B34C5D /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = DC589D25260B65C900B34C5D /* libc++.tbd */; };
 		DC589D28260B65CF00B34C5D /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = DC589D27260B65CF00B34C5D /* libz.tbd */; };
-		DC589D2A260B65E800B34C5D /* XMLCoder.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC589D29260B65E800B34C5D /* XMLCoder.xcframework */; };
-		DC589D2B260B65E800B34C5D /* XMLCoder.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DC589D29260B65E800B34C5D /* XMLCoder.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		DCC66C00247BF40C007DEF99 /* RealmObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC66BFF247BF40C007DEF99 /* RealmObjects.swift */; };
 		DCC66C02247CE524007DEF99 /* IndexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC66C01247CE524007DEF99 /* IndexViewController.swift */; };
 		DCC66C05247CF767007DEF99 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC66C03247CF767007DEF99 /* DetailViewController.swift */; };
@@ -25,6 +19,11 @@
 		DCC66C0A247E339E007DEF99 /* NSTextFiledWithIndicator.xib in Resources */ = {isa = PBXBuildFile; fileRef = DCC66C09247E339E007DEF99 /* NSTextFiledWithIndicator.xib */; };
 		DCC66C1E247E52B4007DEF99 /* URL+Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC66C1D247E52B4007DEF99 /* URL+Base.swift */; };
 		DCC66C22247E91A6007DEF99 /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC66C21247E91A6007DEF99 /* UserDefaults.swift */; };
+		DCCCE76626FDBB070000E078 /* RealmSwift.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCCCE76426FDBB070000E078 /* RealmSwift.xcframework */; };
+		DCCCE76726FDBB070000E078 /* RealmSwift.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DCCCE76426FDBB070000E078 /* RealmSwift.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DCCCE76826FDBB070000E078 /* Realm.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCCCE76526FDBB070000E078 /* Realm.xcframework */; };
+		DCCCE76926FDBB070000E078 /* Realm.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DCCCE76526FDBB070000E078 /* Realm.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DCCCE76C26FDBDA20000E078 /* XMLCoder in Frameworks */ = {isa = PBXBuildFile; productRef = DCCCE76B26FDBDA20000E078 /* XMLCoder */; };
 		DCD3E7C7247B9F65009D0339 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD3E7C6247B9F65009D0339 /* AppDelegate.swift */; };
 		DCD3E7C9247B9F65009D0339 /* EditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD3E7C8247B9F65009D0339 /* EditorViewController.swift */; };
 		DCD3E7CB247B9F66009D0339 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCD3E7CA247B9F66009D0339 /* Assets.xcassets */; };
@@ -40,9 +39,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				DC589D2B260B65E800B34C5D /* XMLCoder.xcframework in Embed Frameworks */,
-				DC05EF922692B27500BC0422 /* RealmSwift.xcframework in Embed Frameworks */,
-				DC05EF902692B27500BC0422 /* Realm.xcframework in Embed Frameworks */,
+				DCCCE76726FDBB070000E078 /* RealmSwift.xcframework in Embed Frameworks */,
+				DCCCE76926FDBB070000E078 /* Realm.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -50,13 +48,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		DC05EF8D2692B27500BC0422 /* Realm.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Realm.xcframework; path = Frameworks/10.9.0/Carthage.xcframework/Realm.xcframework; sourceTree = "<group>"; };
-		DC05EF8E2692B27500BC0422 /* RealmSwift.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = RealmSwift.xcframework; path = Frameworks/10.9.0/Carthage.xcframework/RealmSwift.xcframework; sourceTree = "<group>"; };
 		DC160BD126043B0C00A00890 /* SidebarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarViewController.swift; sourceTree = "<group>"; };
 		DC4F63D826EF338100C39C09 /* Support.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Support.storyboard; sourceTree = "<group>"; };
 		DC589D25260B65C900B34C5D /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		DC589D27260B65CF00B34C5D /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
-		DC589D29260B65E800B34C5D /* XMLCoder.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = XMLCoder.xcframework; path = Carthage/Build/XMLCoder.xcframework; sourceTree = "<group>"; };
 		DCC66BFF247BF40C007DEF99 /* RealmObjects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmObjects.swift; sourceTree = "<group>"; };
 		DCC66C01247CE524007DEF99 /* IndexViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexViewController.swift; sourceTree = "<group>"; };
 		DCC66C03247CF767007DEF99 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
@@ -65,6 +60,8 @@
 		DCC66C1D247E52B4007DEF99 /* URL+Base.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+Base.swift"; sourceTree = "<group>"; };
 		DCC66C20247E5AFE007DEF99 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
 		DCC66C21247E91A6007DEF99 /* UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
+		DCCCE76426FDBB070000E078 /* RealmSwift.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = RealmSwift.xcframework; path = Frameworks/RealmSwift.xcframework; sourceTree = "<group>"; };
+		DCCCE76526FDBB070000E078 /* Realm.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Realm.xcframework; path = Frameworks/Realm.xcframework; sourceTree = "<group>"; };
 		DCD3E7C3247B9F65009D0339 /* Xliff Tool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Xliff Tool.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCD3E7C6247B9F65009D0339 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DCD3E7C8247B9F65009D0339 /* EditorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorViewController.swift; sourceTree = "<group>"; };
@@ -81,12 +78,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCCCE76C26FDBDA20000E078 /* XMLCoder in Frameworks */,
 				DC589D28260B65CF00B34C5D /* libz.tbd in Frameworks */,
-				DC05EF8F2692B27500BC0422 /* Realm.xcframework in Frameworks */,
-				DC05EF912692B27500BC0422 /* RealmSwift.xcframework in Frameworks */,
 				DC589D26260B65C900B34C5D /* libc++.tbd in Frameworks */,
+				DCCCE76626FDBB070000E078 /* RealmSwift.xcframework in Frameworks */,
 				DC4F63DC26EF33BF00C39C09 /* MyAppStore in Frameworks */,
-				DC589D2A260B65E800B34C5D /* XMLCoder.xcframework in Frameworks */,
+				DCCCE76826FDBB070000E078 /* Realm.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,9 +93,8 @@
 		DC589D1D260B65B200B34C5D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				DC05EF8D2692B27500BC0422 /* Realm.xcframework */,
-				DC05EF8E2692B27500BC0422 /* RealmSwift.xcframework */,
-				DC589D29260B65E800B34C5D /* XMLCoder.xcframework */,
+				DCCCE76526FDBB070000E078 /* Realm.xcframework */,
+				DCCCE76426FDBB070000E078 /* RealmSwift.xcframework */,
 				DC589D27260B65CF00B34C5D /* libz.tbd */,
 				DC589D25260B65C900B34C5D /* libc++.tbd */,
 			);
@@ -181,6 +177,7 @@
 			name = "Xliff Tool";
 			packageProductDependencies = (
 				DC4F63DB26EF33BF00C39C09 /* MyAppStore */,
+				DCCCE76B26FDBDA20000E078 /* XMLCoder */,
 			);
 			productName = "Xliff Tool";
 			productReference = DCD3E7C3247B9F65009D0339 /* Xliff Tool.app */;
@@ -213,6 +210,7 @@
 			mainGroup = DCD3E7BA247B9F65009D0339;
 			packageReferences = (
 				DC4F63DA26EF33BF00C39C09 /* XCRemoteSwiftPackageReference "MyAppStore" */,
+				DCCCE76A26FDBDA20000E078 /* XCRemoteSwiftPackageReference "XMLCoder" */,
 			);
 			productRefGroup = DCD3E7C4247B9F65009D0339 /* Products */;
 			projectDirPath = "";
@@ -482,6 +480,14 @@
 				minimumVersion = 1.0.0;
 			};
 		};
+		DCCCE76A26FDBDA20000E078 /* XCRemoteSwiftPackageReference "XMLCoder" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@github.com:MaxDesiatov/XMLCoder.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.3;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -489,6 +495,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = DC4F63DA26EF33BF00C39C09 /* XCRemoteSwiftPackageReference "MyAppStore" */;
 			productName = MyAppStore;
+		};
+		DCCCE76B26FDBDA20000E078 /* XMLCoder */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DCCCE76A26FDBDA20000E078 /* XCRemoteSwiftPackageReference "XMLCoder" */;
+			productName = XMLCoder;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

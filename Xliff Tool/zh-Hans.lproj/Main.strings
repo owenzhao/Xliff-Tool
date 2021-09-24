@@ -169,6 +169,12 @@
 /* Class = "NSMenuItem"; title = "Hide Xliff Tool"; ObjectID = "Olw-nP-bQN"; */
 "Olw-nP-bQN.title" = "隐藏 Xliff工具";
 
+/* Class = "NSToolbarItem"; label = "Support"; ObjectID = "oLy-vz-Oht"; */
+"oLy-vz-Oht.label" = "支持";
+
+/* Class = "NSToolbarItem"; paletteLabel = "Support"; ObjectID = "oLy-vz-Oht"; */
+"oLy-vz-Oht.paletteLabel" = "支持";
+
 /* Class = "NSToolbarItem"; label = "Sources"; ObjectID = "Ort-Xb-6S9"; */
 "Ort-Xb-6S9.label" = "源";
 

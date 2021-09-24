@@ -163,7 +163,11 @@ extension SidebarViewController {
             let searchStr = [searchSourcePart, searchTargetPart, searchNotePart].compactMap {$0}
                 .joined(separator: " OR ")
             
-            searchPredicate = NSPredicate(format: searchStr, argumentArray: nil)
+            if !searchStr.isEmpty {
+                searchPredicate = NSPredicate(format: searchStr, argumentArray: nil)
+            } else {
+                searchPredicate = NSPredicate(value: false)
+            }
         }
     }
 }
