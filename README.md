@@ -1,7 +1,5 @@
 # Xliff Tool For Xcode
 
-Xliff Tool is an app helping you deal with Xliff files, especially for Xliff 1.2 that Xcode exported. 
-
 Xliff Tool For Xcode, short for Xliff Tool, is a translation tool for developers. It supports version 1.2 .xliff files that are used by Xcode. If you installed Xcode 13, .xliff files are contained in .xcloc packages. 
 
 > Before Xcode 13, .xcloc files in Finder were shown as directories.
