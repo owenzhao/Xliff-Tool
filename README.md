@@ -20,9 +20,9 @@ Choose "New Project" if it is a new project. Or choose the exist one that it was
 
 ### <span id="Translate">4. Translate</span>
 Different colors mean differences.
-* <font color=red>Source</font>
-* <font color=#13938F>Target(Unaudited)</font>
-* <font color=green>Target(Audited)</font>
+* <font color=blue>Blue for Source</font>
+* <font color=#13938F>Dark Green for Target(Unaudited)</font>
+* <font color=green>Light Green for Target(Audited)</font>
 
 ![03 translate light-w1228](assets/03%20translate%20light.png)
 

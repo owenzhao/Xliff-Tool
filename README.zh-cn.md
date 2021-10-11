@@ -18,9 +18,9 @@ Xliff Tool For Xcode（简称Xliff Tool）是一个为开发者制作的翻译�
 
 ### <span id="翻译">4. 翻译</span>
 不同的颜色表示不同的含义。
-* <font color=red>源</font>
-* <font color=#13938F>目标（未审核）</font>
-* <font color=green>目标（审核完成）</font>
+* <font color=blue>蓝色-源</font>
+* <font color=#13938F>深绿色-目标（未审核）</font>
+* <font color=green>浅绿色-目标（审核完成）</font>
 
 ![03 翻译 亮-w1228](assets/03%20%E7%BF%BB%E8%AF%91%20%E4%BA%AE.png)
 
