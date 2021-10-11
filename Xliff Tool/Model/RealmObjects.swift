@@ -175,7 +175,7 @@ class RLMXTTransUnit:Object, Codable, DynamicNodeEncoding {
     }
     
     @objc dynamic var id:String = ""
-    @objc dynamic var xmlSpace:String = ""
+    @objc dynamic var xmlSpace:String? = ""
     @objc dynamic var source:String = ""
     @objc dynamic var target:String? = nil
     @objc dynamic var note:String? = nil
@@ -198,7 +198,7 @@ class RLMXTTransUnit:Object, Codable, DynamicNodeEncoding {
         
         let values = try decoder.container(keyedBy: CodingKeys.self)
         id = try values.decode(String.self, forKey: .id)
-        xmlSpace = try values.decode(String.self, forKey: .xmlSpace)
+        xmlSpace = try? values.decode(String.self, forKey: .xmlSpace)
         source = try values.decode(String.self, forKey: .source)
         target = try? values.decode(String.self, forKey: .target)
         note = try? values.decode(String.self, forKey: .note)

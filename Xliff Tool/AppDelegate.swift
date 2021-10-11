@@ -175,7 +175,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     
     private func fileIdsInterSection(from url:URL, to fileIds:[String]) -> Set<String> {
         let configuration = Realm.Configuration(fileURL: url,
-                                                schemaVersion: 1)
+                                                schemaVersion: 2)
         { migration, oldSchemaVersion in
             if oldSchemaVersion < 1 {
                 migration.enumerateObjects(ofType: RLMXTFile.className()) { (oldObject, newObject) in
@@ -186,9 +186,13 @@ class AppDelegate: NSObject, NSApplicationDelegate {
                     newObject!["uid"] = oldObject!["uid"]
                 }
             }
+            
+            if oldSchemaVersion < 2 {
+                
+            }
         }
         
-        Realm.Configuration.defaultConfiguration.schemaVersion = 1
+        Realm.Configuration.defaultConfiguration.schemaVersion = 2
         
         let realm = try! Realm(configuration: configuration)
         let originalFileIdSet = Set(realm.objects(RLMXTFile.self).map { $0.id })
