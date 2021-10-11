@@ -249,8 +249,8 @@ extension AppDelegate {
         alert.alertStyle = .critical
         alert.messageText = NSLocalizedString("Make sure to backup before you delete anything.", comment: "")
         alert.informativeText = NSLocalizedString("The operations you do next may get your data lost.", comment: "")
-        alert.addButton(withTitle: "Proceed")
-        alert.addButton(withTitle: "Cancel")
+        alert.addButton(withTitle: NSLocalizedString("Proceed", comment: ""))
+        alert.addButton(withTitle: NSLocalizedString("Cancel", comment: ""))
         
         NSSound.beep()
         let response = alert.runModal()

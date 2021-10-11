@@ -1,59 +1,48 @@
-# Xliff Tool
+# Xliff Tool For Xcode
+
 Xliff Tool is an app helping you deal with Xliff files, especially for Xliff 1.2 that Xcode exported. 
 
-## Install & Upgrade
-See the above [Release Link](https://github.com/owenzhao/Xliff-Tool/releases).
+Xliff Tool For Xcode, short for Xliff Tool, is a translation tool for developers. It supports version 1.2 .xliff files that are used by Xcode. If you installed Xcode 13, .xliff files are contained in .xcloc packages. 
 
-#### brew cask
-I'd love to bring Xliff Tool to brew cask.
+> Before Xcode 13, .xcloc files in Finder were shown as directories.
 
-However, to add a public brew cask, it needs at least 75 stars to get accepted in brew's pull requests . So if you love Xliff Tool, please star this project so I could make the brew cask earlier.
+## How to use
+1. In Xcode, Export Localizations
+2. In Xliff Tool, Open Files
+3. [Choose Project](#ChooseProject)
+4. [Translate](#Translate)
+5. [Audit](#Audit)
+6. [Save](#Save)
+7. In Xcode, Import Localizations
 
-## Design Purpose
-When developing apps with Xcode for multiple targets, say supporting iOS, watchOS and macOS in one project, there are a lot of pains on translations. You have to provide translations for each platform though most of them are the same. 
+### <span id="ChooseProject">3. Choose Project</span>
+Choose "New Project" if it is a new project. Or choose the exist one that it was last used. If you want to create another version, you can choose "New Project" again.
 
-After some days, if your add new functions to your app, you have to find the untranslated words and translate them again.
+### <span id="Translate">4. Translate</span>
+Different colors mean differences.
+* <font color=red>Source</font>
+* <font color=#13938F>Target(Unaudited)</font>
+* <font color=green>Target(Audited)</font>
 
-Xliff Tool makes you do your job a lot easier. 
+![03 translate light-w1228](assets/03%20translate%20light.png)
 
-1. Xliff Tool will automatically translate words in other targets when you have translated one in one target. 
-2. You then can verify those automatically translated words as you may want to revise them sometimes.
-3. Xliff Tool can save results to Xliff file so you can import it back to Xcode.
-4. You can choose to skip translated results so only the untranslated words are listed.
+### <span id="Audit">5. Audit</span>
+To audit is to double check the translation. Whenever the Target is changed, it becomes unaudited. You must click verify button to pass the audit. 
 
-## Model
-Xliff Tool uses both Xliff file and databases. When you choose to open a Xliff file. Xliff Tool will look its inner databases and sorted the databases by relationship with projects. 
+### <span id="Save">6. Save</span>
+When you close the project or the app, the project will save automatically. You can save manually at any time.
 
-Normally, you should choose the top most project and use "Update Project". 
-
-When updating a project, Xliff Tool will do these operations:
-
-1. Backup original database to backups directory.
-2. Merge data in database to the data decoded from the Xliff file.
-    1. All translations are decoded from the Xliff file are not verified by default. Xliff Tool compares the project database and Xliff file and marks those identical translations as verified.
-    2. For translations newly added from the Xliff file, Xliff Tool looks into the project database to find the translation alike. You can later verify them.
-    3. For translations modified from the Xliff file, Xliff Tool looks into the project database and use the previous translation. You can later verify them.
-
-## Backups and Undo
-Xliff Tool makes a backup every time you choose "Update Project", and leaves the latest backups in "backups" directory, you can open the "database" directory from "File" menu.
-
-Make sure to do you backup if you want to manually delete or undo databases. 
-
-## Verify Translated Results First
-Starting from version 1.0.2, Xliff Tool introduced a new menu item "Verify Translated Results First" with on state by default.
-
-For translations with multiple targets, for example, with iOS and watchOS, if you translates one source on iOS target, with this menu item on, Xliff Tool, will do two things:
-
-1. Replacing the counterpart transunit on target watchOS as both of them shares the same source and the watchOS's target is untranslated.
-2. Showing the translation in watchOS target to you to verify next.
-
-Also, if you have revised some translations in your code, this feature will show them to verify first before showing other untranslated translations.
-
-## Screenshots
-
-![Choose An Action](choose_action.png)
-
-![Editor](editor.png)
+## Features
+### Versioning
+You can create multiple projects from one project.
+### Auto Backup
+Each time you open a project, Xliff Tool create a backup for it. The amount of backups is up to latest 5. You can use File-> Open Database Directory to open the directory in Finder. Those .realm files in backups folder are backups, you can copy them out and rename and restore data.
+### Smart
+Xliff Tool will replace Targets that are duplicated while you translate one of them. Then you can audit the rest so you don't need to input again.
+### Shortcuts
+You can use cmd+enter to finish audit.
+### Index and Search
+Using index and search, you can find source and target quickly. You can search by Source/Target/Notes, with/without case.
 
 ## Thanks
 
@@ -71,5 +60,5 @@ Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik"
 Xliff Tool's license is MIT, except for the icon. As the icon is from the website above mentioned.
 
 ## macOS
-You will need macOS 10.13 or later to install Xliff Tool.
+You will need macOS 11 or later to install Xliff Tool.
 
