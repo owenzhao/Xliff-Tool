@@ -60,3 +60,6 @@ Xliff Tool's license is MIT, except for the icon. As the icon is from the websit
 ## macOS
 You will need macOS 11 or later to install Xliff Tool.
 
+## Support
+You can added issues by Github Issues. Or you can send mail to owenzx+feedback@gmail.com.
+

@@ -61,3 +61,5 @@ Xliff Tool's license is MIT, except for the icon. As the icon is from the websit
 ## macOS
 你需要macOS 11或更新版的系统来使用Xliff Tool。
 
+## 支持
+建议使用Github Issues报告发现的问题。也可以通过owenzx+feedback@gmail.com联系。
