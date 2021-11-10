@@ -66,9 +66,13 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
 
     func application(_ sender: NSApplication, openFile filename: String) -> Bool {
-        let xliffExtension = ".xliff"
+        let fileExtensions = [
+            ".xliff",
+            ".xcloc",
+            ".xlf"
+        ]
         
-        guard filename.lowercased().hasSuffix(xliffExtension) else {
+        if fileExtensions.contains(where: { $0 == filename.lowercased() }) {
             return false
         }
         
@@ -77,8 +81,6 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         
         return true
     }
-    
-    
     
     private func closeSplitWindow() {
         NSApp.windows.forEach {
