@@ -6,8 +6,8 @@
         "repositoryURL": "git@github.com:owenzhao/MyAppStore.git",
         "state": {
           "branch": null,
-          "revision": "0a05bb28d5b34fdf336c14cdf0e96c2edf9b6970",
-          "version": "1.4.3"
+          "revision": "5b8d209bd569b29e6077f5675c04e1cb4c1894fb",
+          "version": "1.2.12"
         }
       },
       {
@@ -24,8 +24,8 @@
         "repositoryURL": "git@github.com:MaxDesiatov/XMLCoder.git",
         "state": {
           "branch": null,
-          "revision": "f30119af03996939cc4f54e0bf0dda9f88a84da5",
-          "version": "0.13.1"
+          "revision": "887de88b37b2d691d67db950770e09776229cf6d",
+          "version": "0.13.0"
         }
       },
       {
