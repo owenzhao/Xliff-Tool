@@ -1,5 +1,7 @@
 # Xliff Tool For Xcode
 
+<a href="https://apps.apple.com/cn/app/%E5%92%95%E5%94%A72/id1366583897?itsct=apps_box_badge&amp;itscg=30200" style="display: inline-block; overflow: hidden; border-top-left-radius: 13px; border-top-right-radius: 13px; border-bottom-right-radius: 13px; border-bottom-left-radius: 13px; width: 250px; height: 83px;"><img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83&amp;releaseDate=1558137600&h=21e91e0d36d8455e493367192374b6bd" alt="Download on the App Store" style="border-top-left-radius: 13px; border-top-right-radius: 13px; border-bottom-right-radius: 13px; border-bottom-left-radius: 13px; width: 250px; height: 83px;"></a>
+
 Xliff Tool For Xcode, short for Xliff Tool, is a translation tool for developers. It supports version 1.2 .xliff files that are used by Xcode. If you installed Xcode 13, .xliff files are contained in .xcloc packages. 
 
 > Before Xcode 13, .xcloc files in Finder were shown as directories.

@@ -2,6 +2,8 @@
 
 Xliff Tool For Xcode（简称Xliff Tool）是一个为开发者制作的翻译工具，它支持Xcode所使用的1.2版的.xliff文件。特别的，如果你的系统中安装了Xcode 13，.xliff文件被包含在.xcloc文件包中。因此，Xliff Tool也可以直接打开.xcloc中的.xliff文件。
 
+<a href="https://apps.apple.com/cn/app/%E5%92%95%E5%94%A72/id1366583897?itsct=apps_box_badge&amp;itscg=30200" style="display: inline-block; overflow: hidden; border-top-left-radius: 13px; border-top-right-radius: 13px; border-bottom-right-radius: 13px; border-bottom-left-radius: 13px; width: 250px; height: 83px;"><img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/zh-cn?size=250x83&amp;releaseDate=1558137600&h=8d431e945bc01b30e876fcfd09e520ff" alt="Download on the App Store" style="border-top-left-radius: 13px; border-top-right-radius: 13px; border-bottom-right-radius: 13px; border-bottom-left-radius: 13px; width: 250px; height: 83px;"></a>
+
 > 在Xcode 13之前，.xcloc显示为文件夹的形式，因此可以直接打开。
 
 ## 使用流程
