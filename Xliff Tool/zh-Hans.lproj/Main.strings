@@ -28,6 +28,9 @@
 /* Class = "NSMenuItem"; title = "About Xliff Tool"; ObjectID = "5kV-Vb-QxS"; */
 "5kV-Vb-QxS.title" = "关于 Xliff工具";
 
+/* Class = "NSButtonCell"; title = "Allow Empty Target"; ObjectID = "5Lu-tP-kyX"; */
+"5Lu-tP-kyX.title" = "允许目标为空";
+
 /* Class = "NSMenuItem"; title = "Edit"; ObjectID = "5QF-Oa-p0T"; */
 "5QF-Oa-p0T.title" = "编辑";
 
