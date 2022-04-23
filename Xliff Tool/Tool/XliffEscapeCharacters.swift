@@ -7,3 +7,26 @@
 //
 
 import Foundation
+
+enum XliffEscapeCharacters:String, CaseIterable {
+    case lessThan = "<"
+    case greaterThan = ">"
+    case ampersand = "&"
+    case doubleQuote = "\""
+    case newline = "\n"
+    
+    var escapedString:String {
+        switch self {
+        case .lessThan:
+            return "&lt;"
+        case .greaterThan:
+            return "&gt;"
+        case .ampersand:
+            return "&amp;"
+        case .doubleQuote:
+            return "&quot;"
+        case .newline:
+            return "&#10;"
+        }
+    }
+}

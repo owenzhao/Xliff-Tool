@@ -155,6 +155,16 @@ class EditorViewController: NSViewController {
     }
     
     @objc private func willCloseNotification(_ noti:Notification) {
+        func getXliffAllowedString(from s:String) -> String {
+            var result = s
+            
+            XliffEscapeCharacters.allCases.forEach {
+                result = result.replacingOccurrences(of: $0.rawValue, with: $0.escapedString)
+            }
+            
+            return result
+        }
+        
         defer {
             if isEdited {
                 saveDocument(nil)
@@ -168,7 +178,7 @@ class EditorViewController: NSViewController {
         if transUnit.target != targetTextView.string {
             try! transUnit.realm!.write {
                 transUnit.isVerified = false
-                transUnit.target = targetTextView.string
+                transUnit.target = getXliffAllowedString(from: targetTextView.string)
             }
         }
     }
