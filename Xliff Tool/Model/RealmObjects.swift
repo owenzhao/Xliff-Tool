@@ -178,6 +178,7 @@ class RLMXTTransUnit:Object, Codable, DynamicNodeEncoding {
     @objc dynamic var xmlSpace:String? = ""
     @objc dynamic var source:String = ""
     @objc dynamic var target:String? = nil
+    @objc dynamic var allowEmptyTarget = false
     @objc dynamic var note:String? = nil
     
     @objc dynamic var uid:String = UUID().uuidString

@@ -12,8 +12,6 @@ enum XliffEscapeCharacters:String, CaseIterable {
     case lessThan = "<"
     case greaterThan = ">"
     case ampersand = "&"
-    case doubleQuote = "\""
-    case newline = "\n"
     
     var escapedString:String {
         switch self {
@@ -23,10 +21,6 @@ enum XliffEscapeCharacters:String, CaseIterable {
             return "&gt;"
         case .ampersand:
             return "&amp;"
-        case .doubleQuote:
-            return "&quot;"
-        case .newline:
-            return "&#10;"
         }
     }
 }

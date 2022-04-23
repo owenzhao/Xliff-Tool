@@ -23,7 +23,7 @@ class EditorViewController: NSViewController {
         let verifyTranslatedResultsFirst = (defaults.integer(forKey: UserDefaults.Key.verifyTranslatedResultsFirst.rawValue) == NSControl.StateValue.on.rawValue)
 
         if verifyTranslatedResultsFirst {
-            let translatedResults = results.filter("target != nil AND target != ''")
+            let translatedResults = results.filter("(target != nil AND target != '') OR (allowEmptyTarget == true)")
 
             if !translatedResults.isEmpty {
                 results = translatedResults
@@ -45,7 +45,7 @@ class EditorViewController: NSViewController {
     var files:Results<RLMXTFile>!
     
     lazy private var total = self.transUnits.count
-    lazy private var translated = self.transUnits.filter("target != nil AND target != ''")
+    lazy private var translated = self.transUnits.filter("(target != nil AND target != '') OR (allowEmptyTarget == true)")
     lazy private var verified = self.transUnits.filter("isVerified = true")
     
     var isEdited = false
@@ -101,9 +101,9 @@ class EditorViewController: NSViewController {
         if let button = sender as? NSButton {
             if button.state == .on {
                 verifyButton.isEnabled = true
-            } else {
-                saveChanges()
             }
+            
+            saveChanges()
         }
     }
     
@@ -175,16 +175,6 @@ class EditorViewController: NSViewController {
     }
     
     @objc private func willCloseNotification(_ noti:Notification) {
-        func getXliffAllowedString(from s:String) -> String {
-            var result = s
-            
-            XliffEscapeCharacters.allCases.forEach {
-                result = result.replacingOccurrences(of: $0.rawValue, with: $0.escapedString)
-            }
-            
-            return result
-        }
-        
         defer {
             if isEdited {
                 saveDocument(nil)
@@ -238,7 +228,7 @@ class EditorViewController: NSViewController {
         
         sourceLabel.stringValue = transUnit.source
         targetTextView.string = transUnit.target ?? ""
-        allowEmptyTargetButton.state = .off
+        allowEmptyTargetButton.state = transUnit.allowEmptyTarget ? .on : .off
         noteLabel.stringValue = transUnit.note ?? ""
         copyNoteObjectIDButton.isEnabled = hasObjectID()
         verifyButton.isEnabled = !(transUnit.target?.isEmpty ?? true)
@@ -250,7 +240,7 @@ class EditorViewController: NSViewController {
         
         sourceLabel.stringValue = transUnit.source
         targetTextView.string = transUnit.target ?? ""
-        allowEmptyTargetButton.state = (transUnit.target == nil ? .on : .off)
+        allowEmptyTargetButton.state = transUnit.allowEmptyTarget ? .on : .off
         noteLabel.stringValue = transUnit.note ?? ""
         copyNoteObjectIDButton.isEnabled = hasObjectID()
         verifyButton.isEnabled = {
@@ -319,6 +309,8 @@ extension EditorViewController:NSTextDelegate {
                 transUnit.isVerified = false
             }
             
+            transUnit.allowEmptyTarget = (allowEmptyTargetButton.state == .on)
+            
             transUnit.target = {
                 if allowEmptyTargetButton.state == .on {
                     let result = targetTextView.string.trimmingCharacters(in: .whitespacesAndNewlines)
@@ -328,7 +320,7 @@ extension EditorViewController:NSTextDelegate {
                     }
                 }
                 
-                return targetTextView.string
+                return getXliffAllowedString(from: targetTextView.string)
             }()
         }
         
@@ -340,6 +332,16 @@ extension EditorViewController:NSTextDelegate {
             
             return !targetTextView.string.isEmpty
         }()
+    }
+    
+    func getXliffAllowedString(from s:String) -> String {
+        var result = s
+        
+        XliffEscapeCharacters.allCases.forEach {
+            result = result.replacingOccurrences(of: $0.rawValue, with: $0.escapedString)
+        }
+        
+        return result
     }
 }
 
