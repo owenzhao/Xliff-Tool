@@ -64,6 +64,15 @@ class EditorViewController: NSViewController {
             targetTextView.typingAttributes = attributes
         }
     }
+    @IBOutlet weak var allowEmptyTargetButton: NSButton! {
+        didSet {
+            let attributes:[NSAttributedString.Key:Any] = [
+                .foregroundColor:NSColor(named: "targetColor")!
+            ]
+            let attributedString = NSAttributedString(string: allowEmptyTargetButton.title, attributes: attributes)
+            allowEmptyTargetButton.attributedTitle = attributedString
+        }
+    }
     @IBOutlet weak var noteLabel: NSTextField!
     @IBOutlet weak var copyNoteObjectIDButton: NSButton!
     
@@ -85,6 +94,17 @@ class EditorViewController: NSViewController {
         }
         
         NSWorkspace.shared.open(URL(string: webString + source)!)
+    }
+    
+    
+    @IBAction func allowEmptyTargetButtonClicked(_ sender: Any) {
+        if let button = sender as? NSButton {
+            if button.state == .on {
+                verifyButton.isEnabled = true
+            } else {
+                saveChanges()
+            }
+        }
     }
     
     // "Class =\"NSButtonCell\"; title =\"Cancel\"; ObjectID =\"0uT-sC-hK8\";"
@@ -218,6 +238,7 @@ class EditorViewController: NSViewController {
         
         sourceLabel.stringValue = transUnit.source
         targetTextView.string = transUnit.target ?? ""
+        allowEmptyTargetButton.state = .off
         noteLabel.stringValue = transUnit.note ?? ""
         copyNoteObjectIDButton.isEnabled = hasObjectID()
         verifyButton.isEnabled = !(transUnit.target?.isEmpty ?? true)
@@ -229,9 +250,16 @@ class EditorViewController: NSViewController {
         
         sourceLabel.stringValue = transUnit.source
         targetTextView.string = transUnit.target ?? ""
+        allowEmptyTargetButton.state = (transUnit.target == nil ? .on : .off)
         noteLabel.stringValue = transUnit.note ?? ""
         copyNoteObjectIDButton.isEnabled = hasObjectID()
-        verifyButton.isEnabled = !(transUnit.target?.isEmpty ?? true)
+        verifyButton.isEnabled = {
+            if allowEmptyTargetButton.state == .on {
+                return true
+            }
+            
+            return !(transUnit.target?.isEmpty ?? true)
+        }()
     }
     
     private func updateUIAllComplete() {
@@ -278,7 +306,10 @@ extension EditorViewController:NSTextDelegate {
         }
         
         updateProgress()
-
+        saveChanges()
+    }
+    
+    func saveChanges() {
         // save changes
         let transUnit = self.transUnit!
         let realm = transUnit.realm!
@@ -288,11 +319,27 @@ extension EditorViewController:NSTextDelegate {
                 transUnit.isVerified = false
             }
             
-            transUnit.target = targetTextView.string
+            transUnit.target = {
+                if allowEmptyTargetButton.state == .on {
+                    let result = targetTextView.string.trimmingCharacters(in: .whitespacesAndNewlines)
+                    
+                    if result.isEmpty {
+                        return nil
+                    }
+                }
+                
+                return targetTextView.string
+            }()
         }
         
         // verify button
-        verifyButton.isEnabled = !targetTextView.string.isEmpty
+        verifyButton.isEnabled = {
+            if allowEmptyTargetButton.state == .on {
+                return true
+            }
+            
+            return !targetTextView.string.isEmpty
+        }()
     }
 }
 
