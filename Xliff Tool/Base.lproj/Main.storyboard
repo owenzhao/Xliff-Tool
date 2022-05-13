@@ -560,7 +560,7 @@ DQ
                                             <color key="textColor" name="targetColor"/>
                                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                             <size key="minSize" width="728" height="297"/>
-                                            <size key="maxSize" width="728" height="10000000"/>
+                                            <size key="maxSize" width="993" height="10000000"/>
                                             <color key="insertionPointColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                             <connections>
                                                 <outlet property="delegate" destination="XfG-lQ-9wD" id="BF5-3D-541"/>
@@ -640,6 +640,17 @@ DQ
                                     <action selector="copyNoteObjectIDButtonClicked:" target="XfG-lQ-9wD" id="gl3-rS-aRa"/>
                                 </connections>
                             </button>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="g19-dp-RgO">
+                                <rect key="frame" x="18" y="477" width="20" height="19"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="800" id="Ai3-Zy-bcS"/>
+                                </constraints>
+                                <textFieldCell key="cell" lineBreakMode="truncatingTail" selectable="YES" title="ID" id="Gf3-JM-NeH">
+                                    <font key="font" metaFont="system" size="16"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
                         </subviews>
                         <constraints>
                             <constraint firstItem="ihV-r3-Jhv" firstAttribute="top" secondItem="Dxg-Ae-zJb" secondAttribute="bottom" constant="8" symbolic="YES" id="1nf-WW-U4k"/>
@@ -654,13 +665,16 @@ DQ
                             <constraint firstItem="XzG-dd-1P0" firstAttribute="top" secondItem="t7n-9w-Kcg" secondAttribute="bottom" constant="32" id="UQz-eA-Mcq"/>
                             <constraint firstItem="Kxc-nv-3uz" firstAttribute="top" secondItem="8BX-jd-agJ" secondAttribute="bottom" constant="8" symbolic="YES" id="VMa-oh-Dwj"/>
                             <constraint firstItem="OMX-1x-8cL" firstAttribute="trailing" secondItem="Dxg-Ae-zJb" secondAttribute="trailing" id="W0F-J7-qxw"/>
+                            <constraint firstItem="wID-qE-PK4" firstAttribute="firstBaseline" secondItem="g19-dp-RgO" secondAttribute="baseline" constant="1" id="WHj-jJ-Vqh"/>
                             <constraint firstAttribute="trailing" secondItem="Dxg-Ae-zJb" secondAttribute="trailing" constant="20" id="XV6-Mk-au5"/>
+                            <constraint firstItem="wID-qE-PK4" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="g19-dp-RgO" secondAttribute="trailing" constant="8" symbolic="YES" id="aBs-w8-MsA"/>
                             <constraint firstItem="8BX-jd-agJ" firstAttribute="top" secondItem="ihV-r3-Jhv" secondAttribute="bottom" constant="8" symbolic="YES" id="bAn-iW-gIH"/>
                             <constraint firstItem="wID-qE-PK4" firstAttribute="centerY" secondItem="itV-cV-u5y" secondAttribute="centerY" id="bdV-nY-iSY"/>
                             <constraint firstItem="Dxg-Ae-zJb" firstAttribute="leading" secondItem="itV-cV-u5y" secondAttribute="trailing" constant="10" id="cNq-vg-tLB"/>
                             <constraint firstItem="itV-cV-u5y" firstAttribute="leading" secondItem="wID-qE-PK4" secondAttribute="trailing" constant="10" id="d1o-R1-dRT"/>
                             <constraint firstAttribute="bottom" secondItem="C9Y-ch-Wx7" secondAttribute="bottom" constant="20" symbolic="YES" id="eqb-Zx-chC"/>
                             <constraint firstAttribute="bottom" secondItem="b1t-fE-VRV" secondAttribute="bottom" constant="94" id="fnX-ip-Ppj"/>
+                            <constraint firstItem="g19-dp-RgO" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" symbolic="YES" id="gB3-3c-Fe9"/>
                             <constraint firstItem="OMX-1x-8cL" firstAttribute="leading" secondItem="qSa-nA-HmO" secondAttribute="trailing" constant="12" symbolic="YES" id="hk8-gl-XUl"/>
                             <constraint firstItem="b1t-fE-VRV" firstAttribute="leading" secondItem="XzG-dd-1P0" secondAttribute="leading" id="igH-v9-6XT"/>
                             <constraint firstItem="C9Y-ch-Wx7" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" symbolic="YES" id="ijW-6C-FFW"/>
@@ -679,6 +693,7 @@ DQ
                     <connections>
                         <outlet property="allowEmptyTargetButton" destination="b1t-fE-VRV" id="Mgt-4e-zwI"/>
                         <outlet property="copyNoteObjectIDButton" destination="ASg-cn-BKz" id="Zr4-C3-cOC"/>
+                        <outlet property="idLabel" destination="g19-dp-RgO" id="wQ2-Kz-ZVi"/>
                         <outlet property="noteLabel" destination="XzG-dd-1P0" id="NHU-FI-ZeQ"/>
                         <outlet property="progressLabel" destination="Dxg-Ae-zJb" id="cP0-in-sRE"/>
                         <outlet property="sourceLabel" destination="ihV-r3-Jhv" id="p7f-G8-Tyg"/>

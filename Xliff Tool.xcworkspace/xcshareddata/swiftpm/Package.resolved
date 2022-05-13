@@ -5,8 +5,8 @@
       "kind" : "remoteSourceControl",
       "location" : "git@github.com:owenzhao/MyAppStore.git",
       "state" : {
-        "revision" : "bb77562b3dedb70392617b9c526c59717046ac68",
-        "version" : "1.4.6"
+        "revision" : "506b62866e85fc27f6a31c0a9b7e2859baa72db6",
+        "version" : "1.4.7"
       }
     },
     {
