@@ -54,6 +54,7 @@ class EditorViewController: NSViewController {
     @IBOutlet weak var verifiedLabel: NSTextField!
     @IBOutlet weak var progressLabel: NSTextField!
     
+    @IBOutlet weak var idLabel: NSTextField!
     @IBOutlet weak var sourceLabel: NSTextField!
     @IBOutlet var targetTextView: NSTextView!{
         didSet {
@@ -226,6 +227,7 @@ class EditorViewController: NSViewController {
         
         updateProgress()
         
+        idLabel.stringValue = transUnit.id
         sourceLabel.stringValue = transUnit.source
         targetTextView.string = transUnit.target ?? ""
         allowEmptyTargetButton.state = transUnit.allowEmptyTarget ? .on : .off
@@ -238,6 +240,7 @@ class EditorViewController: NSViewController {
         self.transUnit = transUnit
         updateWindowTitle()
         
+        idLabel.stringValue = transUnit.id
         sourceLabel.stringValue = transUnit.source
         targetTextView.string = transUnit.target ?? ""
         allowEmptyTargetButton.state = transUnit.allowEmptyTarget ? .on : .off
@@ -255,6 +258,7 @@ class EditorViewController: NSViewController {
     private func updateUIAllComplete() {
         updateProgress()
         
+        idLabel.stringValue = NSLocalizedString("ID", comment: "")
         sourceLabel.stringValue = NSLocalizedString("Source", comment: "")
         targetTextView.string = ""
         noteLabel.stringValue = NSLocalizedString("Note", comment: "")
