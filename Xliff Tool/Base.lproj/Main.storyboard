@@ -560,7 +560,7 @@ DQ
                                             <color key="textColor" name="targetColor"/>
                                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                             <size key="minSize" width="728" height="297"/>
-                                            <size key="maxSize" width="728" height="10000000"/>
+                                            <size key="maxSize" width="993" height="10000000"/>
                                             <color key="insertionPointColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                             <connections>
                                                 <outlet property="delegate" destination="XfG-lQ-9wD" id="BF5-3D-541"/>
@@ -642,7 +642,10 @@ DQ
                             </button>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="g19-dp-RgO">
                                 <rect key="frame" x="18" y="477" width="20" height="19"/>
-                                <textFieldCell key="cell" lineBreakMode="clipping" selectable="YES" title="ID" id="Gf3-JM-NeH">
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="800" id="Ai3-Zy-bcS"/>
+                                </constraints>
+                                <textFieldCell key="cell" lineBreakMode="truncatingTail" selectable="YES" title="ID" id="Gf3-JM-NeH">
                                     <font key="font" metaFont="system" size="16"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
