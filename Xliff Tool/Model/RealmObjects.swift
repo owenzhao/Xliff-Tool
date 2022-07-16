@@ -11,7 +11,7 @@ import RealmSwift
 import XMLCoder
 
 
-class RLMXTXliff:Object, Codable, DynamicNodeEncoding {
+class RLMXTXliff:Object, Codable, DynamicNodeEncoding, ObjectKeyIdentifiable {
     @objc dynamic var xmlns:String = ""
     @objc dynamic var xmlnsXsi:String = ""
     @objc dynamic var version:String = ""
@@ -54,7 +54,7 @@ class RLMXTXliff:Object, Codable, DynamicNodeEncoding {
     }
 }
 
-class RLMXTFile:Object, Codable, DynamicNodeEncoding {
+class RLMXTFile:Object, Codable, DynamicNodeEncoding,ObjectKeyIdentifiable {
     static func == (lhs: RLMXTFile, rhs: RLMXTFile) -> Bool {
         return lhs.id == rhs.id
     }
@@ -169,7 +169,7 @@ class RLMXTBody:Object, Codable {
     let files = LinkingObjects(fromType: RLMXTFile.self, property: "body")
 }
 
-class RLMXTTransUnit:Object, Codable, DynamicNodeEncoding {
+class RLMXTTransUnit:Object, Codable, DynamicNodeEncoding, ObjectKeyIdentifiable {
     static func == (lhs: RLMXTTransUnit, rhs: RLMXTTransUnit) -> Bool {
         return lhs.uid == rhs.uid
     }
@@ -220,6 +220,21 @@ class RLMXTTransUnit:Object, Codable, DynamicNodeEncoding {
     
     override static func primaryKey() -> String? {
         return "uid"
+    }
+}
+
+extension RLMXTTransUnit {
+    func unManagedInstance() -> RLMXTTransUnit {
+        let transUnit = RLMXTTransUnit()
+        transUnit.id = self.id
+        transUnit.xmlSpace = self.xmlSpace
+        transUnit.source = self.source
+        transUnit.target = self.target
+        transUnit.allowEmptyTarget = self.allowEmptyTarget
+        transUnit.uid = self.uid
+        transUnit.isVerified = self.isVerified
+        
+        return transUnit
     }
 }
 

@@ -33,7 +33,8 @@ class SidebarViewController: NSViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        NotificationCenter.default.addObserver(self, selector: #selector(transUnitDidChanged(_:)), name: EditorViewController.transUnitDidChanged, object: nil)
+//        NotificationCenter.default.addObserver(self, selector: #selector(transUnitDidChanged(_:)), name: EditorViewController.transUnitDidChanged, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(transUnitDidChanged(_:)), name: EditorView.transUnitDidChanged, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(textDidChangeNotification(_:)), name: NSControl.textDidChangeNotification, object: searchField)
         
         let url = (NSApp.delegate as? AppDelegate)?.databaseURL

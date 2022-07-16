@@ -194,8 +194,8 @@ class EditorViewController: NSViewController {
         }
     }
     
-    @objc private func selectionDidChangeNotification(_ noti:Notification) {
-        if let outlineView = noti.object as? NSOutlineView {
+    @objc private func selectionDidChangeNotification(_ notification:Notification) {
+        if let outlineView = notification.object as? NSOutlineView {
             let row = outlineView.selectedRow
             let item = outlineView.item(atRow: row)
             

@@ -10,6 +10,9 @@
 		DC0E9CBE281379F000AA7B95 /* XliffEscapeCharacters.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0E9CBD281379F000AA7B95 /* XliffEscapeCharacters.swift */; };
 		DC0E9CC128137B9B00AA7B95 /* MyAppStore in Frameworks */ = {isa = PBXBuildFile; productRef = DC0E9CC028137B9B00AA7B95 /* MyAppStore */; };
 		DC160BD326043B0C00A00890 /* SidebarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC160BD126043B0C00A00890 /* SidebarViewController.swift */; };
+		DC32645D28502DCF008C1EBC /* EditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC32645C28502DCF008C1EBC /* EditorView.swift */; };
+		DC32645F2850BEC3008C1EBC /* EditorViewHostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC32645E2850BEC3008C1EBC /* EditorViewHostingController.swift */; };
+		DC3264602850C247008C1EBC /* EditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD3E7C8247B9F65009D0339 /* EditorViewController.swift */; };
 		DC4F63D926EF338100C39C09 /* Support.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC4F63D826EF338100C39C09 /* Support.storyboard */; };
 		DC589D26260B65C900B34C5D /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = DC589D25260B65C900B34C5D /* libc++.tbd */; };
 		DC589D28260B65CF00B34C5D /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = DC589D27260B65CF00B34C5D /* libz.tbd */; };
@@ -22,9 +25,9 @@
 		DCC66C22247E91A6007DEF99 /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC66C21247E91A6007DEF99 /* UserDefaults.swift */; };
 		DCCCE76C26FDBDA20000E078 /* XMLCoder in Frameworks */ = {isa = PBXBuildFile; productRef = DCCCE76B26FDBDA20000E078 /* XMLCoder */; };
 		DCD3E7C7247B9F65009D0339 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD3E7C6247B9F65009D0339 /* AppDelegate.swift */; };
-		DCD3E7C9247B9F65009D0339 /* EditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD3E7C8247B9F65009D0339 /* EditorViewController.swift */; };
 		DCD3E7CB247B9F66009D0339 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCD3E7CA247B9F66009D0339 /* Assets.xcassets */; };
 		DCD3E7CE247B9F66009D0339 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCD3E7CC247B9F66009D0339 /* Main.storyboard */; };
+		DCE4D9472853746C0014463D /* FinishedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE4D9462853746C0014463D /* FinishedView.swift */; };
 		DCFB3DB52483801F001BCA3A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DCFB3DB32483801F001BCA3A /* InfoPlist.strings */; };
 		DCFB3DB82483801F001BCA3A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DCFB3DB62483801F001BCA3A /* Localizable.strings */; };
 		F6D632F6C0891C3790CCC42E /* Pods_Xliff_Tool.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECC4A17C59144316797486E8 /* Pods_Xliff_Tool.framework */; };
@@ -48,6 +51,8 @@
 		D2AF4ED258AA7C0775836C67 /* Pods-Xliff Tool.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Xliff Tool.release.xcconfig"; path = "Target Support Files/Pods-Xliff Tool/Pods-Xliff Tool.release.xcconfig"; sourceTree = "<group>"; };
 		DC0E9CBD281379F000AA7B95 /* XliffEscapeCharacters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XliffEscapeCharacters.swift; sourceTree = "<group>"; };
 		DC160BD126043B0C00A00890 /* SidebarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarViewController.swift; sourceTree = "<group>"; };
+		DC32645C28502DCF008C1EBC /* EditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorView.swift; sourceTree = "<group>"; };
+		DC32645E2850BEC3008C1EBC /* EditorViewHostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorViewHostingController.swift; sourceTree = "<group>"; };
 		DC4F63D826EF338100C39C09 /* Support.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Support.storyboard; sourceTree = "<group>"; };
 		DC589D25260B65C900B34C5D /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		DC589D27260B65CF00B34C5D /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
@@ -66,6 +71,7 @@
 		DCD3E7CD247B9F66009D0339 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DCD3E7CF247B9F66009D0339 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DCD3E7D0247B9F66009D0339 /* Xliff_Tool.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Xliff_Tool.entitlements; sourceTree = "<group>"; };
+		DCE4D9462853746C0014463D /* FinishedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishedView.swift; sourceTree = "<group>"; };
 		DCFB3DB42483801F001BCA3A /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		DCFB3DB72483801F001BCA3A /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		ECC4A17C59144316797486E8 /* Pods_Xliff_Tool.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Xliff_Tool.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -141,6 +147,9 @@
 				DCD3E7C8247B9F65009D0339 /* EditorViewController.swift */,
 				DCC66C01247CE524007DEF99 /* IndexViewController.swift */,
 				DCC66C03247CF767007DEF99 /* DetailViewController.swift */,
+				DC32645C28502DCF008C1EBC /* EditorView.swift */,
+				DCE4D9462853746C0014463D /* FinishedView.swift */,
+				DC32645E2850BEC3008C1EBC /* EditorViewHostingController.swift */,
 				DC589D2C260B778A00B34C5D /* Model */,
 				DCD3E7CA247B9F66009D0339 /* Assets.xcassets */,
 				DCD3E7CC247B9F66009D0339 /* Main.storyboard */,
@@ -293,12 +302,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DCD3E7C9247B9F65009D0339 /* EditorViewController.swift in Sources */,
 				DCC66C00247BF40C007DEF99 /* RealmObjects.swift in Sources */,
+				DC32645F2850BEC3008C1EBC /* EditorViewHostingController.swift in Sources */,
+				DC32645D28502DCF008C1EBC /* EditorView.swift in Sources */,
+				DCE4D9472853746C0014463D /* FinishedView.swift in Sources */,
 				DCC66C1E247E52B4007DEF99 /* URL+Base.swift in Sources */,
 				DCC66C05247CF767007DEF99 /* DetailViewController.swift in Sources */,
 				DC160BD326043B0C00A00890 /* SidebarViewController.swift in Sources */,
 				DCC66C22247E91A6007DEF99 /* UserDefaults.swift in Sources */,
+				DC3264602850C247008C1EBC /* EditorViewController.swift in Sources */,
 				DC0E9CBE281379F000AA7B95 /* XliffEscapeCharacters.swift in Sources */,
 				DCC66C08247E338E007DEF99 /* NSTextFiledWithIndicator.swift in Sources */,
 				DCD3E7C7247B9F65009D0339 /* AppDelegate.swift in Sources */,
@@ -463,7 +475,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 19;
+				CURRENT_PROJECT_VERSION = 20;
 				DEVELOPMENT_TEAM = 96NM39SGJ5;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = "Xliff Tool/Info.plist";
@@ -471,7 +483,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = 1.3.3;
+				MARKETING_VERSION = 1.3.4;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.parussoft.Xliff-Tool";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -487,7 +499,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 19;
+				CURRENT_PROJECT_VERSION = 20;
 				DEVELOPMENT_TEAM = 96NM39SGJ5;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = "Xliff Tool/Info.plist";
@@ -495,7 +507,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = 1.3.3;
+				MARKETING_VERSION = 1.3.4;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.parussoft.Xliff-Tool";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

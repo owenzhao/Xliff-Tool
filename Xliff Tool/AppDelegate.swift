@@ -41,19 +41,20 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         if let windowController = NSStoryboard.main?.instantiateController(withIdentifier: "editorWindowController") as? NSWindowController,
            let splitViewController = windowController.contentViewController as? NSSplitViewController,
            let sidebarSplitViewItem = splitViewController.splitViewItems.last,
-           let editorViewController = splitViewController.splitViewItems.first?.viewController as? EditorViewController,
+//           let editorViewController = splitViewController.splitViewItems.first?.viewController as? EditorViewController,
+           let editorViewHostingController = splitViewController.splitViewItems.first?.viewController as? EditorViewHostingController,
            let sidebarViewController = sidebarSplitViewItem.viewController as? SidebarViewController {
             
-            
-            
             let realm = try! Realm(fileURL: databaseURL)
-            editorViewController.transUnits = realm.objects(RLMXTTransUnit.self)
-            editorViewController.files = realm.objects(RLMXTFile.self)
-            editorViewController.xliff = realm.objects(RLMXTXliff.self).first
-            editorViewController.updateUI()
+//            editorViewController.transUnits = realm.objects(RLMXTTransUnit.self)
+//            editorViewController.files = realm.objects(RLMXTFile.self)
+//            editorViewController.xliff = realm.objects(RLMXTXliff.self).first
+//            editorViewController.updateUI()
+            editorViewHostingController.xliff = realm.objects(RLMXTXliff.self).first
             
             sidebarSplitViewItem.isCollapsed = UserDefaults.standard.bool(forKey: UserDefaults.Key.showSideBar.rawValue)
-            sidebarViewController.files = editorViewController.files
+//            sidebarViewController.files = editorViewController.files
+            sidebarViewController.files = realm.objects(RLMXTFile.self)
             sidebarViewController.outlineView.headerView = nil
             sidebarViewController.outlineView.reloadData()
             
