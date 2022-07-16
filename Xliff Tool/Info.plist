@@ -72,6 +72,18 @@
 	<true/>
 	<key>NSSupportsSuddenTermination</key>
 	<true/>
+	<key>NSUbiquitousContainers</key>
+	<dict>
+		<key>iCloud.com.parussoft.Xliff-Tool</key>
+		<dict>
+			<key>NSUbiquitousContainerDisplayName</key>
+			<string>Xliff Tool</string>
+			<key>NSUbiquitousContainerIsDocumentScopePublic</key>
+			<true/>
+			<key>NSUbiquitousContainerSupportedFolderLevels</key>
+			<string>Any</string>
+		</dict>
+	</dict>
 	<key>UTImportedTypeDeclarations</key>
 	<array>
 		<dict>

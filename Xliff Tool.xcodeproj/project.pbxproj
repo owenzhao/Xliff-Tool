@@ -70,7 +70,7 @@
 		DCD3E7CA247B9F66009D0339 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DCD3E7CD247B9F66009D0339 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DCD3E7CF247B9F66009D0339 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DCD3E7D0247B9F66009D0339 /* Xliff_Tool.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Xliff_Tool.entitlements; sourceTree = "<group>"; };
+		DCD4A3452882CBA000286F40 /* Xliff_Tool.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Xliff_Tool.entitlements; sourceTree = "<group>"; };
 		DCE4D9462853746C0014463D /* FinishedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishedView.swift; sourceTree = "<group>"; };
 		DCFB3DB42483801F001BCA3A /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		DCFB3DB72483801F001BCA3A /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
@@ -160,7 +160,7 @@
 				DCD3E7CF247B9F66009D0339 /* Info.plist */,
 				DCFB3DB62483801F001BCA3A /* Localizable.strings */,
 				DCFB3DB32483801F001BCA3A /* InfoPlist.strings */,
-				DCD3E7D0247B9F66009D0339 /* Xliff_Tool.entitlements */,
+				DCD4A3452882CBA000286F40 /* Xliff_Tool.entitlements */,
 			);
 			path = "Xliff Tool";
 			sourceTree = "<group>";
@@ -471,11 +471,12 @@
 			baseConfigurationReference = A2B1A4824CE8D43B3CC954FA /* Pods-Xliff Tool.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_ENTITLEMENTS = "Xliff Tool/Xliff_Tool.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 20;
+				CURRENT_PROJECT_VERSION = 27;
 				DEVELOPMENT_TEAM = 96NM39SGJ5;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = "Xliff Tool/Info.plist";
@@ -483,7 +484,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = 1.3.4;
+				MARKETING_VERSION = 1.3.9;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.parussoft.Xliff-Tool";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -495,11 +496,12 @@
 			baseConfigurationReference = D2AF4ED258AA7C0775836C67 /* Pods-Xliff Tool.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_ENTITLEMENTS = "Xliff Tool/Xliff_Tool.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 20;
+				CURRENT_PROJECT_VERSION = 27;
 				DEVELOPMENT_TEAM = 96NM39SGJ5;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = "Xliff Tool/Info.plist";
@@ -507,7 +509,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = 1.3.4;
+				MARKETING_VERSION = 1.3.9;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.parussoft.Xliff-Tool";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
