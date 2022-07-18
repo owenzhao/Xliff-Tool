@@ -12,7 +12,6 @@
 		DC160BD326043B0C00A00890 /* SidebarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC160BD126043B0C00A00890 /* SidebarViewController.swift */; };
 		DC32645D28502DCF008C1EBC /* EditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC32645C28502DCF008C1EBC /* EditorView.swift */; };
 		DC32645F2850BEC3008C1EBC /* EditorViewHostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC32645E2850BEC3008C1EBC /* EditorViewHostingController.swift */; };
-		DC3264602850C247008C1EBC /* EditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD3E7C8247B9F65009D0339 /* EditorViewController.swift */; };
 		DC4F63D926EF338100C39C09 /* Support.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC4F63D826EF338100C39C09 /* Support.storyboard */; };
 		DC589D26260B65C900B34C5D /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = DC589D25260B65C900B34C5D /* libc++.tbd */; };
 		DC589D28260B65CF00B34C5D /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = DC589D27260B65CF00B34C5D /* libz.tbd */; };
@@ -310,7 +309,6 @@
 				DCC66C05247CF767007DEF99 /* DetailViewController.swift in Sources */,
 				DC160BD326043B0C00A00890 /* SidebarViewController.swift in Sources */,
 				DCC66C22247E91A6007DEF99 /* UserDefaults.swift in Sources */,
-				DC3264602850C247008C1EBC /* EditorViewController.swift in Sources */,
 				DC0E9CBE281379F000AA7B95 /* XliffEscapeCharacters.swift in Sources */,
 				DCC66C08247E338E007DEF99 /* NSTextFiledWithIndicator.swift in Sources */,
 				DCD3E7C7247B9F65009D0339 /* AppDelegate.swift in Sources */,

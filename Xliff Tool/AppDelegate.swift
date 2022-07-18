@@ -38,6 +38,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
     
     @objc private func openEditor(_ noti:Notification) {
+        Realm.Configuration.defaultConfiguration = Realm.Configuration(fileURL: databaseURL)
+        
         if let windowController = NSStoryboard.main?.instantiateController(withIdentifier: "editorWindowController") as? NSWindowController,
            let splitViewController = windowController.contentViewController as? NSSplitViewController,
            let sidebarSplitViewItem = splitViewController.splitViewItems.last,

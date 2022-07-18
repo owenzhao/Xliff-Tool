@@ -9,11 +9,16 @@
 import Cocoa
 import SwiftUI
 import XMLCoder
+import RealmSwift
 
 class EditorViewHostingController: NSHostingController<EditorView> {
     var xliff:RLMXTXliff!
     
     required init?(coder: NSCoder) {
+        super.init(coder: coder, rootView: EditorView())
+    }
+    
+    override init?(coder: NSCoder, rootView: EditorView) {
         super.init(coder: coder, rootView: EditorView())
     }
 
@@ -126,4 +131,12 @@ extension EditorViewHostingController:NSMenuDelegate {
             }
         }
     }
+}
+
+
+class RealmHelper {
+    private init() {}
+    static let share  = RealmHelper()
+    
+    var config : Realm.Configuration!
 }

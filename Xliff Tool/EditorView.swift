@@ -20,6 +20,7 @@ struct EditorView: View {
     @State var transUnit = RLMXTTransUnit()
     @State var isEdited = false
     @State var finished = false
+    @State var isVerified = false
     
     private let selectionDidChangePublisher = NotificationCenter.default.publisher(for: NSOutlineView.selectionDidChangeNotification)
     
@@ -83,6 +84,7 @@ struct EditorView: View {
                 transUnit.target = getXliffAllowedString(from: newValue)
                 isEdited = true
                 transUnit.isVerified = false
+                isVerified = !enableVerifyButton()
                 NotificationCenter.default.post(name: EditorView.editChanged, object: self)
             }))
             .font(.title2)
@@ -113,7 +115,7 @@ struct EditorView: View {
                     verifyButtonClicked()
                 }
                 .keyboardShortcut(KeyEquivalent.return, modifiers: .command)
-                .disabled(!enableVerifyButton())
+                .disabled(isVerified)
                 
                 Text("⌘ + ⏎")
                     .font(.callout)
@@ -140,6 +142,9 @@ struct EditorView: View {
         }
         .sheet(isPresented: $finished) {
             FinishedView()
+        }
+        .onChange(of: transUnit) { newValue in
+            isVerified = !enableVerifyButton()
         }
     }
     
@@ -192,10 +197,16 @@ struct EditorView: View {
     }
     
     private func verifyButtonClicked() {
-        transUnit.isVerified = true
-        $transUnits.append(transUnit)
-        isEdited = false
-        updateUI()
+        if let realm = transUnits.first?.realm?.thaw() {
+            try! realm.write {
+                transUnit.isVerified = true
+                realm.add(transUnit, update: .all)
+                isEdited = false
+                updateUI()
+            }
+            
+        }
+        
     }
     
     private func nextTransUnit() -> RLMXTTransUnit? {
@@ -228,7 +239,7 @@ struct EditorView: View {
         }
         
         let userInfo:[AnyHashable:Any] = ["transUnit.uid" : uid as Any]
-        NotificationCenter.default.post(name: EditorViewController.transUnitDidChanged,
+        NotificationCenter.default.post(name: EditorView.transUnitDidChanged,
                                         object: nil,
                                         userInfo: userInfo)
     }
