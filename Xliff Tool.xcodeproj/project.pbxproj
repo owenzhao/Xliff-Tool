@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DC0E9CBE281379F000AA7B95 /* XliffEscapeCharacters.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0E9CBD281379F000AA7B95 /* XliffEscapeCharacters.swift */; };
-		DC0E9CC128137B9B00AA7B95 /* MyAppStore in Frameworks */ = {isa = PBXBuildFile; productRef = DC0E9CC028137B9B00AA7B95 /* MyAppStore */; };
 		DC160BD326043B0C00A00890 /* SidebarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC160BD126043B0C00A00890 /* SidebarViewController.swift */; };
 		DC4F63D926EF338100C39C09 /* Support.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC4F63D826EF338100C39C09 /* Support.storyboard */; };
 		DC589D26260B65C900B34C5D /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = DC589D25260B65C900B34C5D /* libc++.tbd */; };
@@ -20,11 +18,12 @@
 		DCC66C0A247E339E007DEF99 /* NSTextFiledWithIndicator.xib in Resources */ = {isa = PBXBuildFile; fileRef = DCC66C09247E339E007DEF99 /* NSTextFiledWithIndicator.xib */; };
 		DCC66C1E247E52B4007DEF99 /* URL+Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC66C1D247E52B4007DEF99 /* URL+Base.swift */; };
 		DCC66C22247E91A6007DEF99 /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC66C21247E91A6007DEF99 /* UserDefaults.swift */; };
-		DCCCE76C26FDBDA20000E078 /* XMLCoder in Frameworks */ = {isa = PBXBuildFile; productRef = DCCCE76B26FDBDA20000E078 /* XMLCoder */; };
 		DCD3E7C7247B9F65009D0339 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD3E7C6247B9F65009D0339 /* AppDelegate.swift */; };
 		DCD3E7C9247B9F65009D0339 /* EditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD3E7C8247B9F65009D0339 /* EditorViewController.swift */; };
 		DCD3E7CB247B9F66009D0339 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCD3E7CA247B9F66009D0339 /* Assets.xcassets */; };
 		DCD3E7CE247B9F66009D0339 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCD3E7CC247B9F66009D0339 /* Main.storyboard */; };
+		DCE1FEC728DF24B9001E626C /* MyAppStore in Frameworks */ = {isa = PBXBuildFile; productRef = DCE1FEC628DF24B9001E626C /* MyAppStore */; };
+		DCE1FECA28DF24D1001E626C /* XMLCoder in Frameworks */ = {isa = PBXBuildFile; productRef = DCE1FEC928DF24D1001E626C /* XMLCoder */; };
 		DCFB3DB52483801F001BCA3A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DCFB3DB32483801F001BCA3A /* InfoPlist.strings */; };
 		DCFB3DB82483801F001BCA3A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DCFB3DB62483801F001BCA3A /* Localizable.strings */; };
 		F6D632F6C0891C3790CCC42E /* Pods_Xliff_Tool.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECC4A17C59144316797486E8 /* Pods_Xliff_Tool.framework */; };
@@ -46,7 +45,6 @@
 /* Begin PBXFileReference section */
 		A2B1A4824CE8D43B3CC954FA /* Pods-Xliff Tool.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Xliff Tool.debug.xcconfig"; path = "Target Support Files/Pods-Xliff Tool/Pods-Xliff Tool.debug.xcconfig"; sourceTree = "<group>"; };
 		D2AF4ED258AA7C0775836C67 /* Pods-Xliff Tool.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Xliff Tool.release.xcconfig"; path = "Target Support Files/Pods-Xliff Tool/Pods-Xliff Tool.release.xcconfig"; sourceTree = "<group>"; };
-		DC0E9CBD281379F000AA7B95 /* XliffEscapeCharacters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XliffEscapeCharacters.swift; sourceTree = "<group>"; };
 		DC160BD126043B0C00A00890 /* SidebarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarViewController.swift; sourceTree = "<group>"; };
 		DC4F63D826EF338100C39C09 /* Support.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Support.storyboard; sourceTree = "<group>"; };
 		DC589D25260B65C900B34C5D /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
@@ -76,10 +74,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DCCCE76C26FDBDA20000E078 /* XMLCoder in Frameworks */,
 				DC589D28260B65CF00B34C5D /* libz.tbd in Frameworks */,
 				DC589D26260B65C900B34C5D /* libc++.tbd in Frameworks */,
-				DC0E9CC128137B9B00AA7B95 /* MyAppStore in Frameworks */,
+				DCE1FECA28DF24D1001E626C /* XMLCoder in Frameworks */,
+				DCE1FEC728DF24B9001E626C /* MyAppStore in Frameworks */,
 				F6D632F6C0891C3790CCC42E /* Pods_Xliff_Tool.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -110,7 +108,6 @@
 			children = (
 				DCC66C1D247E52B4007DEF99 /* URL+Base.swift */,
 				DCC66C21247E91A6007DEF99 /* UserDefaults.swift */,
-				DC0E9CBD281379F000AA7B95 /* XliffEscapeCharacters.swift */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -185,8 +182,8 @@
 			);
 			name = "Xliff Tool";
 			packageProductDependencies = (
-				DCCCE76B26FDBDA20000E078 /* XMLCoder */,
-				DC0E9CC028137B9B00AA7B95 /* MyAppStore */,
+				DCE1FEC628DF24B9001E626C /* MyAppStore */,
+				DCE1FEC928DF24D1001E626C /* XMLCoder */,
 			);
 			productName = "Xliff Tool";
 			productReference = DCD3E7C3247B9F65009D0339 /* Xliff Tool.app */;
@@ -199,7 +196,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1150;
-				LastUpgradeCheck = 1240;
+				LastUpgradeCheck = 1400;
 				ORGANIZATIONNAME = zhaoxin;
 				TargetAttributes = {
 					DCD3E7C2247B9F65009D0339 = {
@@ -218,8 +215,8 @@
 			);
 			mainGroup = DCD3E7BA247B9F65009D0339;
 			packageReferences = (
-				DCCCE76A26FDBDA20000E078 /* XCRemoteSwiftPackageReference "XMLCoder" */,
-				DC0E9CBF28137B9B00AA7B95 /* XCRemoteSwiftPackageReference "MyAppStore" */,
+				DCE1FEC528DF24B9001E626C /* XCRemoteSwiftPackageReference "MyAppStore" */,
+				DCE1FEC828DF24D1001E626C /* XCRemoteSwiftPackageReference "XMLCoder" */,
 			);
 			productRefGroup = DCD3E7C4247B9F65009D0339 /* Products */;
 			projectDirPath = "";
@@ -299,7 +296,6 @@
 				DCC66C05247CF767007DEF99 /* DetailViewController.swift in Sources */,
 				DC160BD326043B0C00A00890 /* SidebarViewController.swift in Sources */,
 				DCC66C22247E91A6007DEF99 /* UserDefaults.swift in Sources */,
-				DC0E9CBE281379F000AA7B95 /* XliffEscapeCharacters.swift in Sources */,
 				DCC66C08247E338E007DEF99 /* NSTextFiledWithIndicator.swift in Sources */,
 				DCD3E7C7247B9F65009D0339 /* AppDelegate.swift in Sources */,
 				DCC66C02247CE524007DEF99 /* IndexViewController.swift in Sources */,
@@ -372,6 +368,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -434,6 +431,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -463,7 +461,8 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 16;
+				CURRENT_PROJECT_VERSION = 20;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = 96NM39SGJ5;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = "Xliff Tool/Info.plist";
@@ -471,7 +470,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = 1.3.1;
+				MARKETING_VERSION = 1.4.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.parussoft.Xliff-Tool";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -487,7 +486,8 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 16;
+				CURRENT_PROJECT_VERSION = 20;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = 96NM39SGJ5;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = "Xliff Tool/Info.plist";
@@ -495,7 +495,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = 1.3.1;
+				MARKETING_VERSION = 1.4.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.parussoft.Xliff-Tool";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -526,33 +526,33 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		DC0E9CBF28137B9B00AA7B95 /* XCRemoteSwiftPackageReference "MyAppStore" */ = {
+		DCE1FEC528DF24B9001E626C /* XCRemoteSwiftPackageReference "MyAppStore" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "git@github.com:owenzhao/MyAppStore.git";
+			repositoryURL = "https://github.com/owenzhao/MyAppStore.git";
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 1.0.0;
 			};
 		};
-		DCCCE76A26FDBDA20000E078 /* XCRemoteSwiftPackageReference "XMLCoder" */ = {
+		DCE1FEC828DF24D1001E626C /* XCRemoteSwiftPackageReference "XMLCoder" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "git@github.com:MaxDesiatov/XMLCoder.git";
+			repositoryURL = "https://github.com/CoreOffice/XMLCoder.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 0.1.3;
+				minimumVersion = 0.9.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		DC0E9CC028137B9B00AA7B95 /* MyAppStore */ = {
+		DCE1FEC628DF24B9001E626C /* MyAppStore */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = DC0E9CBF28137B9B00AA7B95 /* XCRemoteSwiftPackageReference "MyAppStore" */;
+			package = DCE1FEC528DF24B9001E626C /* XCRemoteSwiftPackageReference "MyAppStore" */;
 			productName = MyAppStore;
 		};
-		DCCCE76B26FDBDA20000E078 /* XMLCoder */ = {
+		DCE1FEC928DF24D1001E626C /* XMLCoder */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = DCCCE76A26FDBDA20000E078 /* XCRemoteSwiftPackageReference "XMLCoder" */;
+			package = DCE1FEC828DF24D1001E626C /* XCRemoteSwiftPackageReference "XMLCoder" */;
 			productName = XMLCoder;
 		};
 /* End XCSwiftPackageProductDependency section */

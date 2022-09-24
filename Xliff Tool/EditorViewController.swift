@@ -188,7 +188,7 @@ class EditorViewController: NSViewController {
         if transUnit.target != targetTextView.string {
             try! transUnit.realm!.write {
                 transUnit.isVerified = false
-                transUnit.target = getXliffAllowedString(from: targetTextView.string)
+                transUnit.target = targetTextView.string
             }
         }
     }
@@ -320,7 +320,7 @@ extension EditorViewController:NSTextDelegate {
                     }
                 }
                 
-                return getXliffAllowedString(from: targetTextView.string)
+                return targetTextView.string
             }()
         }
         
@@ -332,16 +332,6 @@ extension EditorViewController:NSTextDelegate {
             
             return !targetTextView.string.isEmpty
         }()
-    }
-    
-    func getXliffAllowedString(from s:String) -> String {
-        var result = s
-        
-        XliffEscapeCharacters.allCases.forEach {
-            result = result.replacingOccurrences(of: $0.rawValue, with: $0.escapedString)
-        }
-        
-        return result
     }
 }
 
