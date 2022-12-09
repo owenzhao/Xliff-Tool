@@ -1,39 +1,12 @@
 {
   "pins" : [
     {
-      "identity" : "myappstore",
-      "kind" : "remoteSourceControl",
-      "location" : "git@github.com:owenzhao/MyAppStore.git",
-      "state" : {
-        "revision" : "bb77562b3dedb70392617b9c526c59717046ac68",
-        "version" : "1.4.6"
-      }
-    },
-    {
-      "identity" : "qrcodekit",
-      "kind" : "remoteSourceControl",
-      "location" : "git@github.com:owenzhao/QRCodeKit.git",
-      "state" : {
-        "revision" : "db92920d4b31aac79c4a4589ddd358006447b8ce",
-        "version" : "1.0.2"
-      }
-    },
-    {
       "identity" : "xmlcoder",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/CoreOffice/XMLCoder.git",
       "state" : {
-        "revision" : "ca932442d7481700f5434a7b138c47dd42d9902b",
-        "version" : "0.14.0"
-      }
-    },
-    {
-      "identity" : "zipfoundation",
-      "kind" : "remoteSourceControl",
-      "location" : "git@github.com:weichsel/ZIPFoundation.git",
-      "state" : {
-        "revision" : "f6a22e7da26314b38bf9befce34ae8e4b2543090",
-        "version" : "0.9.15"
+        "revision" : "c438dad94f6a243b411b70a4b4bac54595064808",
+        "version" : "0.15.0"
       }
     }
   ],

@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		DC160BD326043B0C00A00890 /* SidebarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC160BD126043B0C00A00890 /* SidebarViewController.swift */; };
-		DC4F63D926EF338100C39C09 /* Support.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC4F63D826EF338100C39C09 /* Support.storyboard */; };
 		DC589D26260B65C900B34C5D /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = DC589D25260B65C900B34C5D /* libc++.tbd */; };
 		DC589D28260B65CF00B34C5D /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = DC589D27260B65CF00B34C5D /* libz.tbd */; };
 		DCC66C00247BF40C007DEF99 /* RealmObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC66BFF247BF40C007DEF99 /* RealmObjects.swift */; };
@@ -22,7 +21,6 @@
 		DCD3E7C9247B9F65009D0339 /* EditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD3E7C8247B9F65009D0339 /* EditorViewController.swift */; };
 		DCD3E7CB247B9F66009D0339 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCD3E7CA247B9F66009D0339 /* Assets.xcassets */; };
 		DCD3E7CE247B9F66009D0339 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCD3E7CC247B9F66009D0339 /* Main.storyboard */; };
-		DCE1FEC728DF24B9001E626C /* MyAppStore in Frameworks */ = {isa = PBXBuildFile; productRef = DCE1FEC628DF24B9001E626C /* MyAppStore */; };
 		DCE1FECA28DF24D1001E626C /* XMLCoder in Frameworks */ = {isa = PBXBuildFile; productRef = DCE1FEC928DF24D1001E626C /* XMLCoder */; };
 		DCFB3DB52483801F001BCA3A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DCFB3DB32483801F001BCA3A /* InfoPlist.strings */; };
 		DCFB3DB82483801F001BCA3A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DCFB3DB62483801F001BCA3A /* Localizable.strings */; };
@@ -46,7 +44,6 @@
 		A2B1A4824CE8D43B3CC954FA /* Pods-Xliff Tool.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Xliff Tool.debug.xcconfig"; path = "Target Support Files/Pods-Xliff Tool/Pods-Xliff Tool.debug.xcconfig"; sourceTree = "<group>"; };
 		D2AF4ED258AA7C0775836C67 /* Pods-Xliff Tool.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Xliff Tool.release.xcconfig"; path = "Target Support Files/Pods-Xliff Tool/Pods-Xliff Tool.release.xcconfig"; sourceTree = "<group>"; };
 		DC160BD126043B0C00A00890 /* SidebarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarViewController.swift; sourceTree = "<group>"; };
-		DC4F63D826EF338100C39C09 /* Support.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Support.storyboard; sourceTree = "<group>"; };
 		DC589D25260B65C900B34C5D /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		DC589D27260B65CF00B34C5D /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		DCC66BFF247BF40C007DEF99 /* RealmObjects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmObjects.swift; sourceTree = "<group>"; };
@@ -77,7 +74,6 @@
 				DC589D28260B65CF00B34C5D /* libz.tbd in Frameworks */,
 				DC589D26260B65C900B34C5D /* libc++.tbd in Frameworks */,
 				DCE1FECA28DF24D1001E626C /* XMLCoder in Frameworks */,
-				DCE1FEC728DF24B9001E626C /* MyAppStore in Frameworks */,
 				F6D632F6C0891C3790CCC42E /* Pods_Xliff_Tool.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -141,7 +137,6 @@
 				DC589D2C260B778A00B34C5D /* Model */,
 				DCD3E7CA247B9F66009D0339 /* Assets.xcassets */,
 				DCD3E7CC247B9F66009D0339 /* Main.storyboard */,
-				DC4F63D826EF338100C39C09 /* Support.storyboard */,
 				DCC66C07247E338E007DEF99 /* NSTextFiledWithIndicator.swift */,
 				DCC66C09247E339E007DEF99 /* NSTextFiledWithIndicator.xib */,
 				DCC66C1F247E52BE007DEF99 /* Tool */,
@@ -182,7 +177,6 @@
 			);
 			name = "Xliff Tool";
 			packageProductDependencies = (
-				DCE1FEC628DF24B9001E626C /* MyAppStore */,
 				DCE1FEC928DF24D1001E626C /* XMLCoder */,
 			);
 			productName = "Xliff Tool";
@@ -215,7 +209,6 @@
 			);
 			mainGroup = DCD3E7BA247B9F65009D0339;
 			packageReferences = (
-				DCE1FEC528DF24B9001E626C /* XCRemoteSwiftPackageReference "MyAppStore" */,
 				DCE1FEC828DF24D1001E626C /* XCRemoteSwiftPackageReference "XMLCoder" */,
 			);
 			productRefGroup = DCD3E7C4247B9F65009D0339 /* Products */;
@@ -236,7 +229,6 @@
 				DCFB3DB82483801F001BCA3A /* Localizable.strings in Resources */,
 				DCD3E7CB247B9F66009D0339 /* Assets.xcassets in Resources */,
 				DCD3E7CE247B9F66009D0339 /* Main.storyboard in Resources */,
-				DC4F63D926EF338100C39C09 /* Support.storyboard in Resources */,
 				DCFB3DB52483801F001BCA3A /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -530,14 +522,6 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		DCE1FEC528DF24B9001E626C /* XCRemoteSwiftPackageReference "MyAppStore" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/owenzhao/MyAppStore.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.0;
-			};
-		};
 		DCE1FEC828DF24D1001E626C /* XCRemoteSwiftPackageReference "XMLCoder" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/CoreOffice/XMLCoder.git";
@@ -549,11 +533,6 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		DCE1FEC628DF24B9001E626C /* MyAppStore */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = DCE1FEC528DF24B9001E626C /* XCRemoteSwiftPackageReference "MyAppStore" */;
-			productName = MyAppStore;
-		};
 		DCE1FEC928DF24D1001E626C /* XMLCoder */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = DCE1FEC828DF24D1001E626C /* XCRemoteSwiftPackageReference "XMLCoder" */;
