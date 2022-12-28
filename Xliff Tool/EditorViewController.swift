@@ -164,6 +164,27 @@ class EditorViewController: NSViewController {
         }
     }
     
+    override func viewDidAppear() {
+        super.viewDidAppear()
+        
+        setFeeSurveyIconColor()
+    }
+    
+    private func setFeeSurveyIconColor() {
+        let defaults = UserDefaults.standard
+        
+        if !defaults.bool(forKey: UserDefaults.Key.submitted.rawValue) {
+            if let toolItems = NSApp.mainWindow?.toolbar?.visibleItems {
+                for item in toolItems {
+                    if item.label == NSLocalizedString("Fee Survey", comment: "") {
+                        item.image = item.image?.image(withTintColor: .systemRed)
+                        break
+                    }
+                }
+            }
+        }
+    }
+    
     private func addViewMenuDelegate() {
         let menu = NSApp.mainMenu!
         for menuItem in menu.items {

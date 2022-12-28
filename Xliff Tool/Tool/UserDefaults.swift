@@ -21,6 +21,9 @@ extension UserDefaults {
         case searchTarget
         case searchNote
         case searchOptionCaseSensitive
+        
+        // for fee survey
+        case submitted
     }
     
     static func register() {
@@ -31,6 +34,7 @@ extension UserDefaults {
             UserDefaults.Key.searchTarget.rawValue: NSControl.StateValue.on.rawValue,
             UserDefaults.Key.searchNote.rawValue: NSControl.StateValue.off.rawValue,
             UserDefaults.Key.searchOptionCaseSensitive.rawValue: NSControl.StateValue.off.rawValue,
+            UserDefaults.Key.submitted.rawValue: false,
         ]
         
         UserDefaults.standard.register(defaults: defaults)

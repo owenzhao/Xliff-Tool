@@ -288,6 +288,12 @@ extension AppDelegate:NSMenuDelegate {
 }
 
 extension AppDelegate {
+    @IBAction func showFeeSurvey(_ sender:Any?) {
+        let vc = NSHostingController(rootView: FeeSurveyView().frame(minWidth: 800, minHeight: 600))
+        vc.title = NSLocalizedString("Fee Survey", comment: "")
+        NSApp.mainWindow?.contentViewController?.presentAsModalWindow(vc)
+    }
+    
     @IBAction func showOrHideSidebar(_ sender:Any?) {
         guard let splitViewItem = (NSApp.mainWindow?.contentViewController as? NSSplitViewController)?.splitViewItems.last else {
             return

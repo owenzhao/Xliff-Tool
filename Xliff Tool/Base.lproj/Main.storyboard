@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="macosx"/>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="21507"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -260,7 +261,8 @@
                                 <toolbarItem implicitItemIdentifier="NSToolbarPrintItem" id="bSm-nL-p85"/>
                                 <toolbarItem implicitItemIdentifier="NSToolbarSpaceItem" id="QKh-xq-XM7"/>
                                 <toolbarItem implicitItemIdentifier="NSToolbarFlexibleSpaceItem" id="ZlD-Zl-rTk"/>
-                                <toolbarItem implicitItemIdentifier="D9BDD551-2384-4CAC-91BE-DE5BEC94C7A0" label="Sources" paletteLabel="Sources" toolTip="Show or hide sources" tag="-1" image="SF_sidebar_right" id="Ort-Xb-6S9">
+                                <toolbarItem implicitItemIdentifier="D9BDD551-2384-4CAC-91BE-DE5BEC94C7A0" label="Sources" paletteLabel="Sources" toolTip="Show or hide sources" tag="-1" id="Ort-Xb-6S9">
+                                    <imageReference key="image" image="sidebar.right" catalog="system" symbolScale="large"/>
                                     <size key="minSize" width="32" height="32"/>
                                     <size key="maxSize" width="32" height="32"/>
                                     <connections>
@@ -971,11 +973,11 @@ DQ
                                                     <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                                     <prototypeCellViews>
                                                         <tableCellView id="oPN-X1-VZb">
-                                                            <rect key="frame" x="454" y="1" width="104" height="17"/>
+                                                            <rect key="frame" x="454" y="1" width="105" height="17"/>
                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                             <subviews>
                                                                 <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="FbA-QH-ehx">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="104" height="17"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="105" height="17"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="17" id="Zc6-0F-BGh"/>
                                                                     </constraints>
@@ -1010,11 +1012,11 @@ DQ
                                                     <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                                     <prototypeCellViews>
                                                         <tableCellView id="mIE-fb-QTQ">
-                                                            <rect key="frame" x="561" y="1" width="129" height="17"/>
+                                                            <rect key="frame" x="561.5" y="1" width="128" height="17"/>
                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                             <subviews>
                                                                 <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="FWc-ZH-D5d">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="129" height="17"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="128" height="17"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="17" id="pwW-Vh-y6e"/>
                                                                     </constraints>
@@ -1125,7 +1127,7 @@ Gw
     </scenes>
     <resources>
         <image name="NSActionTemplate" width="20" height="20"/>
-        <image name="SF_sidebar_right" width="44" height="44"/>
+        <image name="sidebar.right" catalog="system" width="24" height="18"/>
         <namedColor name="noteColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="0.49803921568627452" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
