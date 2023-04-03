@@ -9,6 +9,7 @@
 import Cocoa
 import XMLCoder
 import RealmSwift
+import SwiftUI
 
 class EditorViewController: NSViewController {
     static let transUnitDidChanged = Notification.Name("transUnitDidChanged")
@@ -77,6 +78,14 @@ class EditorViewController: NSViewController {
     @IBOutlet weak var copyNoteObjectIDButton: NSButton!
     
     @IBOutlet weak var verifyButton: NSButton!
+    
+    @IBAction func appleTranlateButtonClicked(_ sender: Any) {
+        let translateView = TranslationView(source: transUnit?.source ?? "", target: transUnit?.target ?? "")
+            .background(Color.gray.opacity(0.3))
+            .frame(minHeight: 240)
+        let controller = NSHostingController(rootView: translateView)
+        presentAsSheet(controller)
+    }
     
     @IBAction func openBingTranslatorButtonClicked(_ sender: Any) {
         let webString = "https://cn.bing.com/translator/?text="
@@ -159,8 +168,11 @@ class EditorViewController: NSViewController {
         addViewMenuDelegate()
         
         DispatchQueue.main.async { [self] in
-            NotificationCenter.default.addObserver(self, selector: #selector(willCloseNotification(_:)), name: NSWindow.willCloseNotification, object: self.view.window!)
-            NotificationCenter.default.addObserver(self, selector: #selector(selectionDidChangeNotification(_:)), name: NSOutlineView.selectionDidChangeNotification, object: nil)
+            let nc = NotificationCenter.default
+            nc.addObserver(self, selector: #selector(willCloseNotification(_:)), name: NSWindow.willCloseNotification, object: self.view.window!)
+            nc.addObserver(self, selector: #selector(selectionDidChangeNotification(_:)), name: NSOutlineView.selectionDidChangeNotification, object: nil)
+            nc.addObserver(self, selector: #selector(useTranslation(_:)), name: .useTranslation, object: nil)
+            nc.addObserver(self, selector: #selector(cancelTranslation(_:)), name: .cancelTranslation, object: nil)
         }
     }
     
@@ -226,6 +238,23 @@ class EditorViewController: NSViewController {
             } else {
                debugPrint("")
             }
+        }
+    }
+    
+    @objc private func useTranslation(_ noti:Notification) {
+        if let userInfo = noti.userInfo as? [String:String], let target = userInfo["target"] {
+            self.targetTextView.string = target
+            self.textDidChange(noti)
+            
+            if let vc = self.presentedViewControllers?.last {
+                dismiss(vc)
+            }
+        }
+    }
+    
+    @objc private func cancelTranslation(_ noti:Notification) {
+        if let vc = self.presentedViewControllers?.last {
+            dismiss(vc)
         }
     }
     
@@ -316,8 +345,8 @@ extension EditorViewController:NSTextDelegate {
             updateWindowTitle()
         }
         
-        updateProgress()
         saveChanges()
+        updateProgress()
     }
     
     func saveChanges() {

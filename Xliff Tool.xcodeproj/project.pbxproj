@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 53;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,10 @@
 		DC39237A29434DC300B421E2 /* NSImage+TintColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC39237929434DC300B421E2 /* NSImage+TintColor.swift */; };
 		DC589D26260B65C900B34C5D /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = DC589D25260B65C900B34C5D /* libc++.tbd */; };
 		DC589D28260B65CF00B34C5D /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = DC589D27260B65CF00B34C5D /* libz.tbd */; };
+		DC5AB9F229DAB32A00A8163F /* TranslationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5AB9F129DAB32A00A8163F /* TranslationView.swift */; };
+		DC5AB9F429DABB5100A8163F /* Notification.Names.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5AB9F329DABB5100A8163F /* Notification.Names.swift */; };
+		DC8C808929D99C2200C685BC /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = DC8C808829D99C2200C685BC /* Realm */; };
+		DC8C808B29D99C2200C685BC /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = DC8C808A29D99C2200C685BC /* RealmSwift */; };
 		DCC66C00247BF40C007DEF99 /* RealmObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC66BFF247BF40C007DEF99 /* RealmObjects.swift */; };
 		DCC66C02247CE524007DEF99 /* IndexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC66C01247CE524007DEF99 /* IndexViewController.swift */; };
 		DCC66C05247CF767007DEF99 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC66C03247CF767007DEF99 /* DetailViewController.swift */; };
@@ -27,7 +31,6 @@
 		DCE1FECA28DF24D1001E626C /* XMLCoder in Frameworks */ = {isa = PBXBuildFile; productRef = DCE1FEC928DF24D1001E626C /* XMLCoder */; };
 		DCFB3DB52483801F001BCA3A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DCFB3DB32483801F001BCA3A /* InfoPlist.strings */; };
 		DCFB3DB82483801F001BCA3A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DCFB3DB62483801F001BCA3A /* Localizable.strings */; };
-		F6D632F6C0891C3790CCC42E /* Pods_Xliff_Tool.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECC4A17C59144316797486E8 /* Pods_Xliff_Tool.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -44,14 +47,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		A2B1A4824CE8D43B3CC954FA /* Pods-Xliff Tool.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Xliff Tool.debug.xcconfig"; path = "Target Support Files/Pods-Xliff Tool/Pods-Xliff Tool.debug.xcconfig"; sourceTree = "<group>"; };
-		D2AF4ED258AA7C0775836C67 /* Pods-Xliff Tool.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Xliff Tool.release.xcconfig"; path = "Target Support Files/Pods-Xliff Tool/Pods-Xliff Tool.release.xcconfig"; sourceTree = "<group>"; };
 		DC160BD126043B0C00A00890 /* SidebarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarViewController.swift; sourceTree = "<group>"; };
 		DC39237429430C8300B421E2 /* FeeSurveyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeeSurveyView.swift; sourceTree = "<group>"; };
 		DC3923772943378D00B421E2 /* SubmitPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitPreviewView.swift; sourceTree = "<group>"; };
 		DC39237929434DC300B421E2 /* NSImage+TintColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSImage+TintColor.swift"; sourceTree = "<group>"; };
 		DC589D25260B65C900B34C5D /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		DC589D27260B65CF00B34C5D /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		DC5AB9F129DAB32A00A8163F /* TranslationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationView.swift; sourceTree = "<group>"; };
+		DC5AB9F329DABB5100A8163F /* Notification.Names.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.Names.swift; sourceTree = "<group>"; };
 		DCC66BFF247BF40C007DEF99 /* RealmObjects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmObjects.swift; sourceTree = "<group>"; };
 		DCC66C01247CE524007DEF99 /* IndexViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexViewController.swift; sourceTree = "<group>"; };
 		DCC66C03247CF767007DEF99 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
@@ -69,7 +72,6 @@
 		DCD3E7D0247B9F66009D0339 /* Xliff_Tool.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Xliff_Tool.entitlements; sourceTree = "<group>"; };
 		DCFB3DB42483801F001BCA3A /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		DCFB3DB72483801F001BCA3A /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
-		ECC4A17C59144316797486E8 /* Pods_Xliff_Tool.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Xliff_Tool.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,8 +81,9 @@
 			files = (
 				DC589D28260B65CF00B34C5D /* libz.tbd in Frameworks */,
 				DC589D26260B65C900B34C5D /* libc++.tbd in Frameworks */,
+				DC8C808929D99C2200C685BC /* Realm in Frameworks */,
+				DC8C808B29D99C2200C685BC /* RealmSwift in Frameworks */,
 				DCE1FECA28DF24D1001E626C /* XMLCoder in Frameworks */,
-				F6D632F6C0891C3790CCC42E /* Pods_Xliff_Tool.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,6 +95,7 @@
 			children = (
 				DC39237429430C8300B421E2 /* FeeSurveyView.swift */,
 				DC3923772943378D00B421E2 /* SubmitPreviewView.swift */,
+				DC5AB9F129DAB32A00A8163F /* TranslationView.swift */,
 			);
 			path = "SwiftUI Views";
 			sourceTree = "<group>";
@@ -101,7 +105,6 @@
 			children = (
 				DC589D27260B65CF00B34C5D /* libz.tbd */,
 				DC589D25260B65C900B34C5D /* libc++.tbd */,
-				ECC4A17C59144316797486E8 /* Pods_Xliff_Tool.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -120,6 +123,7 @@
 				DCC66C1D247E52B4007DEF99 /* URL+Base.swift */,
 				DCC66C21247E91A6007DEF99 /* UserDefaults.swift */,
 				DC39237929434DC300B421E2 /* NSImage+TintColor.swift */,
+				DC5AB9F329DABB5100A8163F /* Notification.Names.swift */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -130,7 +134,6 @@
 				DCD3E7C5247B9F65009D0339 /* Xliff Tool */,
 				DCD3E7C4247B9F65009D0339 /* Products */,
 				DC589D1D260B65B200B34C5D /* Frameworks */,
-				F40459A12C04D1E33D3AB5B5 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -165,15 +168,6 @@
 			path = "Xliff Tool";
 			sourceTree = "<group>";
 		};
-		F40459A12C04D1E33D3AB5B5 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				A2B1A4824CE8D43B3CC954FA /* Pods-Xliff Tool.debug.xcconfig */,
-				D2AF4ED258AA7C0775836C67 /* Pods-Xliff Tool.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -181,12 +175,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DCD3E7D3247B9F66009D0339 /* Build configuration list for PBXNativeTarget "Xliff Tool" */;
 			buildPhases = (
-				2E147AD269D62AB3ED889017 /* [CP] Check Pods Manifest.lock */,
 				DCD3E7BF247B9F65009D0339 /* Sources */,
 				DCD3E7C0247B9F65009D0339 /* Frameworks */,
 				DCD3E7C1247B9F65009D0339 /* Resources */,
 				DC589D24260B65B200B34C5D /* Embed Frameworks */,
-				18F556D42A41514532E4716E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -195,6 +187,8 @@
 			name = "Xliff Tool";
 			packageProductDependencies = (
 				DCE1FEC928DF24D1001E626C /* XMLCoder */,
+				DC8C808829D99C2200C685BC /* Realm */,
+				DC8C808A29D99C2200C685BC /* RealmSwift */,
 			);
 			productName = "Xliff Tool";
 			productReference = DCD3E7C3247B9F65009D0339 /* Xliff Tool.app */;
@@ -206,8 +200,9 @@
 		DCD3E7BB247B9F65009D0339 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 1150;
-				LastUpgradeCheck = 1400;
+				LastUpgradeCheck = 1430;
 				ORGANIZATIONNAME = zhaoxin;
 				TargetAttributes = {
 					DCD3E7C2247B9F65009D0339 = {
@@ -227,6 +222,7 @@
 			mainGroup = DCD3E7BA247B9F65009D0339;
 			packageReferences = (
 				DCE1FEC828DF24D1001E626C /* XCRemoteSwiftPackageReference "XMLCoder" */,
+				DC8C808729D99C2200C685BC /* XCRemoteSwiftPackageReference "realm-swift" */,
 			);
 			productRefGroup = DCD3E7C4247B9F65009D0339 /* Products */;
 			projectDirPath = "";
@@ -252,53 +248,12 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		18F556D42A41514532E4716E /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Xliff Tool/Pods-Xliff Tool-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Xliff Tool/Pods-Xliff Tool-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Xliff Tool/Pods-Xliff Tool-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		2E147AD269D62AB3ED889017 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Xliff Tool-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		DCD3E7BF247B9F65009D0339 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC5AB9F429DABB5100A8163F /* Notification.Names.swift in Sources */,
 				DCD3E7C9247B9F65009D0339 /* EditorViewController.swift in Sources */,
 				DCC66C00247BF40C007DEF99 /* RealmObjects.swift in Sources */,
 				DCC66C1E247E52B4007DEF99 /* URL+Base.swift in Sources */,
@@ -308,6 +263,7 @@
 				DC3923782943378D00B421E2 /* SubmitPreviewView.swift in Sources */,
 				DC39237A29434DC300B421E2 /* NSImage+TintColor.swift in Sources */,
 				DCC66C08247E338E007DEF99 /* NSTextFiledWithIndicator.swift in Sources */,
+				DC5AB9F229DAB32A00A8163F /* TranslationView.swift in Sources */,
 				DC39237529430C8300B421E2 /* FeeSurveyView.swift in Sources */,
 				DCD3E7C7247B9F65009D0339 /* AppDelegate.swift in Sources */,
 				DCC66C02247CE524007DEF99 /* IndexViewController.swift in Sources */,
@@ -466,14 +422,13 @@
 		};
 		DCD3E7D4247B9F66009D0339 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A2B1A4824CE8D43B3CC954FA /* Pods-Xliff Tool.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Xliff Tool/Xliff_Tool.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 32;
+				CURRENT_PROJECT_VERSION = 33;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = 96NM39SGJ5;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -484,7 +439,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = 1.4.0;
+				MARKETING_VERSION = 1.5.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.parussoft.Xliff-Tool";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -493,14 +448,13 @@
 		};
 		DCD3E7D5247B9F66009D0339 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D2AF4ED258AA7C0775836C67 /* Pods-Xliff Tool.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Xliff Tool/Xliff_Tool.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 32;
+				CURRENT_PROJECT_VERSION = 33;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = 96NM39SGJ5;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -511,7 +465,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = 1.4.0;
+				MARKETING_VERSION = 1.5.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.parussoft.Xliff-Tool";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -542,6 +496,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		DC8C808729D99C2200C685BC /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.38.0;
+			};
+		};
 		DCE1FEC828DF24D1001E626C /* XCRemoteSwiftPackageReference "XMLCoder" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/CoreOffice/XMLCoder.git";
@@ -553,6 +515,16 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		DC8C808829D99C2200C685BC /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DC8C808729D99C2200C685BC /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		DC8C808A29D99C2200C685BC /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DC8C808729D99C2200C685BC /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
 		DCE1FEC928DF24D1001E626C /* XMLCoder */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = DCE1FEC828DF24D1001E626C /* XCRemoteSwiftPackageReference "XMLCoder" */;
