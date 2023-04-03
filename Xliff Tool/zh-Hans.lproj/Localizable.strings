@@ -2,7 +2,13 @@
 " - Edited" = " — 已编辑";
 
 /* No comment provided by engineer. */
+"Always show this help." = "总是显示这个帮助。";
+
+/* No comment provided by engineer. */
 "Cancel" = "取消";
+
+/* No comment provided by engineer. */
+"Close" = "关闭";
 
 /* No comment provided by engineer. */
 "Create New Project" = "创建新项目";
@@ -41,6 +47,9 @@
 "Project Name" = "项目名称";
 
 /* No comment provided by engineer. */
+"Show Me the Steps" = "具体步骤";
+
+/* No comment provided by engineer. */
 "Source" = "源";
 
 /* No comment provided by engineer. */
@@ -69,4 +78,7 @@
 
 /* No comment provided by engineer. */
 "Which plan(s) will you choose if Xliff Tool charges?" = "如果Xliff Tool收费，您将选择哪种计划？";
+
+/* No comment provided by engineer. */
+"You must have the Xliff Tool Shortcut installed before you continue." = "在继续之前，您必须先安装Xliff Tool的快捷指令。";
 

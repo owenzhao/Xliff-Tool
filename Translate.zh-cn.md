@@ -1,4 +1,11 @@
+
 # 使用快捷指令进行翻译
+## English Version
+* Use the translation tool in Safari.
+
+![Eng-w1385](assets/Eng.png)
+
+
 ## 步骤
 1. 添加快捷指令
 2. 在Xliff Tool中选择苹果翻译
@@ -15,6 +22,7 @@
 #### 快捷指令的说明
 1. 获得输入
 2. 翻译成简体中文
+    1. 如果你需要翻译成其它的语言，就改成你的目标语言
 3. 将翻译内容写回剪贴板
 
 ### 2. 在Xliff Tool中选择苹果翻译

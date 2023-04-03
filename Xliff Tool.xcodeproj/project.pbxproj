@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		DC160BD326043B0C00A00890 /* SidebarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC160BD126043B0C00A00890 /* SidebarViewController.swift */; };
+		DC22912629DB59F200E89F77 /* Defaults in Frameworks */ = {isa = PBXBuildFile; productRef = DC22912529DB59F200E89F77 /* Defaults */; };
+		DC22912829DB5A2D00E89F77 /* Defaults.Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC22912729DB5A2D00E89F77 /* Defaults.Keys.swift */; };
+		DC22912A29DB5B8F00E89F77 /* AppleTranslateHelperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC22912929DB5B8F00E89F77 /* AppleTranslateHelperView.swift */; };
 		DC39237529430C8300B421E2 /* FeeSurveyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC39237429430C8300B421E2 /* FeeSurveyView.swift */; };
 		DC3923782943378D00B421E2 /* SubmitPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3923772943378D00B421E2 /* SubmitPreviewView.swift */; };
 		DC39237A29434DC300B421E2 /* NSImage+TintColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC39237929434DC300B421E2 /* NSImage+TintColor.swift */; };
@@ -48,6 +51,8 @@
 
 /* Begin PBXFileReference section */
 		DC160BD126043B0C00A00890 /* SidebarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarViewController.swift; sourceTree = "<group>"; };
+		DC22912729DB5A2D00E89F77 /* Defaults.Keys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Defaults.Keys.swift; sourceTree = "<group>"; };
+		DC22912929DB5B8F00E89F77 /* AppleTranslateHelperView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleTranslateHelperView.swift; sourceTree = "<group>"; };
 		DC39237429430C8300B421E2 /* FeeSurveyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeeSurveyView.swift; sourceTree = "<group>"; };
 		DC3923772943378D00B421E2 /* SubmitPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitPreviewView.swift; sourceTree = "<group>"; };
 		DC39237929434DC300B421E2 /* NSImage+TintColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSImage+TintColor.swift"; sourceTree = "<group>"; };
@@ -79,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC22912629DB59F200E89F77 /* Defaults in Frameworks */,
 				DC589D28260B65CF00B34C5D /* libz.tbd in Frameworks */,
 				DC589D26260B65C900B34C5D /* libc++.tbd in Frameworks */,
 				DC8C808929D99C2200C685BC /* Realm in Frameworks */,
@@ -96,6 +102,7 @@
 				DC39237429430C8300B421E2 /* FeeSurveyView.swift */,
 				DC3923772943378D00B421E2 /* SubmitPreviewView.swift */,
 				DC5AB9F129DAB32A00A8163F /* TranslationView.swift */,
+				DC22912929DB5B8F00E89F77 /* AppleTranslateHelperView.swift */,
 			);
 			path = "SwiftUI Views";
 			sourceTree = "<group>";
@@ -124,6 +131,7 @@
 				DCC66C21247E91A6007DEF99 /* UserDefaults.swift */,
 				DC39237929434DC300B421E2 /* NSImage+TintColor.swift */,
 				DC5AB9F329DABB5100A8163F /* Notification.Names.swift */,
+				DC22912729DB5A2D00E89F77 /* Defaults.Keys.swift */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -189,6 +197,7 @@
 				DCE1FEC928DF24D1001E626C /* XMLCoder */,
 				DC8C808829D99C2200C685BC /* Realm */,
 				DC8C808A29D99C2200C685BC /* RealmSwift */,
+				DC22912529DB59F200E89F77 /* Defaults */,
 			);
 			productName = "Xliff Tool";
 			productReference = DCD3E7C3247B9F65009D0339 /* Xliff Tool.app */;
@@ -223,6 +232,7 @@
 			packageReferences = (
 				DCE1FEC828DF24D1001E626C /* XCRemoteSwiftPackageReference "XMLCoder" */,
 				DC8C808729D99C2200C685BC /* XCRemoteSwiftPackageReference "realm-swift" */,
+				DC22912429DB59F200E89F77 /* XCRemoteSwiftPackageReference "Defaults" */,
 			);
 			productRefGroup = DCD3E7C4247B9F65009D0339 /* Products */;
 			projectDirPath = "";
@@ -257,6 +267,7 @@
 				DCD3E7C9247B9F65009D0339 /* EditorViewController.swift in Sources */,
 				DCC66C00247BF40C007DEF99 /* RealmObjects.swift in Sources */,
 				DCC66C1E247E52B4007DEF99 /* URL+Base.swift in Sources */,
+				DC22912A29DB5B8F00E89F77 /* AppleTranslateHelperView.swift in Sources */,
 				DCC66C05247CF767007DEF99 /* DetailViewController.swift in Sources */,
 				DC160BD326043B0C00A00890 /* SidebarViewController.swift in Sources */,
 				DCC66C22247E91A6007DEF99 /* UserDefaults.swift in Sources */,
@@ -265,6 +276,7 @@
 				DCC66C08247E338E007DEF99 /* NSTextFiledWithIndicator.swift in Sources */,
 				DC5AB9F229DAB32A00A8163F /* TranslationView.swift in Sources */,
 				DC39237529430C8300B421E2 /* FeeSurveyView.swift in Sources */,
+				DC22912829DB5A2D00E89F77 /* Defaults.Keys.swift in Sources */,
 				DCD3E7C7247B9F65009D0339 /* AppDelegate.swift in Sources */,
 				DCC66C02247CE524007DEF99 /* IndexViewController.swift in Sources */,
 			);
@@ -496,6 +508,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		DC22912429DB59F200E89F77 /* XCRemoteSwiftPackageReference "Defaults" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sindresorhus/Defaults";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.1.0;
+			};
+		};
 		DC8C808729D99C2200C685BC /* XCRemoteSwiftPackageReference "realm-swift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/realm/realm-swift.git";
@@ -515,6 +535,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		DC22912529DB59F200E89F77 /* Defaults */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DC22912429DB59F200E89F77 /* XCRemoteSwiftPackageReference "Defaults" */;
+			productName = Defaults;
+		};
 		DC8C808829D99C2200C685BC /* Realm */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = DC8C808729D99C2200C685BC /* XCRemoteSwiftPackageReference "realm-swift" */;

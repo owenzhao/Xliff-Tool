@@ -1,6 +1,15 @@
 {
   "pins" : [
     {
+      "identity" : "defaults",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/sindresorhus/Defaults",
+      "state" : {
+        "revision" : "d71bfd8ffbf944ef08eacbca5fb96d6f69bf7696",
+        "version" : "7.1.0"
+      }
+    },
+    {
       "identity" : "realm-core",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/realm/realm-core.git",

@@ -7,9 +7,14 @@
 //
 
 import SwiftUI
+import Defaults
 
 struct TranslationView: View {
     @Environment(\.openURL) private var openURL
+    
+    @Default(.alwaysShowAppleTranslateHelperAlert) private var alwaysShowAppleTranslateHelperAlert
+    
+    @State private var showAppleTranslateHelperAlert = false
     
     @State var source:String = ""
     @State var target:String = ""
@@ -50,7 +55,7 @@ struct TranslationView: View {
                 Spacer()
                 
                 Button {
-                    let url = URL(string: "https://github.com/owenzhao/Xliff-Tool")!
+                    let url = URL(string: "https://github.com/owenzhao/Xliff-Tool/blob/newMaster/Translate.zh-cn.md")!
                     openURL(url)
                 } label: {
                     Image(systemName: "questionmark.circle.fill")
@@ -65,8 +70,23 @@ struct TranslationView: View {
         .font(.title2)
         .padding()
         .onAppear(perform: prepareShortCut)
+        .onAppear {
+            if alwaysShowAppleTranslateHelperAlert {
+                showAppleTranslateHelperAlert = true
+            } else {
+                prepareShortCut()
+            }
+        }
         .onDisappear {
             stopTimer = true
+        }
+        .onChange(of: showAppleTranslateHelperAlert) { newValue in
+            if newValue == false {
+                prepareShortCut()
+            }
+        }
+        .sheet(isPresented: $showAppleTranslateHelperAlert) {
+            AppleTranslateHelperView(alwaysShowAppleTranslateHelperAlert: $alwaysShowAppleTranslateHelperAlert)
         }
     }
     
