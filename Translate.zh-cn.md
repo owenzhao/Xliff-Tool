@@ -14,10 +14,9 @@
 ### 1. 添加快捷指令
 要使用快捷指令进行翻译，首先需要安装所需要的快捷指令。
 
+> [点击这里安装快捷指令](https://www.icloud.com/shortcuts/08da5e8939fe48deb34a5b8b27ceb3ec)
+
 ![shortcut-w1312](assets/shortcut.png)
-
-
-> [翻译对应的快捷指令](https://www.icloud.com/shortcuts/08da5e8939fe48deb34a5b8b27ceb3ec)
 
 #### 快捷指令的说明
 1. 获得输入
