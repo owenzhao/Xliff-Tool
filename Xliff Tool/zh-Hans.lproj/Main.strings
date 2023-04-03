@@ -46,8 +46,8 @@
 /* Class = "NSMenuItem"; title = "Open in Xcode"; ObjectID = "9Vj-hj-jhI"; */
 "9Vj-hj-jhI.title" = "使用Xcode打开";
 
-/* Class = "NSButtonCell"; title = "Open Google Translate"; ObjectID = "66u-Js-oNU"; */
-"66u-Js-oNU.title" = "打开谷歌翻译";
+/* Class = "NSButtonCell"; title = "Google Translate"; ObjectID = "66u-Js-oNU"; */
+"66u-Js-oNU.title" = "谷歌翻译";
 
 /* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "77s-Uf-ZqI"; */
 "77s-Uf-ZqI.title" = "Text Cell";
@@ -157,6 +157,9 @@
 /* Class = "NSMenuItem"; title = "Verify Tranlsated Results First"; ObjectID = "LYo-eu-CzR"; */
 "LYo-eu-CzR.title" = "优先审核已翻译的结果";
 
+/* Class = "NSButtonCell"; title = "Apple Translate"; ObjectID = "LYU-Rn-ZOs"; */
+"LYU-Rn-ZOs.title" = "苹果翻译";
+
 /* Class = "NSMenuItem"; title = "Open Database Directory..."; ObjectID = "Mlc-gY-U1q"; */
 "Mlc-gY-U1q.title" = "打开数据库文件夹";
 
@@ -171,12 +174,6 @@
 
 /* Class = "NSMenuItem"; title = "Hide Xliff Tool"; ObjectID = "Olw-nP-bQN"; */
 "Olw-nP-bQN.title" = "隐藏 Xliff工具";
-
-/* Class = "NSToolbarItem"; label = "Support"; ObjectID = "oLy-vz-Oht"; */
-"oLy-vz-Oht.label" = "支持";
-
-/* Class = "NSToolbarItem"; paletteLabel = "Support"; ObjectID = "oLy-vz-Oht"; */
-"oLy-vz-Oht.paletteLabel" = "支持";
 
 /* Class = "NSToolbarItem"; label = "Sources"; ObjectID = "Ort-Xb-6S9"; */
 "Ort-Xb-6S9.label" = "源";
@@ -208,8 +205,8 @@
 /* Class = "NSButtonCell"; title = "Aa"; ObjectID = "Qh5-KZ-O94"; */
 "Qh5-KZ-O94.title" = "Aa";
 
-/* Class = "NSButtonCell"; title = "Open Bing Translator"; ObjectID = "qM1-aW-iR7"; */
-"qM1-aW-iR7.title" = "打开必应翻译";
+/* Class = "NSButtonCell"; title = "Bing Translator"; ObjectID = "qM1-aW-iR7"; */
+"qM1-aW-iR7.title" = "必应翻译";
 
 /* Class = "NSMenuItem"; title = "Zoom"; ObjectID = "R4o-n2-Eq4"; */
 "R4o-n2-Eq4.title" = "缩放";

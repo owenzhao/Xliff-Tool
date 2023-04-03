@@ -291,6 +291,12 @@ extension AppDelegate:NSMenuDelegate {
 }
 
 extension AppDelegate {
+    @IBAction func showFeeSurvey(_ sender:Any?) {
+        let vc = NSHostingController(rootView: FeeSurveyView().frame(minWidth: 800, minHeight: 600))
+        vc.title = NSLocalizedString("Fee Survey", comment: "")
+        NSApp.mainWindow?.contentViewController?.presentAsModalWindow(vc)
+    }
+    
     @IBAction func showOrHideSidebar(_ sender:Any?) {
         guard let splitViewItem = (NSApp.mainWindow?.contentViewController as? NSSplitViewController)?.splitViewItems.last else {
             return
@@ -298,11 +304,5 @@ extension AppDelegate {
         
         splitViewItem.isCollapsed.toggle()
         UserDefaults.standard.setValue(splitViewItem.isCollapsed, forKey: UserDefaults.Key.showSideBar.rawValue)
-    }
-    
-    @IBAction func showSupport(_ sender:Any?) {
-        if let vc = NSStoryboard(name: "Support", bundle: nil).instantiateInitialController() as? NSViewController {
-            NSApp.mainWindow?.contentViewController?.presentAsModalWindow(vc)
-        }
     }
 }

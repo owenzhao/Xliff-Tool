@@ -1,39 +1,30 @@
 {
   "pins" : [
     {
-      "identity" : "myappstore",
+      "identity" : "realm-core",
       "kind" : "remoteSourceControl",
-      "location" : "git@github.com:owenzhao/MyAppStore.git",
+      "location" : "https://github.com/realm/realm-core.git",
       "state" : {
-        "revision" : "bb77562b3dedb70392617b9c526c59717046ac68",
-        "version" : "1.4.6"
+        "revision" : "e56380f05793998dfea0d87a34b68fdba475961c",
+        "version" : "13.9.0"
       }
     },
     {
-      "identity" : "qrcodekit",
+      "identity" : "realm-swift",
       "kind" : "remoteSourceControl",
-      "location" : "git@github.com:owenzhao/QRCodeKit.git",
+      "location" : "https://github.com/realm/realm-swift.git",
       "state" : {
-        "revision" : "db92920d4b31aac79c4a4589ddd358006447b8ce",
-        "version" : "1.0.2"
+        "revision" : "71bddc82c4fe3dd6488739ff8b7e99f69183a614",
+        "version" : "10.38.0"
       }
     },
     {
       "identity" : "xmlcoder",
       "kind" : "remoteSourceControl",
-      "location" : "git@github.com:MaxDesiatov/XMLCoder.git",
+      "location" : "https://github.com/CoreOffice/XMLCoder.git",
       "state" : {
         "revision" : "f30119af03996939cc4f54e0bf0dda9f88a84da5",
         "version" : "0.13.1"
-      }
-    },
-    {
-      "identity" : "zipfoundation",
-      "kind" : "remoteSourceControl",
-      "location" : "git@github.com:weichsel/ZIPFoundation.git",
-      "state" : {
-        "revision" : "7254c74b49cec2cb81520523ba993c671f71b066",
-        "version" : "0.9.14"
       }
     }
   ],

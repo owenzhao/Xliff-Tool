@@ -11,6 +11,9 @@
 "Export" = "导出";
 
 /* No comment provided by engineer. */
+"Fee Survey" = "费用调查";
+
+/* No comment provided by engineer. */
 "Make sure to backup before you delete anything." = "删除任何东西之前，一定要先备份。";
 
 /* No comment provided by engineer. */
@@ -41,6 +44,12 @@
 "Source" = "源";
 
 /* No comment provided by engineer. */
+"Suggestions for Xliff Tool" = "Xliff Tool的建议";
+
+/* No comment provided by engineer. */
+"Target" = "目标";
+
+/* No comment provided by engineer. */
 "The operations you do next may get your data lost." = "您之后的操作可能导致您的数据丢失。";
 
 /* No comment provided by engineer. */
@@ -53,5 +62,11 @@
 "Update Project" = "更新项目";
 
 /* No comment provided by engineer. */
+"Use Translation" = "使用翻译";
+
+/* No comment provided by engineer. */
 "Verified: " = "审核：";
+
+/* No comment provided by engineer. */
+"Which plan(s) will you choose if Xliff Tool charges?" = "如果Xliff Tool收费，您将选择哪种计划？";
 
