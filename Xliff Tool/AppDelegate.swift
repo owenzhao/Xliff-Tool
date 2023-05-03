@@ -143,8 +143,21 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         let fm = FileManager.default
         let openURL = URL.rootURL
         
+        func removeRealmV22Backups() {
+            let urls = try! fm.contentsOfDirectory(at: openURL, includingPropertiesForKeys: [.nameKey, .contentModificationDateKey], options: [.skipsHiddenFiles, .skipsPackageDescendants, .skipsSubdirectoryDescendants])
+            
+            // 移除所有文件名包含“.v22.backup”的项目
+            for url in urls {
+                if url.path.contains(".v22.backup") {
+                    try! fm.removeItem(at: url)
+                }
+            }
+        }
+        
         if !fm.fileExists(atPath: openURL.path) {
             try! fm.createDirectory(at: openURL, withIntermediateDirectories: true, attributes: nil)
+        } else {
+            removeRealmV22Backups()
         }
         
         let urls = try! fm.contentsOfDirectory(at: openURL, includingPropertiesForKeys: [.nameKey, .contentModificationDateKey], options: [.skipsHiddenFiles, .skipsPackageDescendants, .skipsSubdirectoryDescendants])

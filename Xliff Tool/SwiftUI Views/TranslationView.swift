@@ -23,8 +23,14 @@ struct TranslationView: View {
     
     var body: some View {
         VStack(alignment: .leading, spacing: 10) {
-            Text(source)
-                .foregroundColor(.blue)
+            if #available(macOS 12, *) {
+                Text(source)
+                    .foregroundColor(.blue)
+                    .textSelection(.enabled)
+            } else {
+                Text(source)
+                    .foregroundColor(.blue)
+            }
             
             VStack(alignment: .leading, spacing: 5) {
                 Text(NSLocalizedString("Target", comment: ""))
